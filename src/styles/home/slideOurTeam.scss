@@ -1,0 +1,30 @@
+.slide-our-team {
+  padding-left: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+
+  .slide-our-team__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 66px;
+    text-transform: uppercase;
+  }
+
+  .team-list {
+    display: flex;
+
+    .team-list__title {
+      margin-top: 85px;
+      margin-right: 35px;
+      padding: 56px 43px 56px 43px;
+      max-width: 370px;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      font-size: 24px;
+      line-height: 30px;
+      background-color: #ffffff;
+    }
+  }
+}
