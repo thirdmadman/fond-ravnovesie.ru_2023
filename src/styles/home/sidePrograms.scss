@@ -49,6 +49,19 @@
   .fond-projects {
     max-width: 780px;
     width: 100%;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 66px;
+      height: 63px;
+      top: 16px;
+      right: -61px;
+      background: url('../../../public/images/visual-three-lines-spark.svg') no-repeat;
+    }
+
     .fond-projects__title {
       font-size: 40px;
       line-height: 51px;
