@@ -4,49 +4,43 @@ export const fondTeam = {
       name: 'Ксения Ковалева',
       jobTitle: 'Учредитель и директор фонда',
       description: '',
-      img: ''
+      img: '/images/image120.png'
     },
     {
       name: 'Инна Деникина',
       jobTitle: 'Попечитель фонда, психолог',
       description: '',
-      img: ''
+      img: '/images/image121.png'
     },
     {
       name: 'Юлия Ахмедова',
       jobTitle: 'Попечитель фонда',
       description: '',
-      img: ''
+      img: '/images/image122.png'
     },
     {
       name: 'Наталия Курбатова',
       jobTitle: 'Психолог',
       description: '',
-      img: ''
+      img: '/images/image92.png'
     },
     {
       name: 'Дарья Соловьева',
       jobTitle: 'Психолог',
       description: '',
-      img: ''
-    },
-    {
-      name: 'Лина Мастерова',
-      jobTitle: 'Координатор проектов',
-      description: '',
-      img: ''
+      img: '/images/image134.png'
     },
     {
       name: 'Мария Кононова',
       jobTitle: 'Равный консультант, ведущая групп поддержки',
       description: '',
-      img: ''
+      img: '/images/image135.png'
     },
     {
       name: 'Мария Копылова',
       jobTitle: 'Ведущая групп поддержки, фотограф',
       description: '',
-      img: ''
+      img: '/images/image136.png'
     },
   ],
 }
