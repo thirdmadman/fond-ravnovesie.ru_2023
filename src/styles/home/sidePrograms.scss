@@ -3,8 +3,7 @@
   padding: 0 150px;
   display: flex;
   justify-content: space-between;
-
-      background: url(/_next/static/media/fond-projects-background.8c159fd4.svg) no-repeat calc(50% + 418px) 41px;
+  background: url('../../../public/images/fond-projects-background.svg') no-repeat calc(50% + 418px) 41px;
 
   .get-help {
     .get-help__title {
@@ -42,9 +41,9 @@
       padding: 28px 71px 30px 71px;
       border-radius: 40px;
       background-color: #263c93;
-      color: #F6F6F6;
+      color: #f6f6f6;
       font-size: 24px;
-      line-height: 17px
+      line-height: 17px;
     }
   }
 
