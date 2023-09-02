@@ -16,13 +16,13 @@ export const TeamCarousel: React.FC<PropType> = (props) => {
 
   return (
     <div className='team-carousel'>
-      <button className='team-carousel__next-left' type='button' onClick={() => emblaApi?.scrollPrev()} />
+      <button className='team-carousel__next-left' type='button' onClick={() => emblaApi?.scrollPrev()} aria-label='scrollPrev' />
       <div className='team-carousel__viewport' ref={emblaRef}>
         <div className='team-carousel__container'>
           {slides}
         </div>
       </div>
-      <button className='team-carousel__next-right' type='button' onClick={() => emblaApi?.scrollNext()} />
+      <button className='team-carousel__next-right' type='button' onClick={() => emblaApi?.scrollNext()} aria-label='scrollNext'/>
     </div>
   );
 };
