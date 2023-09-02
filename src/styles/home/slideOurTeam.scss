@@ -1,5 +1,6 @@
 .slide-our-team {
   padding-left: 150px;
+  padding-right: 60px;
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,7 @@
 
   .team-list {
     display: flex;
+    justify-content: space-between;
 
     .team-list__title {
       margin-top: 85px;
@@ -21,10 +23,19 @@
       max-width: 370px;
       width: 100%;
       height: fit-content;
+      border-radius: 10px;
       text-align: center;
       font-size: 24px;
       line-height: 30px;
       background-color: #ffffff;
+    }
+
+    .team-list__cards {
+      max-width: 1305px;
+      width: 100%;
+      min-width: 0px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
