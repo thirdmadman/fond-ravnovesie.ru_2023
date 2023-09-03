@@ -2,6 +2,7 @@
   padding-left: 150px;
   padding-right: 60px;
   margin-bottom: 150px;
+  min-height: 770px;
   display: flex;
   flex-direction: column;
 
@@ -15,6 +16,18 @@
   .team-list {
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 295px;
+      height: 320px;
+      background: url('../../../public/images/arrow-down-hand-drawn-left-bottom.svg') no-repeat center center;
+      left: 51px;
+      bottom: -175px;
+    }
 
     .team-list__title {
       margin-top: 85px;
