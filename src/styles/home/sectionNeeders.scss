@@ -1,4 +1,4 @@
-.slide-needers {
+.section-needers {
   margin-bottom: 150px;
   padding: 0 150px;
   min-height: 912px;
@@ -6,16 +6,16 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  .slide-needers__images {
+  .section-needers__images {
     min-width: 320px;
     padding-top: 32px ;
   }
 
-  .slide-needers__text {
+  .section-needers__text {
   }
 
-  .slide {
-    .slide-title {
+  .main-text {
+    .main-text__title {
       margin-top: 80px;
       margin-bottom: 50px;
       max-width: 780px;
@@ -25,7 +25,7 @@
       line-height: 60px;
       text-transform: uppercase;
     }
-    .slide__main-profile {
+    .main-text__main-profile {
       margin-bottom: 50px;
       display: flex;
       justify-content: space-between;
@@ -41,7 +41,7 @@
       }
     }
 
-    .slide__additional-profile {
+    .main-text__additional-profile {
       margin-left: 24px;
 
       font-size: 16px;

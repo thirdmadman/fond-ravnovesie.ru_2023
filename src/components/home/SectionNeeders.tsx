@@ -1,16 +1,16 @@
 import '../../styles/home/sectionNeeders.scss';
-import needersSlideImage from '../../../public/images/needers-slide-image.png';
+import needersSectionImage from '../../../public/images/needers-slide-image.png';
 import Image from 'next/image';
 
-export function SlideNeeders() {
+export function SectionNeeders() {
   return (
-    <section className='slide-needers'>
-      <div className='slide-needers__images'>
-        <Image src={needersSlideImage} alt='needers'></Image>
+    <section className='section-needers'>
+      <div className='section-needers__images'>
+        <Image src={needersSectionImage} alt='needers'></Image>
       </div>
-      <div className='slide-needers__text slide'>
-        <div className='slide-title'>Мы оказываем помощь людям из любого города России:</div>
-        <div className='slide__main-profile'>
+      <div className='section-needers__text main-text'>
+        <div className='main-text__title'>Мы оказываем помощь людям из любого города России:</div>
+        <div className='main-text__main-profile'>
           <ul>
             <li>биполярное аффективное расстройство</li>
             <li>циклотимия</li>
@@ -23,7 +23,7 @@ export function SlideNeeders() {
             <li>зависимости</li>
           </ul>
         </div>
-        <div className='slide__additional-profile'>
+        <div className='main-text__additional-profile'>
           <p>Также оказываем поддержку</p>
           <ul>
             <li>близким и родственникам людей с психическими расстройствами</li>

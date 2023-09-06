@@ -2,7 +2,7 @@ import '../../styles/home/sectionPrograms.scss';
 import {fondProjects} from '@/fondProjects';
 import {ProjectGroupCard} from './ProjectGroupCard';
 
-export function SlidePrograms() {
+export function SectionPrograms() {
   const getProjectGroupCards = () => {
     const props = fondProjects.groups.map((projectsGroup, i) => {
       const projectGroupNumber = i + 1;
@@ -22,8 +22,8 @@ export function SlidePrograms() {
   };
 
   return (
-    <section className='slide-programs'>
-      <div className='slide-programs__get-help get-help'>
+    <section className='section-programs'>
+      <div className='section-programs__get-help get-help'>
         <div className='get-help__title'>КАК ПОЛУЧИТЬ ПОМОЩЬ</div>
         <ol className='get-help__list'>
           <li>Перейдите в нашу группу Вконтакте и напишите в сообщения группы, что хотите получить помощь</li>
@@ -35,7 +35,7 @@ export function SlidePrograms() {
           ПЕРЕЙТИ В ГРУППУ ВКОНТАКТЕ
         </button>
       </div>
-      <div className='slide-programs__fond-projects fond-projects'>
+      <div className='section-programs__fond-projects fond-projects'>
         <div className='fond-projects__title'>ПРОЕКТЫ ФОНДА</div>
         <div className='fond-projects__list'>{getProjectGroupCards()}</div>
       </div>

@@ -1,10 +1,10 @@
 import { Header } from '@/components/Header'
 import '../styles/home/home.scss';
-import { SlideMission } from '@/components/home/SectionMission';
-import { SlideNeeders } from '@/components/home/SectionNeeders';
-import { SlideInfo } from '@/components/home/SectionInfo';
-import { SlidePrograms } from '@/components/home/SectionPrograms';
-import { SlideOurTeam } from '@/components/home/SectionOurTeam';
+import { SectionMission } from '@/components/home/SectionMission';
+import { SectionNeeders } from '@/components/home/SectionNeeders';
+import { SectionInfo } from '@/components/home/SectionInfo';
+import { SectionPrograms } from '@/components/home/SectionPrograms';
+import { SectionOurTeam } from '@/components/home/SectionOurTeam';
 import { SectionHistory } from '@/components/home/SectionHistory';
 import { SectionDonation } from '@/components/home/SectionDonation';
 import { SectionSocials } from '@/components/home/SectionSocials';
@@ -13,11 +13,11 @@ import { Footer } from '@/components/Footer';
 export default function Home() {
   return <div className='main-page'>
     <Header></Header>
-    <SlideMission></SlideMission>
-    <SlideNeeders></SlideNeeders>
-    <SlideInfo></SlideInfo>
-    <SlidePrograms></SlidePrograms>
-    <SlideOurTeam></SlideOurTeam>
+    <SectionMission></SectionMission>
+    <SectionNeeders></SectionNeeders>
+    <SectionInfo></SectionInfo>
+    <SectionPrograms></SectionPrograms>
+    <SectionOurTeam></SectionOurTeam>
     <SectionHistory></SectionHistory>
     <SectionDonation></SectionDonation>
     <SectionSocials></SectionSocials>

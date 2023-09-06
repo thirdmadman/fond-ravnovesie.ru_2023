@@ -7,15 +7,15 @@ import {fondTeam} from '@/fondTeam';
 
 const OPTIONS: EmblaOptionsType = {};
 
-export function SlideOurTeam() {
+export function SectionOurTeam() {
   const leadCardInfo = fondTeam.members[0];
 
   const teamMembers = fondTeam.members.filter((el, i) => i !== 0);
 
   return (
-    <section className='slide-our-team'>
-      <div className='slide-our-team__title'>Наша команда</div>
-      <div className='slide-our-team__list team-list'>
+    <section className='section-our-team'>
+      <div className='section-our-team__title'>Наша команда</div>
+      <div className='section-our-team__list team-list'>
         <div className='team-list__title'>короткая информация по опыту специалистов</div>
         <div className='team-list__cards'>
           <TeamCard name={leadCardInfo.name} jobTitle={leadCardInfo.jobTitle} imageSrc={leadCardInfo.img} isLead />

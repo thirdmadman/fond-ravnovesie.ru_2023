@@ -1,4 +1,4 @@
-.slide-info {
+.section-info {
   margin-bottom: 150px;
   padding-top: 150px;
   min-height: 900px;
@@ -7,7 +7,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  .slide-info__main-text {
+  .section-info__main-text {
     margin-bottom: 128px;
     padding-top: 100px;
     max-width: 1000px;
@@ -50,7 +50,7 @@
     }
   }
 
-  .slide-info__offset-text {
+  .section-info__offset-text {
     display: block;
     font-size: 16px;
     max-width: 250px;
@@ -74,7 +74,7 @@
     }
   }
 
-  .slide-info__additional-text {
+  .section-info__additional-text {
     max-width: 400px;
     text-align: center;
     line-height: normal;
