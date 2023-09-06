@@ -90,7 +90,7 @@ export function DonationForm() {
           onChange={handleInputChange}
           placeholder='E-mail для чека *'
         />
-        <button id='submit' type='submit' aria-label='Amount'>
+        <button id='submit' type='submit'>
           Оформить подписку
         </button>
 
