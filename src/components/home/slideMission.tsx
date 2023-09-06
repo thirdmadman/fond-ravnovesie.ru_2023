@@ -4,7 +4,7 @@ export function SlideMission() {
   return (
     <div className='slide-mission'>
       <div className='slide-mission__title-text'>
-        Равновесие - это благотворительный фонд, оказывающий <span className='underline-blue'>комплексную</span> поддержку людям старше 18 лет с психическими расстройствами,
+        <span className='slide-mission__text-bage'>Равновесие</span> - это благотворительный фонд, оказывающий <span className='underline-blue'>комплексную</span> поддержку людям старше 18 лет с психическими расстройствами,
         <br />не включающими шизофрению.
       </div>
       <div className='slide-mission__description description'>

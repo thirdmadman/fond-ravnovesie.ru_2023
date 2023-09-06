@@ -7,28 +7,40 @@
   align-items: flex-end;
 
   .slide-mission__title-text {
+    margin-bottom: 13px;
     margin-right: 50px;
     width: 540px;
+    min-height: 600px;
     font-size: 40px;
     line-height: 60px;
     text-transform: uppercase;
-    vertical-align: middle;
+    vertical-align: bottom;
 
-    &::before {
-      content: '';
-      margin-right: 10px;
-      width: 70px;
-      height: 36px;
-      border-radius: 36px;
+    .slide-mission__text-bage {
       display: inline-block;
-      background: #e38895;
+      margin-left: 83px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 36px;
+        left: -80px;
+        bottom: 17px;
+        border-radius: 36px;
+        background: #e38895;
+      }
     }
 
     .underline-blue {
+      display: inline-block;
+      position: relative;
       &::after {
         content: '';
-        position: relative;
-        top: -10px;
+        position: absolute;
+        bottom: 2px;
         width: 423px;
         height: 8px;
         display: block;
