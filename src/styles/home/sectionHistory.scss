@@ -1,12 +1,13 @@
 .section-history {
   padding: 0 150px;
   margin-bottom: 150px;
+  min-height: 765px;
   display: flex;
   justify-content: space-between;
 
   .section-history__title {
     margin-left: 43px;
-    margin-top: 60px;
+    margin-top: 80px;
     max-width: 500px;
     font-size: 40px;
     line-height: 63px;
@@ -26,7 +27,7 @@
   }
 
   .section-history__text {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-right: 50px;
     margin-left: 50px;
     max-width: 960px;
