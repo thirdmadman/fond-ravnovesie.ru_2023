@@ -11,7 +11,7 @@ import { SectionSocials } from '@/components/home/SectionSocials';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
-  return <div className='main-page'>
+  return <div className='home-page'>
     <Header></Header>
     <SectionMission></SectionMission>
     <SectionNeeders></SectionNeeders>
