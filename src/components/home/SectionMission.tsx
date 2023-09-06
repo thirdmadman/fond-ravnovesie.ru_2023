@@ -1,4 +1,4 @@
-import '../../styles/home/slideMission.scss'
+import '../../styles/home/sectionMission.scss'
 
 export function SlideMission() {
   return (

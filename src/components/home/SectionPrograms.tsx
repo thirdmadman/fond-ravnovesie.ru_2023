@@ -1,4 +1,4 @@
-import '../../styles/home/sidePrograms.scss';
+import '../../styles/home/sectionPrograms.scss';
 import {fondProjects} from '@/fondProjects';
 import {ProjectGroupCard} from './ProjectGroupCard';
 

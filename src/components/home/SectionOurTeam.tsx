@@ -1,5 +1,5 @@
 import {EmblaOptionsType} from 'embla-carousel-react';
-import '../../styles/home/slideOurTeam.scss';
+import '../../styles/home/sectionOurTeam.scss';
 
 import {TeamCard} from './TeamCard';
 import {TeamCarousel} from './TeamCarousel';

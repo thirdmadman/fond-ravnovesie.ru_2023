@@ -1,4 +1,4 @@
-import '../../styles/home/slideNeeders.scss';
+import '../../styles/home/sectionNeeders.scss';
 import needersSlideImage from '../../../public/images/needers-slide-image.png';
 import Image from 'next/image';
 
