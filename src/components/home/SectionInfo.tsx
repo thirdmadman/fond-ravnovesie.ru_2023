@@ -1,5 +1,5 @@
 import '../../styles/home/sectionInfo.scss';
-import imageSeparator from '../../../public/images/gray-star.svg';
+import imageSeparator from '../../../public/images/visuals/gray-star.svg';
 import Image from 'next/image'
 
 export function SectionInfo() {
