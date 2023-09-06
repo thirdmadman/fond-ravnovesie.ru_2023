@@ -6,6 +6,7 @@ import { SlideInfo } from '@/components/home/slideInfo';
 import { SlidePrograms } from '@/components/home/slidePrograms';
 import { SlideOurTeam } from '@/components/home/slideOurTeam';
 import { SectionHistory } from '@/components/home/sectionHistory';
+import { SectionDonation } from '@/components/home/sectionDonation';
 
 export default function Home() {
   return <div className='main-page'>
@@ -16,5 +17,6 @@ export default function Home() {
     <SlidePrograms></SlidePrograms>
     <SlideOurTeam></SlideOurTeam>
     <SectionHistory></SectionHistory>
+    <SectionDonation></SectionDonation>
   </div>
 }
