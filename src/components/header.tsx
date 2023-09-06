@@ -1,7 +1,7 @@
 import {DEFAULT_PHONE_NUMBER} from '@/shared/text-constants';
 import Image from 'next/image';
-import '../../styles/home/header.scss';
-import logo from '../../../public/images/logo-header.png';
+import '../styles/header.scss';
+import logo from '../../public/images/logo-header.png';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
 

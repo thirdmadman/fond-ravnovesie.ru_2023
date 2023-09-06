@@ -1,4 +1,4 @@
-import { Header } from '@/components/home/header'
+import { Header } from '@/components/header'
 import '../styles/home/home.scss';
 import { SlideMission } from '@/components/home/slideMission';
 import { SlideNeeders } from '@/components/home/slideNeeders';
