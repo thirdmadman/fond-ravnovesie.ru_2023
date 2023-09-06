@@ -1,5 +1,5 @@
 import '../../styles/home/sidePrograms.scss';
-import {fondProjects} from './fondProjects';
+import {fondProjects} from '@/fondProjects';
 import {ProjectGroupCard} from './projectGroupCard';
 
 export function SlidePrograms() {
