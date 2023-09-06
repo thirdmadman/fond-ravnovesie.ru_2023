@@ -1,8 +1,8 @@
 import {EmblaOptionsType} from 'embla-carousel-react';
 import '../../styles/home/slideOurTeam.scss';
 
-import {TeamCard} from './teamCard';
-import {TeamCarousel} from './teamCarousel';
+import {TeamCard} from './TeamCard';
+import {TeamCarousel} from './TeamCarousel';
 import {fondTeam} from '@/fondTeam';
 
 const OPTIONS: EmblaOptionsType = {};

@@ -1,6 +1,6 @@
 import '../../styles/home/sidePrograms.scss';
 import {fondProjects} from '@/fondProjects';
-import {ProjectGroupCard} from './projectGroupCard';
+import {ProjectGroupCard} from './ProjectGroupCard';
 
 export function SlidePrograms() {
   const getProjectGroupCards = () => {

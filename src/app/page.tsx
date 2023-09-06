@@ -1,14 +1,14 @@
-import { Header } from '@/components/header'
+import { Header } from '@/components/Header'
 import '../styles/home/home.scss';
-import { SlideMission } from '@/components/home/slideMission';
-import { SlideNeeders } from '@/components/home/slideNeeders';
-import { SlideInfo } from '@/components/home/slideInfo';
-import { SlidePrograms } from '@/components/home/slidePrograms';
-import { SlideOurTeam } from '@/components/home/slideOurTeam';
-import { SectionHistory } from '@/components/home/sectionHistory';
-import { SectionDonation } from '@/components/home/sectionDonation';
-import { SectionSocials } from '@/components/home/sectionSocials';
-import { Footer } from '@/components/footer';
+import { SlideMission } from '@/components/home/SlideMission';
+import { SlideNeeders } from '@/components/home/SlideNeeders';
+import { SlideInfo } from '@/components/home/SlideInfo';
+import { SlidePrograms } from '@/components/home/SlidePrograms';
+import { SlideOurTeam } from '@/components/home/SlideOurTeam';
+import { SectionHistory } from '@/components/home/SectionHistory';
+import { SectionDonation } from '@/components/home/SectionDonation';
+import { SectionSocials } from '@/components/home/SectionSocials';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return <div className='main-page'>

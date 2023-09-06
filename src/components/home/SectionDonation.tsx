@@ -2,7 +2,7 @@
 import {useState} from 'react';
 
 import '../../styles/home/sectionDonation.scss';
-import { DonationForm } from './donationForm';
+import { DonationForm } from './DonationForm';
 
 export function SectionDonation() {
 
