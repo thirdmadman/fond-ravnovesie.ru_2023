@@ -8,20 +8,20 @@ import channel78RuLogo from '/public/images/socials/78.ru-logo.png';
 
 export function SectionSocials() {
   return (
-    <section className='section-socials'>
-      <div className='section-socials__title'>Мы в сми</div>
-      <div className='section-socials__list'>
-        <div className='section-socials__list-item'>
-          <Image src={needHelpLogo} alt='need-help-logo.png'></Image>
+    <section className="section-socials">
+      <div className="section-socials__title">Мы в сми</div>
+      <div className="section-socials__list">
+        <div className="section-socials__list-item">
+          <Image src={needHelpLogo} alt="need-help-logo.png"></Image>
         </div>
-        <div className='section-socials__list-item'>
-          <Image src={spbSobakaRuLogo} alt='spb.sobaka.ru-logo.png'></Image>
+        <div className="section-socials__list-item">
+          <Image src={spbSobakaRuLogo} alt="spb.sobaka.ru-logo.png"></Image>
         </div>
-        <div className='section-socials__list-item'>
-          <Image src={hseOutreachLogo} alt='hse-outreach.png'></Image>
+        <div className="section-socials__list-item">
+          <Image src={hseOutreachLogo} alt="hse-outreach.png"></Image>
         </div>
-        <div className='section-socials__list-item'>
-          <Image src={channel78RuLogo} alt='78.ru.png'></Image>
+        <div className="section-socials__list-item">
+          <Image src={channel78RuLogo} alt="78.ru.png"></Image>
         </div>
       </div>
     </section>

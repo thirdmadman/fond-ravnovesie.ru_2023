@@ -8,10 +8,10 @@ interface ProjectGroupCardProps {
 }
 
 export function ProjectGroupCard(props: ProjectGroupCardProps) {
-  const {projectGroupNumber, projectGroupName, projectNamesInGroup, link} = props;
+  const { projectGroupNumber, projectGroupName, projectNamesInGroup, link } = props;
   return (
-    <div className='project-group-card'>
-      <div className='project-group-card__title'>
+    <div className="project-group-card">
+      <div className="project-group-card__title">
         <span>{projectGroupNumber < 10 ? `0${projectGroupNumber}` : projectGroupNumber}</span>
         {projectGroupName}
       </div>
@@ -20,7 +20,7 @@ export function ProjectGroupCard(props: ProjectGroupCardProps) {
           <li key={el}>“{el}“</li>
         ))}
       </ul>
-      <button type='button' className='project-group-card__button'>
+      <button type="button" className="project-group-card__button">
         ПОДРОБНЕЕ
       </button>
     </div>

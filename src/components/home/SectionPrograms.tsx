@@ -1,6 +1,6 @@
 import '../../styles/home/sectionPrograms.scss';
-import {fondProjects} from '@/fondProjects';
-import {ProjectGroupCard} from './ProjectGroupCard';
+import { fondProjects } from '@/fondProjects';
+import { ProjectGroupCard } from './ProjectGroupCard';
 
 export function SectionPrograms() {
   const getProjectGroupCards = () => {
@@ -8,7 +8,9 @@ export function SectionPrograms() {
       const projectGroupNumber = i + 1;
       const projectGroupName = projectsGroup.groupTitle;
 
-      const projectNamesInGroup = fondProjects.projects.filter((el) => projectsGroup.projectIds.includes(el.id)).map((el) => el.name);
+      const projectNamesInGroup = fondProjects.projects
+        .filter((el) => projectsGroup.projectIds.includes(el.id))
+        .map((el) => el.name);
 
       return {
         projectGroupNumber,
@@ -22,22 +24,22 @@ export function SectionPrograms() {
   };
 
   return (
-    <section className='section-programs'>
-      <div className='section-programs__get-help get-help'>
-        <div className='get-help__title'>КАК ПОЛУЧИТЬ ПОМОЩЬ</div>
-        <ol className='get-help__list'>
+    <section className="section-programs">
+      <div className="section-programs__get-help get-help">
+        <div className="get-help__title">КАК ПОЛУЧИТЬ ПОМОЩЬ</div>
+        <ol className="get-help__list">
           <li>Перейдите в нашу группу Вконтакте и напишите в сообщения группы, что хотите получить помощь</li>
           <li>Бот в сообщениях предложит на выбор несколько проектов</li>
           <li>После выбора проекта бот предложит заполнить анкету</li>
           <li>После отправления анкеты, с вами свяжется координатор и объяснит дальнейшее взаимодействие</li>
         </ol>
-        <button className='get-help__button-to-vk' type='button'>
+        <button className="get-help__button-to-vk" type="button">
           ПЕРЕЙТИ В ГРУППУ ВКОНТАКТЕ
         </button>
       </div>
-      <div className='section-programs__fond-projects fond-projects'>
-        <div className='fond-projects__title'>ПРОЕКТЫ ФОНДА</div>
-        <div className='fond-projects__list'>{getProjectGroupCards()}</div>
+      <div className="section-programs__fond-projects fond-projects">
+        <div className="fond-projects__title">ПРОЕКТЫ ФОНДА</div>
+        <div className="fond-projects__list">{getProjectGroupCards()}</div>
       </div>
     </section>
   );

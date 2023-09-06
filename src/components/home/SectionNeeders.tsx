@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export function SectionNeeders() {
   return (
-    <section className='section-needers'>
-      <div className='section-needers__images'>
-        <Image src={needersSectionImage} alt='needers'></Image>
+    <section className="section-needers">
+      <div className="section-needers__images">
+        <Image src={needersSectionImage} alt="needers"></Image>
       </div>
-      <div className='section-needers__text main-text'>
-        <div className='main-text__title'>Мы оказываем помощь людям из любого города России:</div>
-        <div className='main-text__main-profile'>
+      <div className="section-needers__text main-text">
+        <div className="main-text__title">Мы оказываем помощь людям из любого города России:</div>
+        <div className="main-text__main-profile">
           <ul>
             <li>биполярное аффективное расстройство</li>
             <li>циклотимия</li>
@@ -23,7 +23,7 @@ export function SectionNeeders() {
             <li>зависимости</li>
           </ul>
         </div>
-        <div className='main-text__additional-profile'>
+        <div className="main-text__additional-profile">
           <p>Также оказываем поддержку</p>
           <ul>
             <li>близким и родственникам людей с психическими расстройствами</li>
