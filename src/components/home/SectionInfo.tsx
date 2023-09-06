@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export function SlideInfo() {
   return (
-    <div className='slide-info'>
+    <section className='slide-info'>
       <Image src={imageSeparator} alt='separator'></Image>
       <div className='slide-info__main-text'>
         Фонд уделяет особое внимание 
@@ -26,6 +26,6 @@ export function SlideInfo() {
       <div className='slide-info__additional-text'>
         Психоактивные и психические расстройства диагностируются у каждого 7 человека в России
       </div>
-    </div>
+    </section>
   );
 }

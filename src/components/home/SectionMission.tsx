@@ -2,7 +2,7 @@ import '../../styles/home/slideMission.scss'
 
 export function SlideMission() {
   return (
-    <div className='slide-mission'>
+    <section className='slide-mission'>
       <div className='slide-mission__title-text'>
         <span className='slide-mission__text-bage'>Равновесие</span> - это благотворительный фонд, оказывающий <span className='underline-blue'>комплексную</span> поддержку людям старше 18 лет с психическими расстройствами,
         <br />не включающими шизофрению.
@@ -22,6 +22,6 @@ export function SlideMission() {
           получить поддержку, реализовать свой потенциал и не зависеть от расстройства.
         </div>
       </div>
-    </div>
+    </section>
   );
 }

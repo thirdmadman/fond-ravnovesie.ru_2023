@@ -22,7 +22,7 @@ export function SlidePrograms() {
   };
 
   return (
-    <div className='slide-programs'>
+    <section className='slide-programs'>
       <div className='slide-programs__get-help get-help'>
         <div className='get-help__title'>КАК ПОЛУЧИТЬ ПОМОЩЬ</div>
         <ol className='get-help__list'>
@@ -39,6 +39,6 @@ export function SlidePrograms() {
         <div className='fond-projects__title'>ПРОЕКТЫ ФОНДА</div>
         <div className='fond-projects__list'>{getProjectGroupCards()}</div>
       </div>
-    </div>
+    </section>
   );
 }

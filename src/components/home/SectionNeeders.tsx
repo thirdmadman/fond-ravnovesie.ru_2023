@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function SlideNeeders() {
   return (
-    <div className='slide-needers'>
+    <section className='slide-needers'>
       <div className='slide-needers__images'>
         <Image src={needersSlideImage} alt='needers'></Image>
       </div>
@@ -32,6 +32,6 @@ export function SlideNeeders() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

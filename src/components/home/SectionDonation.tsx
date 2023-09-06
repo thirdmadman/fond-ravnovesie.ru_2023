@@ -1,12 +1,8 @@
 "use client"
-import {useState} from 'react';
-
 import '../../styles/home/sectionDonation.scss';
 import { DonationForm } from './DonationForm';
 
 export function SectionDonation() {
-
-
   return (
     <section className='section-donation'>
       <div className='section-donation__qr qr-donation'>

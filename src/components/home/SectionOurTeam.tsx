@@ -13,7 +13,7 @@ export function SlideOurTeam() {
   const teamMembers = fondTeam.members.filter((el, i) => i !== 0);
 
   return (
-    <div className='slide-our-team'>
+    <section className='slide-our-team'>
       <div className='slide-our-team__title'>Наша команда</div>
       <div className='slide-our-team__list team-list'>
         <div className='team-list__title'>короткая информация по опыту специалистов</div>
@@ -27,6 +27,6 @@ export function SlideOurTeam() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
