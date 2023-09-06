@@ -1,10 +1,10 @@
 import { Header } from '@/components/Header'
 import '../styles/home/home.scss';
-import { SlideMission } from '@/components/home/SlideMission';
-import { SlideNeeders } from '@/components/home/SlideNeeders';
-import { SlideInfo } from '@/components/home/SlideInfo';
-import { SlidePrograms } from '@/components/home/SlidePrograms';
-import { SlideOurTeam } from '@/components/home/SlideOurTeam';
+import { SlideMission } from '@/components/home/SectionMission';
+import { SlideNeeders } from '@/components/home/SectionNeeders';
+import { SlideInfo } from '@/components/home/SectionInfo';
+import { SlidePrograms } from '@/components/home/SectionPrograms';
+import { SlideOurTeam } from '@/components/home/SectionOurTeam';
 import { SectionHistory } from '@/components/home/SectionHistory';
 import { SectionDonation } from '@/components/home/SectionDonation';
 import { SectionSocials } from '@/components/home/SectionSocials';
