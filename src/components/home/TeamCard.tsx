@@ -8,7 +8,7 @@ interface TeamCardProps {
   isLead?: boolean;
 }
 
-export function TeamCard({ name, jobTitle, imageSrc, isLead = true }: TeamCardProps) {
+export function TeamCard({ name, jobTitle, imageSrc, isLead = false }: TeamCardProps) {
   return (
     <div className={`team-card ${isLead ? 'team-card_lead' : ''}`}>
       <div className="team-card__text">
