@@ -10,8 +10,7 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
-export const TeamCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
+export function TeamCarousel({ slides, options = {} }: PropType) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (
@@ -33,4 +32,4 @@ export const TeamCarousel: React.FC<PropType> = (props) => {
       />
     </div>
   );
-};
+}

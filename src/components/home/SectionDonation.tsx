@@ -1,4 +1,5 @@
 'use client';
+
 import '../../styles/home/sectionDonation.scss';
 import { DonationForm } from './DonationForm';
 
@@ -11,9 +12,9 @@ export function SectionDonation() {
           Мы будем рады небольшой, но ежемесячной помощи - это позволит нам чувствовать себя увереннее и надёжнее
           строить планы нашей работы.
         </div>
-        <div className="qr-donation__img-box"></div>
+        <div className="qr-donation__img-box">{/* image here */}</div>
       </div>
-      <DonationForm></DonationForm>
+      <DonationForm />
     </section>
   );
 }

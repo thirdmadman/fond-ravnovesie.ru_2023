@@ -1,12 +1,12 @@
 import '../../styles/home/sectionNeeders.scss';
-import needersSectionImage from '../../../public/images/needers-slide-image.png';
 import Image from 'next/image';
+import needersSectionImage from '/public/images/needers-slide-image.png';
 
 export function SectionNeeders() {
   return (
     <section className="section-needers">
       <div className="section-needers__images">
-        <Image src={needersSectionImage} alt="needers"></Image>
+        <Image src={needersSectionImage} alt="needers" />
       </div>
       <div className="section-needers__text main-text">
         <div className="main-text__title">Мы оказываем помощь людям из любого города России:</div>

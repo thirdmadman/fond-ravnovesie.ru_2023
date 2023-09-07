@@ -20,9 +20,9 @@ export function ProjectGroupCard(props: ProjectGroupCardProps) {
           <li key={el}>“{el}“</li>
         ))}
       </ul>
-      <button type="button" className="project-group-card__button">
+      <a href={link} className="project-group-card__button">
         ПОДРОБНЕЕ
-      </button>
+      </a>
     </div>
   );
 }

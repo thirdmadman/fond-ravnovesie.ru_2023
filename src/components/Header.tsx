@@ -1,9 +1,8 @@
 import { DEFAULT_PHONE_NUMBER } from '@/shared/text-constants';
 import Image from 'next/image';
 import '../styles/header.scss';
-import logo from '../../public/images/logo-header.png';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import logo from '/public/images/logo-header.png';
 
 const menuLinks = [
   { name: 'Главная', path: '/' },
@@ -14,17 +13,11 @@ const menuLinks = [
 ];
 
 export function Header() {
-  // const pathname = usePathname();
-
-  const getLink = (name: string, path: string) => {
-    // const isActive = pathname === path;
-
-    return (
-      <Link href={path} className="navigation__link" key={name}>
-        {name}
-      </Link>
-    );
-  };
+  const getLink = (name: string, path: string) => (
+    <Link href={path} className="navigation__link" key={name}>
+      {name}
+    </Link>
+  );
 
   return (
     <header className="header">

@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 
 import '../../styles/home/donationForm.scss';
@@ -21,26 +22,21 @@ export function DonationForm() {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log(state);
   };
 
-  const getMonthlyReminder = () => {
-    return (
-      <div className=" form-inputs__reminder form-inputs__reminder_monthly">
-        Вы оформляете подписку на ежемесячное пожертвование указанной суммы. Отменить подписку вы можете обратившись на
-        почту <a href="email:info@fond-ravnovesie.ru">info@fond-ravnovesie.ru</a>
-      </div>
-    );
-  };
+  const getMonthlyReminder = () => (
+    <div className=" form-inputs__reminder form-inputs__reminder_monthly">
+      Вы оформляете подписку на ежемесячное пожертвование указанной суммы. Отменить подписку вы можете обратившись на
+      почту <a href="email:info@fond-ravnovesie.ru">info@fond-ravnovesie.ru</a>
+    </div>
+  );
 
-  const getOnceReminder = () => {
-    return (
-      <div className="form-inputs__reminder form-inputs__reminder_once">
-        По возникшим вопросам вы можете обратиться на почту{' '}
-        <a href="email:info@fond-ravnovesie.ru">info@fond-ravnovesie.ru</a>
-      </div>
-    );
-  };
+  const getOnceReminder = () => (
+    <div className="form-inputs__reminder form-inputs__reminder_once">
+      По возникшим вопросам вы можете обратиться на почту{' '}
+      <a href="email:info@fond-ravnovesie.ru">info@fond-ravnovesie.ru</a>
+    </div>
+  );
 
   return (
     <form className="donation-form" onSubmit={handleSubmit}>
