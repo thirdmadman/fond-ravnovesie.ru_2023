@@ -3,12 +3,12 @@ import '../../styles/home/sectionMission.scss';
 export function SectionMission() {
   return (
     <section className="section-mission">
-      <div className="section-mission__title-text">
+      <h1 className="section-mission__title-text">
         <span className="section-mission__text-bage">Равновесие</span> - это благотворительный фонд, оказывающий{' '}
         <span className="underline-blue">комплексную</span> поддержку людям старше 18 лет с психическими расстройствами,
         <br />
         не включающими шизофрению.
-      </div>
+      </h1>
       <div className="section-mission__description description">
         <div className="description__buttons">
           <button className="button" type="button">

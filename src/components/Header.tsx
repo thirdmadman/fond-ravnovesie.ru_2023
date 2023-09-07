@@ -30,7 +30,7 @@ export function Header() {
     <header className="header">
       <Image className="header__logo" src={logo} alt="logo" width="160" height="90" />
       <nav className="header__navigation navigation">{menuLinks.map((link) => getLink(link.name, link.path))}</nav>
-      <Link className="header__phone" href={`tel:${DEFAULT_PHONE_NUMBER}`}>
+      <Link className="header__phone" href={`tel:${DEFAULT_PHONE_NUMBER}`} itemScope itemType="http://schema.org/LocalBusiness" itemProp="telephone" >
         {DEFAULT_PHONE_NUMBER}
       </Link>
     </header>
