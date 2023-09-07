@@ -1,4 +1,5 @@
 import '../../styles/home/sectionMission.scss';
+import { ButtonDropdown } from './ButtonDropdown';
 
 export function SectionMission() {
   return (
@@ -11,9 +12,13 @@ export function SectionMission() {
       </h1>
       <div className="section-mission__description description">
         <div className="description__buttons">
-          <button className="button" type="button">
-            <p>ПОМОЧЬ ФОНДУ</p>
-          </button>
+          <ButtonDropdown buttonText="ПОМОЧЬ ФОНДУ">
+            <a href="/help-ways#donate">Пожертвовать</a>
+            <a href="/help-ways#become-volunteer">Стать волонтером</a>
+            <a href="/help-ways#become-partner">Стать партнером</a>
+            <a href="/help-ways#share">Распространить информацию</a>
+            <a href="/help-ways#provide-room">Предоставить помещение</a>
+          </ButtonDropdown>
           <button className="button" type="button">
             <p>ПОЛУЧИТЬ ПОМОЩЬ</p>
           </button>
