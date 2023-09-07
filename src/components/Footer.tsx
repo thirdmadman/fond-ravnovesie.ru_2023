@@ -15,7 +15,7 @@ export function Footer() {
           <div className="links-list__item links-list__item_yt"></div>
         </a>
       </div>
-      <div className="footer__contacts" itemScope itemType="http://schema.org/LocalBusiness">
+      <div className="footer__contacts" itemScope itemType="http://schema.org/Organization">
         <a className="footer__link-email" href="email:info@fond-ravnovesie.ru" itemProp="email">
           info@fond-ravnovesie.ru
         </a>
@@ -24,7 +24,7 @@ export function Footer() {
         </a>
       </div>
 
-      <p className="footer__fond-name">© CC BY-NC-SA <span itemScope itemType="http://schema.org/LocalBusiness" itemProp="name" >Благотворительный фонд “РАВНОВЕСИЕ”</span></p>
+      <p className="footer__fond-name">© CC BY-NC-SA <span itemScope itemType="http://schema.org/Organization" itemProp="name" >Благотворительный фонд “РАВНОВЕСИЕ”</span></p>
 
       <a href="/">Политика конфиденциальности</a>
       <a href="/">Оферта</a>
