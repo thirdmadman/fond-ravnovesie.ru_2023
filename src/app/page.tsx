@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="home-page">
+      <style key="title">
+        {`body {
+            background:
+            url('/images/three-color-gradient-home.svg') no-repeat calc(100vw - 1035px) 143px,
+            url('/images/ellipse-subtraction-white-home.svg') no-repeat center 2037px,
+            url('/images/ellipse-offset-gradient-white-home.svg') no-repeat calc(100vw - 1529px) 5198px;
+          }`}
+      </style>
       <Header />
       <SectionMission />
       <SectionNeeders />
