@@ -13,9 +13,11 @@ export const metadata: Metadata = {
 export default function Contacts() {
   return (
     <div className="contacts-page">
-      <Header />
-      <SectionContacts />
-      <Footer />
+      <div className="container">
+        <Header />
+        <SectionContacts />
+        <Footer />
+      </div>
     </div>
   );
 }

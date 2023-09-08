@@ -1,6 +1,16 @@
 .home-page {
   width: 100%;
-  max-width: 1920px;
-  margin: auto;
-  position: relative;
+  height: 100%;
+
+  background:
+  url('/images/three-color-gradient-home.svg') no-repeat calc(100vw - 1035px) 143px,
+  url('/images/ellipse-subtraction-white-home.svg') no-repeat center 2037px,
+  url('/images/ellipse-offset-gradient-white-home.svg') no-repeat calc(100vw - 1529px) 5198px;
+
+  .container {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+  }
 }
