@@ -1,5 +1,16 @@
 @use 'preflight.css';
 
+@font-face {
+  font-family: 'Steppe';
+  src: url('../assets/fonts/Steppe/Steppe-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Steppe;
+}
+
 html {
   background-color: #f6f6f6;
 }

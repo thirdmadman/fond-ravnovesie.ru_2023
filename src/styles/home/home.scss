@@ -1,16 +1,8 @@
-@font-face {
-  font-family: 'Steppe';
-  src: url('../../assets/fonts/Steppe/Steppe-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
 body {
   background:
   url('../../../public/images/three-color-gradient-home.svg') no-repeat calc(100vw - 1035px) 143px,
   url('../../../public/images/ellipse-subtraction-white-home.svg') no-repeat center 2037px,
   url('../../../public/images/ellipse-offset-gradient-white-home.svg') no-repeat calc(100vw - 1529px) 5198px;
-  font-family: Steppe;
 }
 
 .home-page {
