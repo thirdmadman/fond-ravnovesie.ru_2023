@@ -4,6 +4,7 @@ html {
 
 body {
   height: 100%;
+  background: url('../../public/images/wave-background-white.svg') no-repeat calc(100vw - 1454px) calc(100vh - 1065px);
 }
 
 .not-fund-page {
@@ -100,9 +101,8 @@ body {
 
     .not-fund-page__button_blue {
       border: none;
-      background-color: #263C93;
-      color: #F6F6F6;
+      background-color: #263c93;
+      color: #f6f6f6;
     }
-
   }
 }

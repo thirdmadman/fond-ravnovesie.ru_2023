@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import '../styles/notFoundPage.scss';
+
+export const metadata: Metadata = {
+  title: '404 Not Found',
+  description: 'Извините, но страницы, на которую вы собирались перейти, не существует :(',
+};
 
 export default function NotFundPage() {
   return (
