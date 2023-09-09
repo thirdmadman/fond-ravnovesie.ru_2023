@@ -1,0 +1,51 @@
+.report-card {
+  padding: 36px 40px;
+  max-width: 320px;
+  width: 100%;
+  min-height: 285px;
+  border-radius: 30px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  a {
+    padding: 15px 25px 15px 35px;
+    max-width: 245px;
+    border-radius: 39px;
+    display: block;
+    background: #f6f6f6;
+    color: #282828;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    position: relative;
+
+    p {
+      padding-top: 4px;
+    }
+
+    &::after {
+
+      content: '';
+      width: 24px;
+      height: 24px;
+      display: block;
+      position: absolute;
+      top: 14px;
+      right: 22px;
+      background: url('../../../public/images/icons/icon-arrow-right-black.svg');
+    }
+  }
+}
