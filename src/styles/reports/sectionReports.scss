@@ -15,5 +15,6 @@
   .section-reports__list {
     display: flex;
     gap: 60px;
+    flex-wrap: wrap;
   }
 }
