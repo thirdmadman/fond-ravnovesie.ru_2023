@@ -1,25 +1,7 @@
 import '../../styles/reports/sectionReports.scss';
 import { ReportCard } from './ReportCard';
 
-const reports = {
-  data: [
-    {
-      year: 2023,
-      description: '',
-      link: '/',
-    },
-    {
-      year: 2022,
-      description: '',
-      link: '/',
-    },
-    {
-      year: 2021,
-      description: '',
-      link: '/',
-    },
-  ],
-};
+import { reports } from '../../fondReports';
 
 export function SectionReports() {
   return (
