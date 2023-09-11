@@ -4,6 +4,9 @@
   padding-left: 150px;
   padding-right: 150px;
 
+  display: flex;
+  justify-content: space-between;
+
   .section-legal-info__data {
   }
 
@@ -23,11 +26,21 @@
       gap: 17px 23px;
       line-height: 19px;
     }
+
+    .data {
+      .data__heading {
+        color: #8B8B8B;
+      }
+    }
   }
 
   .section-legal-info__papers {
+    
   }
 
   .legal-papers {
+    margin-top: 75px;
+    display: flex;
+    gap: 53px;
   }
 }

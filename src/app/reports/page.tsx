@@ -3,6 +3,7 @@ import '../../styles/reports/reports.scss';
 import { Footer } from '@/components/Footer';
 import { Metadata } from 'next';
 import { SectionReports } from '@/components/reports/SectionReports';
+import { SectionLegalInfo } from '@/components/reports/SectionLegalInfo';
 
 export const metadata: Metadata = {
   title: 'Отчёты | Благотворительный фонд Равновесие',
@@ -16,6 +17,7 @@ export default function Reports() {
       <div className="container">
         <Header />
         <SectionReports />
+        <SectionLegalInfo />
         <Footer />
       </div>
     </div>
