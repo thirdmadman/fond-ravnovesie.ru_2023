@@ -1,4 +1,4 @@
-export const reports = {
+export const fondReports = {
   data: [
     {
       year: 2023,
