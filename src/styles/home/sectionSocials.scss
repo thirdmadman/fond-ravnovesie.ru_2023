@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 1760px) {
+    padding: 28px 70px;
+  }
+
   .section-socials__title {
     margin-top: 30px;
     margin-left: 10px;

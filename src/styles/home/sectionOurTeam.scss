@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
 
+  @media screen and (max-width: 1760px) {
+    padding: 0 70px;
+  }
+
   .section-our-team__title {
     margin-top: 23px;
     margin-bottom: 10px;
