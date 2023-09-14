@@ -42,6 +42,10 @@
         bottom: -215px;
         right: -279px;
         background: url('../../../public/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg') no-repeat;
+
+        @media screen and (max-width: 1600px) {
+          right: -225px;
+        }
       }
     }
 

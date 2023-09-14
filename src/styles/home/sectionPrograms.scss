@@ -10,6 +10,11 @@
   }
 
   .get-help {
+
+    @media screen and (max-width: 1600px) {
+      margin-left: 14px;
+    }
+
     .get-help__title {
       font-size: 40px;
       line-height: 51px;
@@ -34,6 +39,10 @@
         top: 45px;
         right: -94px;
         background: url('../../../public/images/visuals/arrow-down-left-bottom-pink-hand-drawn.svg') no-repeat;
+
+        @media screen and (max-width: 1600px) {
+          right: -40px;
+        }
       }
 
       li {
@@ -55,6 +64,10 @@
     max-width: 780px;
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: 1600px) {
+      max-width: 668px;
+    }
 
     &::before {
       content: '';

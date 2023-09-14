@@ -18,6 +18,11 @@
     text-transform: uppercase;
     position: relative;
 
+    @media screen and (max-width: 1600px) {
+      margin-left: 100px;
+      max-width: 350px;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -43,6 +48,10 @@
     @media screen and (max-width: 1760px) {
       margin-right: 0;
       max-width: 1010px;
+    }
+
+    @media screen and (max-width: 1600px) {
+      gap: 30px;
     }
 
     div:nth-child(2n) {
