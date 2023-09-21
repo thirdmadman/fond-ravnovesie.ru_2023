@@ -76,6 +76,11 @@
     text-transform: none;
     height: 0;
 
+
+    @media screen and (max-width: 1280px) {
+      max-width: 183px;
+    }
+
     &_left {
       position: absolute;
       left: -302px;
@@ -84,6 +89,12 @@
 
       @media screen and (max-width: 1490px) {
         top: 8px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        top: 11px;
+        left: -228px;
+        max-width: 176px;
       }
     }
 
@@ -95,6 +106,11 @@
 
       @media screen and (max-width: 1490px) {
         top: 20px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        top: 24px;
+        right: -247px;
       }
     }
   }

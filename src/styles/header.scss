@@ -18,6 +18,10 @@
     padding: 0 70px;
   }
 
+  @media screen and (max-width: 1280px) {
+    padding: 0 50px;
+  }
+
 
   .header__navigation {
     margin-left: 34px;
@@ -26,6 +30,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 575px;
+    }
   }
 
   .navigation__link {
@@ -34,5 +42,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 16px;
+    }
   }
 }
