@@ -10,12 +10,22 @@
     padding: 0 70px;
   }
 
+  @media screen and (max-width: 1490px) {
+    padding: 0 50px;
+    min-height: 690px;
+  }
+
   .section-our-team__title {
     margin-top: 23px;
     margin-bottom: 10px;
     font-size: 40px;
     line-height: 66px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1490px) {
+      font-size: 32px;
+      margin-top: 15px;
+    }
   }
 
   .team-list {
@@ -54,6 +64,10 @@
       @media screen and (max-width: 1600px) {
         margin-right: 25px;
       }
+
+      @media screen and (max-width: 1490px) {
+        // max-width: 370px;
+      }
     }
 
     .team-list__cards {
@@ -62,6 +76,10 @@
       min-width: 0px;
       display: flex;
       justify-content: space-between;
+
+      @media screen and (max-width: 1490px) {
+        max-width: 1000px;
+      }
     }
   }
 }

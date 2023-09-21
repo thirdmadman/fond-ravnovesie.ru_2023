@@ -11,8 +11,16 @@
   align-items: center;
   text-align: center;
 
+  @media screen and (max-width: 1490px) {
+    max-width: 200px;
+  }
+
   .team-card__text {
     margin: 0 10px;
+
+    @media screen and (max-width: 1490px) {
+      margin: 0 5px;
+    }
   }
 
   &_lead {
@@ -21,12 +29,16 @@
     flex: 0 0 250px;
     position: relative;
 
+    @media screen and (max-width: 1490px) {
+      max-width: 210px;
+    }
+
     &::before {
       content: '';
       display: block;
       position: absolute;
       z-index: -1;
-      background: linear-gradient(#E38895, #FDE04D);
+      background: linear-gradient(#e38895, #fde04d);
       bottom: -45px;
       left: -42px;
       width: 250px;

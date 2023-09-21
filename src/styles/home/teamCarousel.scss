@@ -16,7 +16,9 @@
     margin-right: 0;
   }
 
-
+  @media screen and (max-width: 1490px) {
+    max-width: 735px;
+  }
 
   .team-carousel__viewport {
     overflow: hidden;
@@ -36,16 +38,18 @@
     display: flex;
     touch-action: pan-y;
     gap: 13px;
+
+    @media screen and (max-width: 1490px) {
+      gap: 18px;
+    }
   }
 
   .team-carousel__next-left {
-    
     width: 30px;
     background: url('../../../public/images/icons/ic_next_left.svg') no-repeat center 275px;
   }
 
   .team-carousel__next-right {
-    
     width: 30px;
     background: url('../../../public/images/icons/ic_next_right.svg') no-repeat center 275px;
   }

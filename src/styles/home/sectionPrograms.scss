@@ -9,16 +9,32 @@
     padding: 0 70px;
   }
 
-  .get-help {
+  @media screen and (max-width: 1490px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .get-help {
     @media screen and (max-width: 1600px) {
       margin-left: 14px;
+    }
+
+    @media screen and (max-width: 1490px) {
+      margin-left: 0;
+      margin-bottom: 150px;
     }
 
     .get-help__title {
       font-size: 40px;
       line-height: 51px;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 1490px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 32px;
+        text-align: center;
+      }
     }
 
     .get-help__list {
@@ -29,6 +45,11 @@
       font-size: 24px;
       line-height: 30px;
       list-style-type: decimal;
+
+      @media screen and (max-width: 1490px) {
+        margin-left: 55px;
+        margin-bottom: 40px;
+      }
 
       &::after {
         content: '';
@@ -57,6 +78,11 @@
       color: #f6f6f6;
       font-size: 24px;
       line-height: 17px;
+
+      @media screen and (max-width: 1490px) {
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
 
@@ -67,6 +93,10 @@
 
     @media screen and (max-width: 1600px) {
       max-width: 668px;
+    }
+
+    @media screen and (max-width: 1490px) {
+      max-width: 780px;
     }
 
     &::before {
@@ -84,6 +114,12 @@
       font-size: 40px;
       line-height: 51px;
       margin-bottom: 10px;
+
+      @media screen and (max-width: 1490px) {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
     }
 
     .fond-projects__list {
