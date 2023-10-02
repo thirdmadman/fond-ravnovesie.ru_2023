@@ -1,3 +1,5 @@
+@import "constants.scss";
+
 .header {
   padding: 0 150px;
   max-width: 1920px;
@@ -14,11 +16,11 @@
   font-weight: 400;
   line-height: 40px;
 
-  @media screen and (max-width: 1760px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
     padding: 0 70px;
   }
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
     padding: 0 50px;
   }
 
@@ -31,7 +33,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       max-width: 575px;
     }
   }
@@ -43,7 +45,7 @@
     font-weight: 400;
     line-height: 40px;
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       font-size: 16px;
     }
   }

@@ -1,3 +1,5 @@
+@import "../constants.scss";
+
 .section-needers {
   margin-bottom: 150px;
   padding: 0 150px;
@@ -6,15 +8,15 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @media screen and (max-width: 1760px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
     padding: 0 70px;
   }
 
-  @media screen and (max-width: 1760px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
     justify-content: initial;
   }
 
-  @media screen and (max-width: 1490px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
     justify-content: space-between;
     padding-left: 70px;
     padding-right: 50px;
@@ -28,12 +30,12 @@
 
     position: relative;
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
       max-width: 628px;
       margin-left: 32px;
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       max-width: 480px;
     }
 
@@ -46,11 +48,11 @@
       left: 113px;
       z-index: 3;
 
-      @media screen and (max-width: 1600px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
         top: 40px;
       }
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         top: 45px;
         left: -24px;
       }
@@ -82,18 +84,18 @@
       left: 431px;
       z-index: 2;
 
-      @media screen and (max-width: 1600px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
         top: 481px;
         left: 329px;
       }
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         top: 504px;
         left: 276px;
         z-index: 1;
       }
 
-      @media screen and (max-width: 1280px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         left: 190px;
       }
 
@@ -129,11 +131,11 @@
 
       z-index: 1;
 
-      @media screen and (max-width: 1600px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
         top: 397px;
       }
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         top: 402px;
         left: -7px;
         z-index: 2;
@@ -170,7 +172,7 @@
   }
 
   .main-text {
-    @media screen and (max-width: 1490px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
       max-width: 645px;
     }
 
@@ -184,11 +186,11 @@
       line-height: 60px;
       text-transform: uppercase;
 
-      @media screen and (max-width: 1600px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
         margin-top: 75px;
       }
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         font-size: 32px;
         line-height: 48px;
       }
@@ -201,12 +203,12 @@
       font-size: 16px;
       line-height: 20px;
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         justify-content: initial;
         margin-bottom: 55px;
       }
 
-      @media screen and (max-width: 1280px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         justify-content: space-between;
       }
 
@@ -216,7 +218,7 @@
         padding-left: 23px;
         margin: 0;
 
-        @media screen and (max-width: 1490px) {
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
           max-width: 286px;
         }
       }

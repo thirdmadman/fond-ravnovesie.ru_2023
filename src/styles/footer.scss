@@ -1,3 +1,5 @@
+@import "constants.scss";
+
 .footer {
   min-height: 285px;
   padding-top: 21px;
@@ -5,14 +7,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: #8b8b8b;
+  color: $color-dark-m;
   line-height: 21px;
 
   .footer__horizontal-line {
     max-width: 1590px;
     width: 100%;
     height: 2px;
-    background: #e0e0e0;
+    background: $color-light-s;
   }
 
   .footer__social-links-list {
@@ -28,7 +30,7 @@
       width: 48px;
       height: 48px;
       border-radius: 100%;
-      background: #282828;
+      background: $color-dark-l;
       display: flex;
       align-items: center;
       justify-content: center;

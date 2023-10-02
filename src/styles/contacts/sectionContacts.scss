@@ -21,7 +21,7 @@
     }
 
     p {
-      color: #282828;
+      color: $color-dark-l;
       font-size: 24px;
       line-height: 35px;
       margin-bottom: 20px;
@@ -70,7 +70,7 @@
     .info__legal-address {
       margin-top: 35px;
       line-height: 30px;
-      color: #8b8b8b;
+      color: $color-dark-m;
     }
 
     .info__socials {

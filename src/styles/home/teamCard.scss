@@ -1,24 +1,26 @@
+@import "../constants.scss";
+
 .team-card {
   flex: 0 0 205px;
   width: 205px;
   min-height: 550px;
   height: 100%;
   border-radius: 43px;
-  background-color: #ffffff;
+  background-color: $color-light-xl;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 
-  @media screen and (max-width: 1490px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
     max-width: 200px;
   }
 
   .team-card__text {
     margin: 0 10px;
 
-    @media screen and (max-width: 1490px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
       margin: 0 5px;
     }
   }
@@ -29,7 +31,7 @@
     flex: 0 0 250px;
     position: relative;
 
-    @media screen and (max-width: 1490px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
       max-width: 210px;
     }
 
@@ -54,14 +56,14 @@
   .team-card__name {
     margin-top: 113px;
     margin-bottom: 12px;
-    color: #282828;
+    color: $color-dark-l;
     text-align: center;
     font-size: 17px;
     line-height: 15px;
   }
 
   .team-card__job-title {
-    color: #8b8b8b;
+    color: $color-dark-m;
     font-size: 17px;
     line-height: 20px;
   }

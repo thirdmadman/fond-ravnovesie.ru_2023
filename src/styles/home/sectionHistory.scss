@@ -1,3 +1,5 @@
+@import "../constants.scss";
+
 .section-history {
   padding: 0 150px;
   margin-bottom: 150px;
@@ -5,11 +7,11 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 1760px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
     padding: 0 70px;
   }
 
-  @media screen and (max-width: 1490px) {
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
     padding-left: 70px;
     padding-right: 50px;
     min-height: 660px;
@@ -24,12 +26,12 @@
     text-transform: uppercase;
     position: relative;
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
       margin-left: 100px;
       max-width: 350px;
     }
 
-    @media screen and (max-width: 1490px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
       font-size: 32px;
       line-height: 50px;
       max-width: 300px;
@@ -57,23 +59,23 @@
     font-size: 16px;
     line-height: 168%;
 
-    @media screen and (max-width: 1760px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-l) {
       margin-right: 0;
       max-width: 1010px;
     }
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
       gap: 30px;
     }
 
-    @media screen and (max-width: 1490px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
       margin-top: 30px;
       max-width: 855px;
       width: 100%;
       justify-content: space-between;
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       margin-left: 10px;
     }
 
@@ -85,7 +87,7 @@
       max-width: 460px;
       width: 100%;
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         max-width: 360px;
       }
     }
@@ -102,7 +104,7 @@
       font-size: 24px;
       line-height: 38px;
 
-      @media screen and (max-width: 1490px) {
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin-bottom: 14px;
         line-height: 36px;
       }
