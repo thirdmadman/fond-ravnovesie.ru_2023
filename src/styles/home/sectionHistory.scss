@@ -1,0 +1,113 @@
+@import "../constants.scss";
+
+.section-history {
+  padding: 0 150px;
+  margin-bottom: 150px;
+  min-height: 765px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
+    padding: 0 70px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
+    padding-left: 70px;
+    padding-right: 50px;
+    min-height: 660px;
+  }
+
+  .section-history__title {
+    margin-left: 43px;
+    margin-top: 80px;
+    max-width: 500px;
+    font-size: 40px;
+    line-height: 63px;
+    text-transform: uppercase;
+    position: relative;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      margin-left: 100px;
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      font-size: 32px;
+      line-height: 50px;
+      max-width: 300px;
+      margin-top: 65px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: url('../../../public/images/visuals/quote-black-hand-drawn.svg') no-repeat center center;
+      left: -100px;
+      top: -67px;
+    }
+  }
+
+  .section-history__text {
+    margin-top: 50px;
+    margin-left: 50px;
+    max-width: 1010px;
+    display: flex;
+    gap: 90px;
+    font-size: 16px;
+    line-height: 168%;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-l) {
+      margin-right: 0;
+      max-width: 1010px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      gap: 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      margin-top: 30px;
+      max-width: 855px;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      margin-left: 10px;
+    }
+
+    div:nth-child(2n) {
+      margin-top: 35px;
+    }
+
+    .section-history__column {
+      max-width: 460px;
+      width: 100%;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        max-width: 360px;
+      }
+    }
+
+    p {
+      margin-bottom: 26px;
+
+      &:nth-last-child(2) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .section-history__header {
+      font-size: 24px;
+      line-height: 38px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        margin-bottom: 14px;
+        line-height: 36px;
+      }
+    }
+  }
+}

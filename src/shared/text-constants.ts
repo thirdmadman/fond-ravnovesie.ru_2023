@@ -1,0 +1,1 @@
+export const DEFAULT_PHONE_NUMBER = '8 (931) 363-46-16';

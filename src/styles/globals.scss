@@ -1,0 +1,27 @@
+@use 'preflight.css';
+
+
+@font-face {
+  font-family: 'Steppe';
+  src: url('../assets/fonts/Steppe/Steppe-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  background-color: #F6F6F6;
+  min-height: 100%;
+  height: -webkit-fill-available;
+  position: relative;
+}
+
+body {
+  font-family: Steppe;
+  // height: 100%;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

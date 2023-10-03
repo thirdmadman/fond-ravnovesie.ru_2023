@@ -1,0 +1,134 @@
+@import "../constants.scss";
+
+.section-info {
+  margin-bottom: 150px;
+  padding-top: 150px;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .section-info__main-text {
+    margin-bottom: 128px;
+    padding-top: 100px;
+    max-width: 1000px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 64px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      font-size: 32px;
+      padding-top: 75px;
+      max-width: 770px;
+      line-height: 51px;
+      margin-bottom: 225px;
+    }
+  }
+
+  .underline-red {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: 51px;
+
+    &_left {
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -40px;
+        width: 256px;
+        height: 6px;
+        background: url('../../../public/images/visuals/underline-red-info-home.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          top: 45px;
+          left: -49px;
+        }
+      }
+    }
+
+    &_right {
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: -85px;
+        width: 256px;
+        height: 6px;
+        background: url('../../../public/images/visuals/underline-red-info-home.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          top: 43px;
+          right: -16px;
+        }
+      }
+    }
+  }
+
+  .section-info__offset-text {
+    display: block;
+    font-size: 16px;
+    max-width: 250px;
+    line-height: normal;
+    text-transform: none;
+    height: 0;
+
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 183px;
+    }
+
+    &_left {
+      position: absolute;
+      left: -302px;
+      top: 12px;
+      text-align: left;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 8px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        top: 11px;
+        left: -228px;
+        max-width: 176px;
+      }
+    }
+
+    &_right {
+      position: absolute;
+      text-align: left;
+      right: -325px;
+      top: 9px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 20px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        top: 24px;
+        right: -247px;
+      }
+    }
+  }
+
+  .section-info__additional-text {
+    max-width: 400px;
+    text-align: center;
+    line-height: normal;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 403px;
+      height: 47px;
+      background: url('../../../public/images/visuals/underline-wavy-blue-info-home.svg') no-repeat center;
+    }
+  }
+}

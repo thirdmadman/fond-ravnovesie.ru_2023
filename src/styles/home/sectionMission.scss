@@ -1,0 +1,203 @@
+@import "../constants.scss";
+
+.section-mission {
+  padding: 0 150px;
+  margin-bottom: 150px;
+  height: 930px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
+    padding: 0 70px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
+    height: 660px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    padding: 0 50px;
+  }
+
+  .section-mission__title-text {
+    margin-bottom: 13px;
+    margin-right: 50px;
+    max-width: 540px;
+    min-height: 600px;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      width: 780px;
+      margin-right: 15px;
+      margin-bottom: 35px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      font-size: 32px;
+      line-height: 48px;
+      min-height: 435px;
+      max-width: 500px;
+      margin-bottom: 0px;
+    }
+    
+
+    .section-mission__text-bage {
+      display: inline-block;
+      margin-left: 83px;
+      position: relative;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        margin-left: 66px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 36px;
+        left: -80px;
+        bottom: 17px;
+        border-radius: 36px;
+        background: #e38895;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          width: 61px;
+          height: 31px;
+          left: -66px;
+          bottom: 13px;
+        }
+      }
+    }
+
+    .underline-blue {
+      display: inline-block;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        width: 423px;
+        height: 8px;
+        display: block;
+        background: url('../../../public/images/visuals/underline-blue-mission-home.svg') no-repeat;
+      }
+    }
+  }
+
+  .section-mission__description {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      max-width: 925px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      max-width: 690px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -259px;
+      left: -45px;
+      display: block;
+      width: 223px;
+      height: 192px;
+      background: url('../../../public/images/visuals/arrow-with-loop-pink-hand-drawn.svg');
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        top: -213px;
+        left: 13px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: -224px;
+        left: -135px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        top: -216px;
+        left: -61px;
+      }
+    }
+  }
+
+  .button {
+    padding: 0 32px;
+    height: 65px;
+    min-width: 330px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    background: $color-dark-l;
+    color: $color-light-m;
+    font-family: Steppe;
+    font-size: 24px;
+    line-height: 36px;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      padding: 0 22px;
+      height: 60px;
+      min-width: 310px;
+    }
+  }
+
+  .description {
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 660px;
+    }
+
+    .description__buttons {
+      display: flex;
+      column-gap: 60px;
+      row-gap: 20px;
+      flex-wrap: wrap;
+      padding-left: 25px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        column-gap: 20px;
+        padding-left: 0;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .description__text {
+      margin-bottom: 20px;
+      margin-top: 100px;
+      margin-left: 20px;
+      font-family: Steppe;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        margin-bottom: 50px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        margin-bottom: 10px;
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

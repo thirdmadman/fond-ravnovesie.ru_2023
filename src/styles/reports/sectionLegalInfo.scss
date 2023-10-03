@@ -1,0 +1,54 @@
+@import "../constants.scss";
+
+.section-legal-info {
+  margin-bottom: 150px;
+  min-height: 520px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .section-legal-info__data {
+  }
+
+  .legal-data {
+    h2 {
+      margin-bottom: 45px;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+
+    .legal-data__data {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      max-width: 780px;
+      grid-gap: 16px 23px;
+      gap: 17px 23px;
+      line-height: 19px;
+    }
+
+    .data {
+      .data__heading {
+        color: $color-dark-m;
+      }
+    }
+  }
+
+  .section-legal-info__papers {
+    
+  }
+
+  .legal-papers {
+    margin-left: 40px;
+    margin-top: 75px;
+    display: flex;
+    gap: 53px;
+    flex-wrap: wrap;
+
+    img {
+      min-width: 153px;
+    }
+  }
+}

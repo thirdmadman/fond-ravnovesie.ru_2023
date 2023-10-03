@@ -1,0 +1,239 @@
+@import "../constants.scss";
+
+.section-needers {
+  margin-bottom: 150px;
+  padding: 0 150px;
+  min-height: 912px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
+    padding: 0 70px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-l) {
+    justify-content: initial;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 50px;
+  }
+
+  .section-needers__images {
+    max-width: 730px;
+    width: 100%;
+    padding-top: 32px;
+    margin-left: 64px;
+
+    position: relative;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      max-width: 628px;
+      margin-left: 32px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 480px;
+    }
+
+    .section-needers__image {
+      position: absolute;
+    }
+
+    .image-first {
+      top: 49px;
+      left: 113px;
+      z-index: 3;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        top: 40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 45px;
+        left: -24px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -38px;
+        top: -15px;
+        width: 372px;
+        height: 399px;
+        background: url('../../../public/images/needers/outline-purple-photo1.svg') no-repeat;
+      }
+
+      .image-first__background {
+        position: absolute;
+        left: 0px;
+        top: -15px;
+        width: 334px;
+        height: 504px;
+        background: url('../../../public/images/needers/background-oval-blue.svg') no-repeat;
+        z-index: -2;
+      }
+    }
+
+    .image-second {
+      top: 325px;
+      left: 431px;
+      z-index: 2;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        top: 481px;
+        left: 329px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 504px;
+        left: 276px;
+        z-index: 1;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        left: 190px;
+      }
+
+      img {
+        transform: rotate(3.51deg);
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        width: 356px;
+        height: 515px;
+        background: url('../../../public/images/needers/outline-purple-photo2.svg') no-repeat;
+      }
+
+      .image-second__background {
+        position: absolute;
+        left: -15px;
+        top: -13px;
+        width: 319px;
+        height: 489px;
+        background: url('../../../public/images/needers/background-oval-pink.svg') no-repeat;
+        z-index: -2;
+      }
+    }
+
+    .image-third {
+      top: 406px;
+      left: 13px;
+
+      z-index: 1;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        top: 397px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 402px;
+        left: -7px;
+        z-index: 2;
+      }
+
+      img {
+        transform: rotate(-3.3deg);
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -80px;
+        top: -10px;
+        width: 340px;
+        height: 514px;
+        background: url('../../../public/images/needers/outline-purple-photo3.svg') no-repeat;
+      }
+
+      .image-third__background {
+        position: absolute;
+        left: -26px;
+        top: 25px;
+        width: 331px;
+        height: 479px;
+        background: url('../../../public/images/needers/background-oval-yellow.svg') no-repeat;
+        z-index: -2;
+      }
+    }
+  }
+
+  .section-needers__text {
+  }
+
+  .main-text {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      max-width: 645px;
+    }
+
+    .main-text__title {
+      margin-top: 80px;
+      margin-bottom: 50px;
+      max-width: 780px;
+      width: 100%;
+
+      font-size: 40px;
+      line-height: 60px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        margin-top: 75px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+    .main-text__main-profile {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 16px;
+      line-height: 20px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        justify-content: initial;
+        margin-bottom: 55px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        justify-content: space-between;
+      }
+
+      ul {
+        max-width: 383px;
+        list-style: initial;
+        padding-left: 23px;
+        margin: 0;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          max-width: 286px;
+        }
+      }
+    }
+
+    .main-text__additional-profile {
+      margin-left: 24px;
+
+      font-size: 16px;
+      line-height: 20px;
+
+      ul {
+        list-style: initial;
+        margin: 0;
+      }
+    }
+  }
+}
