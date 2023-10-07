@@ -47,7 +47,20 @@
   }
 
   .header__logo {
+    min-width: 160px;
+    margin-right: 34px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      min-width: 80px;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      min-width: 80px;
+      margin-right: 0;
       width: 80px;
       height: 45px;
       background-size: cover;
@@ -107,6 +120,13 @@
     word-break: keep-all;
     text-wrap: nowrap;
 
+    margin-left: 34px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       font-size: 15px;
     }
@@ -117,6 +137,9 @@
     width: 52px;
     height: 26px;
     background-image: url('../../public/images/icons/icon-burger-menu.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 
     @media screen and (max-width: $layout-breakpoint-tablet-m) {
       display: block;
@@ -138,11 +161,15 @@
     width: 38px;
     height: 38px;
     background-image: url('../../public/images/icons/icon-burger-menu-close.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     z-index: 11;
 
     &_is-hidden {
       display: none;
     }
+    
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       top: 40px;
