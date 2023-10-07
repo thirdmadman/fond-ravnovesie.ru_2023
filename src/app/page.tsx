@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="home-page">
+      <Header />
       <div className="container">
-        <Header />
         <SectionMission />
         <SectionNeeders />
         <SectionInfo />
