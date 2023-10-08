@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function Reports() {
   return (
     <div className="reports-page">
+      <Header />
       <div className="container">
-        <Header />
         <SectionReports />
         <SectionLegalInfo />
         <Footer />
