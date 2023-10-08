@@ -1,0 +1,97 @@
+@import '../constants.scss';
+
+.community-info {
+  padding: 172px 150px 0 150px;
+
+  @media screen and (max-width: $layout-breakpoint-desktop-m) {
+    padding: 172px 70px 0 70px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    padding: 172px 50px 0 50px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding: 132px 0 0 0;
+  }
+
+  .community-info__header {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+    max-width: 830px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 19px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-m) {
+      margin-bottom: 3px;
+    }
+  }
+
+  .community-info__img-wrapper {
+    margin: 0 auto;
+    max-width: 530px;
+    height: 45px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      width: 250px;
+      height: 35px;
+    }
+
+    .lines-img {
+      width: 100%;
+      object-fit: contain;
+      position: relative !important;
+      height: unset !important;
+    }
+  }
+
+  .community-info__description {
+    max-width: 1073px;
+    font-size: 24px;
+    margin: 60px 0 16px;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 720px;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      max-width: 340px;
+      font-size: 10px;
+      text-align: center;
+      margin: 0 26px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-m) {
+      max-width: 300px;
+      margin: 0 10px;
+    }
+  }
+
+  .community-info__pictures {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+    .community-picture {
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        gap: 0;
+        flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-m) {
+      
+    }
+  }
+}
