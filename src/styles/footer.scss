@@ -9,12 +9,26 @@
   align-items: center;
   color: $color-dark-m;
   line-height: 21px;
+  font-size: 16px;
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    padding-top: 25px;
+    font-size: 10px;
+    background-color: $color-dark-l;
+    color: $color-dark-m;
+    line-height: 16px;
+    padding-bottom: 55px;
+  }
 
   .footer__horizontal-line {
     max-width: 1590px;
     width: 100%;
     height: 2px;
     background: $color-light-s;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
   }
 
   .footer__social-links-list {
@@ -23,6 +37,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
   }
 
   .links-list {
@@ -54,6 +72,37 @@
     }
   }
 
+  .footer__mobile {
+    display: none;
+    text-align: center;
+    line-height: 23px;
+    
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: flex;
+      flex-direction: column;
+      color: $color-light-m;
+    }
+  }
+
+  .mobile {
+
+    .mobile__navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .mobile__navigation-block {
+    }
+
+    .mobile__horizontal-separator {
+      width: 256px;
+      height: 8px;
+      background-image: url('../../public/images/visuals/wavy-line-separator-white-footer.svg');
+    }
+  }
+
   .footer__contacts {
     margin-top: 30px;
     margin-bottom: 13px;
@@ -61,8 +110,14 @@
     flex-direction: column;
     align-items: center;
 
-    font-size: 16px;
+
     line-height: 25px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-top: 17px;
+      line-height: 19px;
+      margin-bottom: 16px;
+    }
   }
 
   .footer__link-email {
@@ -77,6 +132,14 @@
       height: 20px;
       left: -2px;
       background: url('../../public/images/icons/icon-message.svg') no-repeat;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      padding-left: 0px;
     }
   }
 
@@ -91,11 +154,25 @@
       position: absolute;
       left: 0px;
       background: url('../../public/images/icons/icon-phone.svg') no-repeat;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      padding-left: 0px;
     }
   }
 
   .footer__fond-name {
     line-height: 25px;
     margin-bottom: 9px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+
   }
 }
