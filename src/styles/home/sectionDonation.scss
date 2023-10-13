@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-donation {
   padding: 0 150px;
@@ -17,6 +17,11 @@
     min-height: 925px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    padding: 0 50px;
+    min-height: 910px;
+  }
+
   .section-donation__qr {
   }
 
@@ -29,6 +34,10 @@
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       align-items: flex-start;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 370px;
     }
 
     .qr-donation__title {
@@ -61,10 +70,19 @@
         position: absolute;
         bottom: -215px;
         right: -279px;
-        background: url('../../../public/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg') no-repeat;
+        background-image: url('../../../public/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg');
+        background-repeat: no-repeat;
 
         @media screen and (max-width: $layout-breakpoint-desktop-m) {
           right: -225px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-desktop-m) {
+          background-size: cover;
+          width: 303px;
+          height: 191px;
+          left: 343px;
+          top: 90px;
         }
       }
     }
@@ -73,13 +91,19 @@
       margin-top: 128px;
       width: 342px;
       height: 342px;
-      background: url('../../../public/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
-      url('../../../public/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
+      background:
+        url('../../../public/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
+        url('../../../public/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
       align-self: center;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin-top: 60px;
         align-self: flex-start;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        margin-top: 5px;
+        align-self: flex-end;
       }
     }
   }

@@ -17,6 +17,10 @@
     min-height: 660px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    min-height: 810px;
+  }
+
   .section-history__title {
     margin-left: 43px;
     margin-top: 80px;
