@@ -43,7 +43,7 @@
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
-    gap: 13px;
+    gap: 15px;
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       gap: 18px;
