@@ -1,14 +1,13 @@
 @import "constants.scss";
 
 .footer {
-  min-height: 285px;
-  padding-top: 21px;
+  min-height: 265px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   color: $color-dark-m;
-  line-height: 21px;
+  line-height: 25px;
   font-size: 16px;
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
@@ -18,6 +17,8 @@
     color: $color-dark-m;
     line-height: 16px;
     padding-bottom: 55px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
   .footer__horizontal-line {
@@ -105,7 +106,7 @@
 
   .footer__contacts {
     margin-top: 30px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,13 +167,8 @@
   }
 
   .footer__fond-name {
-    line-height: 25px;
-    margin-bottom: 9px;
-
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       line-height: 20px;
-      margin-bottom: 0px;
     }
-
   }
 }
