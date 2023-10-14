@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-mission {
   padding: 0 150px;
@@ -43,7 +43,6 @@
       max-width: 500px;
       margin-bottom: 0px;
     }
-    
 
     .section-mission__text-bage {
       display: inline-block;
@@ -126,6 +125,11 @@
         top: -216px;
         left: -61px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        top: -223px;
+        left: -30px;
+      }
     }
   }
 
@@ -135,6 +139,7 @@
     min-width: 330px;
     border-radius: 32px;
     display: flex;
+    justify-content: center;
     align-items: center;
     background: $color-dark-l;
     color: $color-light-m;
@@ -147,12 +152,20 @@
       height: 60px;
       min-width: 310px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      min-width: 270px;
+      font-size: 20px;
+    }
   }
 
   .description {
-
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       max-width: 660px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: 530px;
     }
 
     .description__buttons {
@@ -197,6 +210,12 @@
 
       @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        font-size: 12px;
+        margin-bottom: 35px;
+        line-height: 15px;
       }
     }
   }

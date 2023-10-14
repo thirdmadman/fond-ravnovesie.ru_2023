@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .button-dropdown {
   padding: 0 20px 0 44px;
@@ -19,6 +19,11 @@
     padding: 0 20px 0 40px;
     height: 60px;
     min-width: 310px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-l) {
+    min-width: 270px;
+    font-size: 20px;
   }
 
   &::after {
