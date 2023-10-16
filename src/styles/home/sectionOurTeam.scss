@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-our-team {
   padding-left: 150px;
@@ -41,12 +41,21 @@
       position: absolute;
       width: 295px;
       height: 320px;
-      background: url('../../../public/images/visuals/arrow-with-loop-down-left-bottom-pink-hand-drawn.svg') no-repeat center center;
+      background-image: url('../../../public/images/visuals/arrow-with-loop-down-left-bottom-pink-hand-drawn.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
       left: 51px;
       bottom: -175px;
 
       @media screen and (max-width: $layout-breakpoint-desktop-m) {
         left: 135px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        left: 38px;
+        top: 453px;
+        width: 261px;
+        background-size: contain;
       }
     }
 
@@ -69,6 +78,13 @@
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         // max-width: 370px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        max-width: 175px;
+        margin-top: 45px;
+        padding: 20px 25px 20px 25px;
+        margin-right: 35px;
       }
     }
 

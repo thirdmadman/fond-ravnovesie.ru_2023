@@ -98,6 +98,11 @@
         left: -228px;
         max-width: 176px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        top: 2px;
+        left: -215px;
+      }
     }
 
     &_right {
@@ -113,6 +118,12 @@
       @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         top: 24px;
         right: -247px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        top: -4px;
+        right: -226px;
+        max-width: 165px;
       }
     }
   }

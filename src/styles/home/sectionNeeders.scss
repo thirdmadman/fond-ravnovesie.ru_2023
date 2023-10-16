@@ -185,6 +185,10 @@
       max-width: 635px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: 515px;
+    }
+
     .main-text__title {
       margin-top: 80px;
       margin-bottom: 50px;
@@ -200,6 +204,7 @@
         line-height: 48px;
       }
     }
+
     .main-text__main-profile {
       margin-bottom: 50px;
       display: flex;
@@ -215,6 +220,10 @@
 
       @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         justify-content: space-between;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        margin-bottom: 50px;
       }
 
       ul {
@@ -233,6 +242,10 @@
 
         @media screen and (max-width: $layout-breakpoint-desktop-xs) {
           max-width: 275px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-l) {
+          max-width: 255px;
         }
       }
     }

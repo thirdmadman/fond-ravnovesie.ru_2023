@@ -17,6 +17,10 @@
     max-width: 200px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-l) {
+    max-width: 170px;
+  }
+
   .team-card__text {
     margin: 0 10px;
 
@@ -33,6 +37,10 @@
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       max-width: 210px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: 170px;
     }
 
     &::before {

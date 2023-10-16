@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-programs {
   margin-bottom: 150px;
@@ -110,6 +110,11 @@
       top: 16px;
       right: -61px;
       background: url('../../../public/images/visuals/three-lines-spark-blue-hand-drawn-right-top.svg') no-repeat;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 26px;
+        right: -69px;
+      }
     }
 
     .fond-projects__title {
