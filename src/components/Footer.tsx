@@ -15,6 +15,31 @@ export function Footer() {
           <div className="links-list__item links-list__item_yt" />
         </a>
       </div>
+      <div className="footer__mobile mobile">
+        <nav className="mobile__navigation">
+          <ul className="mobile__navigation-block">
+            <li>Вам нужна помощь?</li>
+            <li>
+              <a href="/">Проекты</a>
+            </li>
+            <li>
+              <a href="/">Сообщество</a>
+            </li>
+          </ul>
+          <ul className="mobile__navigation-block">
+            <li>
+              <a href="/">Отчёты</a>
+            </li>
+            <li>
+              <a href="/">Помочь фонду</a>
+            </li>
+            <li>
+              <a href="/">Получить помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="mobile__horizontal-separator" />
+      </div>
       <div className="footer__contacts">
         <a className="footer__link-email" href="email:info@fond-ravnovesie.ru" itemProp="email">
           info@fond-ravnovesie.ru
