@@ -42,6 +42,10 @@
       margin-top: 65px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      margin-left: 80px;
+    }
+
     &::before {
       content: '';
       display: block;

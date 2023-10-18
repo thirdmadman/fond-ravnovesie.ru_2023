@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .donation-form {
   padding-left: 31px;
@@ -18,6 +18,11 @@
     margin-top: 100px;
     padding-bottom: 60px;
     padding-left: 0px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-l) {
+    max-width: 900px;
+    margin-top: 50px;
   }
 
   border-radius: 60px;
