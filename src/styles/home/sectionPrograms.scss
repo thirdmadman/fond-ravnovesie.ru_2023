@@ -66,6 +66,10 @@
         @media screen and (max-width: $layout-breakpoint-desktop-m) {
           right: -40px;
         }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-l) {
+          right: -90px;
+        }
       }
 
       li {
