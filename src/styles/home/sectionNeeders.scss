@@ -189,6 +189,10 @@
       max-width: 515px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      max-width: 350px;
+    }
+
     .main-text__title {
       margin-top: 80px;
       margin-bottom: 50px;
@@ -246,6 +250,10 @@
 
         @media screen and (max-width: $layout-breakpoint-tablet-l) {
           max-width: 255px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          max-width: 175px;
         }
       }
     }

@@ -82,6 +82,10 @@
     @media screen and (max-width: $layout-breakpoint-tablet-l) {
       max-width: 676px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      max-width: 593px
+    }
   }
 
   .section-socials__list-item {

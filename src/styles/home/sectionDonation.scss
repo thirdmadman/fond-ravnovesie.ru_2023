@@ -66,6 +66,10 @@
       @media screen and (max-width: $layout-breakpoint-tablet-l) {
         font-size: 32px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        margin-bottom: 25px;
+      }
     }
 
     .qr-donation__subtitle {
@@ -82,6 +86,10 @@
         max-width: 550px;
         font-size: 20px;
         line-height: 25px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        max-width: 500px;
       }
 
       &::after {
@@ -134,7 +142,11 @@
         margin-right: 85px;
       }
 
-
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        margin-top: 16px;
+        align-self: initial;
+        margin-right: 0px;
+      }
     }
   }
 

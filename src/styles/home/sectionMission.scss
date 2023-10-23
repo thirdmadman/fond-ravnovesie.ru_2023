@@ -101,6 +101,18 @@
       max-width: 690px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 660px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: 530px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      max-width: 360px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -129,6 +141,11 @@
       @media screen and (max-width: $layout-breakpoint-tablet-l) {
         top: -223px;
         left: -30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        top: -226px;
+        left: -115px;
       }
     }
   }
@@ -160,14 +177,6 @@
   }
 
   .description {
-    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
-      max-width: 660px;
-    }
-
-    @media screen and (max-width: $layout-breakpoint-tablet-l) {
-      max-width: 530px;
-    }
-
     .description__buttons {
       display: flex;
       column-gap: 60px;
@@ -216,6 +225,10 @@
         font-size: 12px;
         margin-bottom: 35px;
         line-height: 15px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        margin-bottom: 0px;
       }
     }
   }
