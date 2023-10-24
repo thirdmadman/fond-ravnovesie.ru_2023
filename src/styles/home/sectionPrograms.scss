@@ -16,6 +16,10 @@
     align-items: center;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+  }
+
   .get-help {
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       margin-left: 14px;
