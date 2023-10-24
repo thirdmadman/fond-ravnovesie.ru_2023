@@ -21,6 +21,11 @@
     min-height: 810px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+
   .section-history__title {
     margin-left: 43px;
     margin-top: 80px;
@@ -44,6 +49,10 @@
 
     @media screen and (max-width: $layout-breakpoint-tablet-l) {
       margin-left: 80px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      max-width: initial;
     }
 
     &::before {
@@ -87,6 +96,11 @@
       margin-left: 10px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      margin-left: 0px;
+      margin-top: 60px
+    }
+
     div:nth-child(2n) {
       margin-top: 35px;
     }
@@ -97,6 +111,10 @@
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         max-width: 360px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        max-width: 410px;
       }
     }
 

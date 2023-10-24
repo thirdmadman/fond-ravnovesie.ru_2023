@@ -27,6 +27,10 @@
     align-items: center;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+  }
+
   .section-donation__qr {
   }
 
@@ -50,6 +54,11 @@
       margin-right: initial;
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      min-height: 312px;
+      margin-bottom: 50px;
     }
 
     .qr-donation__title {
@@ -114,6 +123,13 @@
           left: 343px;
           top: 90px;
         }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          width: 317px;
+          height: 227px;
+          left: 52px;
+          top: 105px;
+        }
       }
     }
 
@@ -146,6 +162,13 @@
         margin-top: 16px;
         align-self: initial;
         margin-right: 0px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        width: 230px;
+        height: 230px;
+        align-self: flex-end;
+        background-size: 30%;
       }
     }
   }

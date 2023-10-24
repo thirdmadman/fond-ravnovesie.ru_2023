@@ -18,6 +18,10 @@
     padding-right: 50px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+  }
+
   .section-needers__images {
     max-width: 790px;
     width: 100%;
@@ -52,6 +56,12 @@
         left: 47px;
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        top: 19px;
+        left: 102px;
+        width: 275px;
+      }
+
       &::before {
         content: '';
         display: block;
@@ -61,6 +71,13 @@
         width: 372px;
         height: 399px;
         background: url('../../../public/images/needers/outline-purple-photo1.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: -25px;
+          top: -11px;
+          width: 255px;
+          background-size: contain;
+        }
       }
 
       .image-first__background {
@@ -71,6 +88,13 @@
         height: 504px;
         background: url('../../../public/images/needers/background-oval-blue.svg') no-repeat;
         z-index: -2;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          top: -9px;
+          width: 228px;
+          height: 346px;
+          background-size: contain;
+        }
       }
     }
 
@@ -95,6 +119,12 @@
         top: 507px;
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        left: 225px;
+        top: 354px;
+        width: 195px;
+      }
+
       img {
         transform: rotate(3.51deg);
       }
@@ -108,6 +138,13 @@
         width: 356px;
         height: 515px;
         background: url('../../../public/images/needers/outline-purple-photo2.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: 0px;
+          top: 0px;
+          width: 243px;
+          background-size: contain;
+        }
       }
 
       .image-second__background {
@@ -118,6 +155,13 @@
         height: 489px;
         background: url('../../../public/images/needers/background-oval-pink.svg') no-repeat;
         z-index: -2;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: -11px;
+          top: -10px;
+          width: 220px;
+          background-size: contain;
+        }
       }
     }
 
@@ -142,6 +186,12 @@
         left: 10px;
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        left: 77px;
+        top: 278px;
+        width: 196px;    
+      }
+
       img {
         transform: rotate(-3.3deg);
       }
@@ -155,6 +205,13 @@
         width: 340px;
         height: 514px;
         background: url('../../../public/images/needers/outline-purple-photo3.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: -55px;
+          top: -5px;
+          width: 232px;
+          background-size: contain;
+        }
       }
 
       .image-third__background {
@@ -165,6 +222,13 @@
         height: 479px;
         background: url('../../../public/images/needers/background-oval-yellow.svg') no-repeat;
         z-index: -2;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: -18px;
+          top: 20px;
+          width: 224px;
+          background-size: contain;
+        }
       }
     }
   }

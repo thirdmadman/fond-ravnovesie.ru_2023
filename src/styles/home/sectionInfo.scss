@@ -103,6 +103,13 @@
         top: 2px;
         left: -215px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        top: 280px;
+        left: -103px;
+        max-width: 212px;
+        text-align: center;
+      }
     }
 
     &_right {
@@ -124,6 +131,13 @@
         top: -4px;
         right: -226px;
         max-width: 165px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        top: 229px;
+        right: -126px;
+        max-width: 245px;
+        text-align: center;
       }
     }
   }

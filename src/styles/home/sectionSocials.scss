@@ -21,6 +21,10 @@
     min-height: 124px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0px 30px;
+  }
+
   .section-socials__title {
     margin-top: 40px;
     margin-left: 10px;
@@ -85,6 +89,12 @@
 
     @media screen and (max-width: $layout-breakpoint-tablet-m) {
       max-width: 593px
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      max-width: 352px;
+      flex-wrap: wrap;
+      row-gap: 43px;
     }
   }
 

@@ -20,6 +20,10 @@
     padding: 0 50px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+  }
+
   .section-mission__title-text {
     margin-bottom: 13px;
     margin-right: 50px;
@@ -146,6 +150,11 @@
       @media screen and (max-width: $layout-breakpoint-tablet-m) {
         top: -226px;
         left: -115px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        top: -274px;
+        left: -90px;
       }
     }
   }

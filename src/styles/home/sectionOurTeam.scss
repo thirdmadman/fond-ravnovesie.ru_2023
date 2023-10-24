@@ -17,6 +17,10 @@
     min-height: 690px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+  }
+
   .section-our-team__title {
     margin-top: 23px;
     margin-bottom: 10px;
