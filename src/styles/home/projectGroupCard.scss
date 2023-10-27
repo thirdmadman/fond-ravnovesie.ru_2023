@@ -18,6 +18,10 @@
     padding: 25px 0px 30px 60px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+    max-width: 614px;
+  }
+
   .project-group-card__title {
     margin-bottom: 25px;
     font-size: 24px;

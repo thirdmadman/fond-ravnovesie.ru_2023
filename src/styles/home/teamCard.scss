@@ -21,11 +21,19 @@
     max-width: 170px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    max-width: 154px;
+  }
+
   .team-card__text {
     margin: 0 10px;
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       margin: 0 5px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      margin: 0 15px;
     }
   }
 

@@ -20,6 +20,7 @@
 
   @media screen and (max-width: $layout-breakpoint-tablet-s) {
     padding: 0 30px;
+    min-height: 610px;
   }
 
   .section-needers__images {
@@ -60,6 +61,10 @@
         top: 19px;
         left: 102px;
         width: 275px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        left: 31px;
       }
 
       &::before {
@@ -125,6 +130,10 @@
         width: 195px;
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        left: 143px;
+      }
+
       img {
         transform: rotate(3.51deg);
       }
@@ -144,6 +153,10 @@
           top: 0px;
           width: 243px;
           background-size: contain;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          left: -28px;
         }
       }
 
@@ -192,6 +205,10 @@
         width: 196px;    
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        left: 6px;
+      }
+
       img {
         transform: rotate(-3.3deg);
       }
@@ -211,6 +228,10 @@
           top: -5px;
           width: 232px;
           background-size: contain;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          left: -31px;
         }
       }
 
@@ -257,6 +278,10 @@
       max-width: 350px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      max-width: 325px;
+    }
+
     .main-text__title {
       margin-top: 80px;
       margin-bottom: 50px;
@@ -270,6 +295,14 @@
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         font-size: 32px;
         line-height: 48px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        margin-top: 30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        margin-top: 40px;
       }
     }
 
@@ -318,6 +351,10 @@
 
         @media screen and (max-width: $layout-breakpoint-tablet-m) {
           max-width: 175px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          max-width: 160px;
         }
       }
     }

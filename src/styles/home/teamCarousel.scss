@@ -26,6 +26,10 @@
     max-width: 525px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    max-width: 400px;
+  }
+
   .team-carousel__viewport {
     overflow: hidden;
     margin-left: 30px;
@@ -37,6 +41,13 @@
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       max-width: 655px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    
   }
 
   .team-carousel__container {
@@ -54,10 +65,22 @@
     width: 30px;
     min-width: 30px;
     background: url('../../../public/images/icons/ic_next_left.svg') no-repeat center 275px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      min-width: 20px;
+      width: 20px;
+      background-size: contain;
+    }
   }
 
   .team-carousel__next-right {
     min-width: 30px;
     background: url('../../../public/images/icons/ic_next_right.svg') no-repeat center 275px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      min-width: 20px;
+      width: 20px;
+      background-size: contain;
+    }
   }
 }
