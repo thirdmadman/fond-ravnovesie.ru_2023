@@ -26,6 +26,12 @@
     font-size: 20px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    min-width: 348px;
+    font-size: 15px;
+    border-radius: 25px;
+  }
+
   &::after {
     content: '';
     display: block;
@@ -38,6 +44,11 @@
 
   .button-dropdown__text {
     cursor: pointer;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .dropdown-list {
@@ -50,6 +61,14 @@
     line-height: 18px;
     background: $color-dark-l;
     display: none;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      top: 60px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      width: 100%;
+    }
   }
 
   li {
