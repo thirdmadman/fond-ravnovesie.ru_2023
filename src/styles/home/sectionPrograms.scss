@@ -20,6 +20,10 @@
     padding: 0 30px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    padding: 0 40px;
+  }
+
   .get-help {
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       margin-left: 14px;
@@ -41,6 +45,14 @@
         font-size: 32px;
         text-align: center;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        margin-top: 0px;
+        margin-bottom: 90px;
+        font-size: 17px;
+        line-height: 22px;
+
+      }
     }
 
     .get-help__list {
@@ -59,6 +71,18 @@
 
       @media screen and (max-width: $layout-breakpoint-tablet-xs) {
         margin-left: 35px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        list-style: none;
+        counter-reset: item;
+        font-size: 11px;
+        line-height: 14px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
       }
 
       &::after {
@@ -94,10 +118,48 @@
         @media screen and (max-width: $layout-breakpoint-tablet-xs) {
           right: -30px;
         }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          display: none;
+        }
       }
 
       li {
         margin-bottom: 30px;
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          counter-increment: item;
+          margin-bottom: 45px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+        }
+
+        span:nth-child(1) {
+          display: none;
+
+          @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+            content: counter(item);
+            background: $color-light-m;
+            border-radius: 100%;
+            color: $color-dark-l;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -8px;
+          }
+        }
+
+        span:nth-child(2) {
+          @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+            background-color: $color-light-l;
+          }
+        }
       }
     }
 
@@ -108,10 +170,17 @@
       color: $color-light-m;
       font-size: 24px;
       line-height: 17px;
+      text-align: center;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin: 0 auto;
         display: block;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 15px;
+        line-height: 10px;
+        padding: 24px 10px 23px 10px;
       }
     }
   }

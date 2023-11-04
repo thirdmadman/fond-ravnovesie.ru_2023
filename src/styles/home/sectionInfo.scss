@@ -9,6 +9,10 @@
   justify-content: flex-start;
   align-items: center;
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    display: none;
+  }
+
   .section-info__main-text {
     margin-bottom: 128px;
     padding-top: 100px;
