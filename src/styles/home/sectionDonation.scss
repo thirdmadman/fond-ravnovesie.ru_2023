@@ -33,6 +33,7 @@
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
     padding: 0 40px;
+    min-height: initial;
   }
 
   .section-donation__qr {
