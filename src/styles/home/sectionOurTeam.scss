@@ -21,6 +21,15 @@
     padding: 0 30px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    min-height: initial;
+    margin-bottom: 0px;
+  }
+
   .section-our-team__title {
     margin-top: 23px;
     margin-bottom: 10px;
@@ -31,6 +40,12 @@
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       font-size: 32px;
       margin-top: 15px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 17px;
+      margin-top: 22px;
+      text-align: center;
     }
   }
 
@@ -65,6 +80,14 @@
         width: 261px;
         background-size: contain;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        left: 14px;
+        top: 342px;
+        width: 122px;
+        height: 122px;
+        transform: rotate(268deg);
+      }
     }
 
     .team-list__title {
@@ -79,6 +102,7 @@
       font-size: 24px;
       line-height: 30px;
       background-color: $color-light-xl;
+      color: $color-dark-m;
 
       @media screen and (max-width: $layout-breakpoint-desktop-m) {
         margin-right: 25px;
@@ -122,6 +146,10 @@
 
       @media screen and (max-width: $layout-breakpoint-tablet-xs) {
         padding-left: 35px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        padding-left: 0px;
       }
     }
   }

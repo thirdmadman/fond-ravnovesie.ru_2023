@@ -25,6 +25,12 @@
     max-width: 154px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    max-width: 104px;
+    border-radius: 18px;
+    min-height: 200px;
+  }
+
   .team-card__text {
     margin: 0 10px;
 
@@ -34,6 +40,10 @@
 
     @media screen and (max-width: $layout-breakpoint-tablet-s) {
       margin: 0 15px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin: 0 5px;
     }
   }
 
@@ -51,6 +61,10 @@
       max-width: 170px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      max-width: 104px;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -62,11 +76,27 @@
       width: 250px;
       height: 185px;
       border-radius: 45px;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        width: 60px;
+        height: 50px;
+        bottom: -10px;
+        left: -10px;
+        border-radius: 15px;
+      }
     }
   }
 
   img {
     border-radius: 43px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      border-radius: 18px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      max-height: 140px;
+    }
   }
 
   .team-card__name {
@@ -76,11 +106,23 @@
     text-align: center;
     font-size: 17px;
     line-height: 15px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-top: 25px;
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 5px;
+    }
   }
 
   .team-card__job-title {
     color: $color-dark-m;
     font-size: 17px;
     line-height: 20px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 }

@@ -30,6 +30,11 @@
     max-width: 400px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    max-width: 229px;
+    margin-left: 16px;
+  }
+
   .team-carousel__viewport {
     overflow: hidden;
     margin-left: 30px;
@@ -47,7 +52,11 @@
       margin-right: 15px;
     }
 
-    
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
   }
 
   .team-carousel__container {
@@ -58,6 +67,10 @@
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       gap: 18px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      gap: 16px;
     }
   }
 
@@ -71,6 +84,10 @@
       width: 20px;
       background-size: contain;
     }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
   }
 
   .team-carousel__next-right {
@@ -81,6 +98,10 @@
       min-width: 20px;
       width: 20px;
       background-size: contain;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
     }
   }
 }

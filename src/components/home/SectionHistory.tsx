@@ -4,6 +4,7 @@ export function SectionHistory() {
   return (
     <section className="section-history">
       <div className="section-history__title">На своем опыте знаю, как сильно мешает психическое расстройство ...</div>
+      <div className="section-history__title-mobile">ИСТОРИЯ УЧРЕДИТЕЛЯ</div>
       <div className="section-history__text">
         <div className="section-history__column">
           <h4 className="section-history__header">ДЕТСТВО</h4>

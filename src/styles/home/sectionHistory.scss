@@ -26,6 +26,11 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+
   .section-history__title {
     margin-left: 43px;
     margin-top: 80px;
@@ -55,6 +60,10 @@
       max-width: initial;
     }
 
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -64,6 +73,14 @@
       background: url('../../../public/images/visuals/quote-black-hand-drawn.svg') no-repeat center center;
       left: -100px;
       top: -67px;
+    }
+  }
+
+  .section-history__title-mobile {
+    display: none;
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: block;
+      margin-left: 50%;
     }
   }
 
@@ -101,6 +118,12 @@
       margin-top: 60px
     }
 
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      flex-direction: column;
+      font-size: 10px;
+      gap: initial;
+    }
+
     .section-history__column {
       max-width: 460px;
       width: 100%;
@@ -120,6 +143,12 @@
       &:nth-last-child(2) {
         margin-bottom: 15px;
       }
+
+      &:nth-last-child(1) {
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          margin-bottom: 0px;
+        }
+      }
     }
 
     .section-history__header {
@@ -129,6 +158,11 @@
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin-bottom: 0px;
         line-height: 40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 15px;
+        text-align: center;
       }
     }
   }
