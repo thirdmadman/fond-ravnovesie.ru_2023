@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-history {
   padding: 0 150px;
@@ -115,7 +115,7 @@
 
     @media screen and (max-width: $layout-breakpoint-tablet-s) {
       margin-left: 0px;
-      margin-top: 60px
+      margin-top: 60px;
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
@@ -140,8 +140,16 @@
     p {
       margin-bottom: 26px;
 
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        line-height: 15px;
+      }
+
       &:nth-last-child(2) {
         margin-bottom: 15px;
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          margin-bottom: 0px;
+        }
       }
 
       &:nth-last-child(1) {
@@ -163,6 +171,8 @@
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         font-size: 15px;
         text-align: center;
+        line-height: 22px;
+        margin-bottom: 10px;
       }
     }
   }

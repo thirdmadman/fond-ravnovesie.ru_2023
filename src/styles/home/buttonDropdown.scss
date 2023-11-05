@@ -27,7 +27,8 @@
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-    min-width: 348px;
+    max-width: 348px;
+    width: 100%;
     font-size: 15px;
     border-radius: 25px;
   }

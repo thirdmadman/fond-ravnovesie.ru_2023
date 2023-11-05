@@ -30,6 +30,7 @@
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    margin-top: 0;
     max-width: 235px;
     background-color: initial;
     box-shadow: none;
