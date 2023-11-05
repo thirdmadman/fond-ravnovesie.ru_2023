@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .project-group-card {
   max-width: 780px;
@@ -7,7 +7,6 @@
   padding: 25px 0px 30px 60px;
   background: $color-light-xl;
 
-  
   @media screen and (max-width: $layout-breakpoint-desktop-m) {
     max-width: 668px;
     padding: 26px 0px 30px 25px;
@@ -20,6 +19,12 @@
 
   @media screen and (max-width: $layout-breakpoint-tablet-xs) {
     max-width: 614px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    max-width: 240px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 14px;
   }
 
   .project-group-card__title {
@@ -36,6 +41,15 @@
       font-size: 40px;
       line-height: 50px;
       text-transform: none;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 13px;
+      line-height: 17px;
     }
   }
 
@@ -49,6 +63,13 @@
 
     li {
       margin-bottom: 15px;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 10px;
+        line-height: 13px;
+        margin-bottom: 0px;
+        line-height: 13px;
+      }
     }
 
     li:before {
@@ -58,6 +79,10 @@
       width: 12px;
       height: 12px;
       background: url('../../../public/images/visuals/list-stroke-black-hand-drawn.svg') no-repeat center;
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        width: 4px;
+        background-size: contain;
+      }
     }
   }
 
@@ -72,6 +97,13 @@
 
     font-size: 22px;
 
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 10px;
+      line-height: 13px;
+      padding: 7px 13px 7px 28px;
+      min-height: 30px;
+    }
+
     &::after {
       content: '';
       display: block;
@@ -82,6 +114,13 @@
       background:
         url('../../../public/images/icons/icon-arrow.svg') no-repeat center,
         $color-light-m;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+        background-color: initial;
+      }
     }
   }
 }
