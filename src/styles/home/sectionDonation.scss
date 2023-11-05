@@ -69,7 +69,23 @@
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       min-height: initial;
-      margin-bottom: 100px;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &::after {
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 56px;
+        background-image: url('../../../public/images/visuals/arrow-down-bottom-black-hand-drawn-donation.svg');
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
     }
 
     .qr-donation__title {
