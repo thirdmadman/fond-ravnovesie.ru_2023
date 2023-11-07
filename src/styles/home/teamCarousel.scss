@@ -55,6 +55,7 @@
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       margin-left: 0px;
       margin-right: 0px;
+      min-width: initial;
     }
 
   }

@@ -119,6 +119,15 @@
       flex-wrap: wrap;
       row-gap: 43px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      gap: 72px;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      gap: 32px;
+    }
   }
 
   .section-socials__list-item {
@@ -133,6 +142,11 @@
     @media screen and (max-width: $layout-breakpoint-tablet-l) {
       width: 124px;
       height: 124px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      width: 100px;
+      height: 100px;
     }
   }
 }
