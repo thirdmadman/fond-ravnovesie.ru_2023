@@ -38,6 +38,10 @@
     flex-wrap: initial;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding: 0 20px;
+  }
+
   
 
   .section-mission__title-text {

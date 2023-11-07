@@ -30,6 +30,10 @@
     margin-bottom: 0px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding: 0 20px;
+  }
+
   .section-our-team__title {
     margin-top: 23px;
     margin-bottom: 10px;

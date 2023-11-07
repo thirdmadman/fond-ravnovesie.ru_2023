@@ -24,6 +24,10 @@
     padding: 0 40px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding: 0 20px;
+  }
+
   .get-help {
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       margin-left: 14px;
