@@ -11,17 +11,19 @@ export function SectionSocials() {
     <section className="section-socials">
       <div className="section-socials__title">Мы в сми</div>
       <div className="section-socials__list">
-        <div className="section-socials__list-item">
-          <Image src={needHelpLogo} alt="need-help-logo.png" />
-        </div>
-        <div className="section-socials__list-item">
-          <Image src={spbSobakaRuLogo} alt="spb.sobaka.ru-logo.png" />
-        </div>
-        <div className="section-socials__list-item">
-          <Image src={hseOutreachLogo} alt="hse-outreach.png" />
-        </div>
-        <div className="section-socials__list-item">
-          <Image src={channel78RuLogo} alt="78.ru.png" />
+        <div className="section-socials__list-wrapper">
+          <div className="section-socials__list-item">
+            <Image src={needHelpLogo} alt="need-help-logo.png" />
+          </div>
+          <div className="section-socials__list-item">
+            <Image src={spbSobakaRuLogo} alt="spb.sobaka.ru-logo.png" />
+          </div>
+          <div className="section-socials__list-item">
+            <Image src={hseOutreachLogo} alt="hse-outreach.png" />
+          </div>
+          <div className="section-socials__list-item">
+            <Image src={channel78RuLogo} alt="78.ru.png" />
+          </div>
         </div>
       </div>
     </section>

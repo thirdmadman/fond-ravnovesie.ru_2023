@@ -33,6 +33,7 @@
     @media screen and (max-width: $layout-breakpoint-tablet-l) {
       font-size: 32px;
       margin-top: 20px;
+      margin-bottom: 45px;
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
@@ -69,6 +70,16 @@
   }
 
   .section-socials__list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      justify-content: center;
+    }
+  }
+
+  .section-socials__list-wrapper {
     margin-right: 85px;
     max-width: 985px;
     width: 100%;
