@@ -1,13 +1,13 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .home-page {
   width: 100%;
   height: 100%;
 
   background:
-  url('/images/three-color-gradient-home.svg') no-repeat calc(100vw - 1035px) 143px,
-  url('/images/ellipse-subtraction-white-home.svg') no-repeat center 2037px,
-  url('/images/ellipse-offset-gradient-white-home.svg') no-repeat calc(100vw - 1529px) 5198px;
+    url('/images/three-color-gradient-home.svg') no-repeat calc(100vw - 1035px) 143px,
+    url('/images/ellipse-subtraction-white-home.svg') no-repeat center 2037px,
+    url('/images/ellipse-offset-gradient-white-home.svg') no-repeat calc(100vw - 1529px) 5198px;
 
   .container {
     width: 100%;
@@ -15,5 +15,35 @@
     margin: auto;
     position: relative;
     overflow-x: hidden;
+
+    & > section {
+      padding-left: 150px;
+      padding-right: 150px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-l) {
+        padding-left: 70px;
+        padding-right: 70px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
   }
 }

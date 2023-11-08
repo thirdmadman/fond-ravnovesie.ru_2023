@@ -8,30 +8,13 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
-  }
-
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    padding: 0 50px;
     min-height: 690px;
-  }
-
-  @media screen and (max-width: $layout-breakpoint-tablet-s) {
-    padding: 0 30px;
-  }
-
-  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-    padding: 0 40px;
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
     min-height: initial;
     margin-bottom: 0px;
-  }
-
-  @media screen and (max-width: $layout-breakpoint-mobile-l) {
-    padding: 0 20px;
   }
 
   .section-our-team__title {
@@ -157,7 +140,6 @@
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         margin-top: 0;
         margin-bottom: 20px;
-
       }
     }
 

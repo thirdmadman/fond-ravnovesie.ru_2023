@@ -67,6 +67,11 @@
       margin-bottom: 50px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       min-height: initial;
       margin-bottom: 0;
@@ -178,6 +183,10 @@
           top: 105px;
         }
 
+        @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+          display: none;
+        }
+
         @media screen and (max-width: $layout-breakpoint-mobile-xl) {
           display: none;
         }
@@ -220,6 +229,10 @@
         min-height: 230px;
         align-self: flex-end;
         background-size: 30%;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+        align-self: center;
       }
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {

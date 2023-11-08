@@ -1,19 +1,12 @@
 @import '../constants.scss';
 
 .section-history {
-  padding: 0 150px;
   margin-bottom: 150px;
   min-height: 765px;
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
-  }
-
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    padding-left: 70px;
-    padding-right: 50px;
     min-height: 660px;
   }
 
@@ -22,17 +15,11 @@
   }
 
   @media screen and (max-width: $layout-breakpoint-tablet-s) {
-    padding: 0 30px;
     flex-direction: column;
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-    padding: 0 40px;
     margin-bottom: 100px;
-  }
-
-  @media screen and (max-width: $layout-breakpoint-mobile-l) {
-    padding: 0 20px;
   }
 
   .section-history__title {

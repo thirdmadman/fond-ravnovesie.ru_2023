@@ -1,48 +1,28 @@
 @import '../constants.scss';
 
 .section-mission {
-  padding: 0 150px;
   margin-bottom: 150px;
   min-height: 930px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
-  }
-
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
     min-height: 660px;
-    padding: 0 50px;
   }
 
-  @media screen and (max-width: $layout-breakpoint-tablet-s) {
-    padding: 0 30px;
-  }
-
-  @media screen and (max-width: $layout-breakpoint-tablet-xs) {
-    flex-wrap: wrap;
-  }
-
-  @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+  @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-    padding: 0 40px;
     max-width: initial;
     min-height: 332px;
     margin-bottom: 60px;
     flex-wrap: initial;
   }
-
-  @media screen and (max-width: $layout-breakpoint-mobile-l) {
-    padding: 0 20px;
-  }
-
-  
 
   .section-mission__title-text {
     margin-bottom: 13px;
@@ -73,6 +53,11 @@
     @media screen and (max-width: $layout-breakpoint-tablet-xs) {
       max-width: 402px;
       margin-right: 0px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+      text-align: center;
+      margin-top: 200px;
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
@@ -143,6 +128,10 @@
         display: block;
         background: url('../../../public/images/visuals/underline-blue-mission-home.svg') no-repeat;
 
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          width: 324px;
+        }
+
         @media screen and (max-width: $layout-breakpoint-mobile-xl) {
           display: none;
         }
@@ -160,7 +149,7 @@
     }
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
-      max-width: 690px;
+      max-width: 710px;
     }
 
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
@@ -228,6 +217,10 @@
       @media screen and (max-width: $layout-breakpoint-tablet-xs) {
         top: -225px;
         left: -96px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+        display: none;
       }
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {

@@ -114,6 +114,10 @@
         max-width: 212px;
         text-align: center;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+        display: none;
+      }
     }
 
     &_right {
@@ -142,6 +146,10 @@
         right: -126px;
         max-width: 245px;
         text-align: center;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+        display: none;
       }
     }
   }
