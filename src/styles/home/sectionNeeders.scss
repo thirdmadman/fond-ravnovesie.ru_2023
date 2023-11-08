@@ -112,6 +112,7 @@
         width: 372px;
         height: 399px;
         background: url('../../../public/images/needers/outline-purple-photo1.svg') no-repeat;
+        z-index: -1;
 
         @media screen and (max-width: $layout-breakpoint-tablet-s) {
           left: -25px;
