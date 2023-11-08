@@ -107,7 +107,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      text-wrap: nowrap;
       font-size: 24px;
       line-height: 40px;
 
@@ -121,9 +121,10 @@
 
     .form-inputs__input-amount {
       max-width: 300px;
-      text-align: center;
       margin-bottom: 0;
+      margin-right: 10px;
       padding-top: 10px;
+      text-align: center;
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         padding-top: 0;
