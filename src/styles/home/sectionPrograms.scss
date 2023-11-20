@@ -56,6 +56,10 @@
         font-size: 17px;
         line-height: 22px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        margin-top: 130px;
+      }
     }
 
     .get-help__list {

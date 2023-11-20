@@ -24,6 +24,12 @@
     min-height: initial;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    margin-bottom: 110px;
+    justify-content: initial;
+    min-height: initial;
+  }
+
   .section-history__title {
     margin-left: 43px;
     margin-top: 80px;
