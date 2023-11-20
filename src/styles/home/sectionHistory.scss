@@ -19,7 +19,9 @@
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+    justify-content: initial;
+    min-height: initial;
   }
 
   .section-history__title {
@@ -133,6 +135,7 @@
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         line-height: 15px;
+        margin-bottom: 20px;
       }
 
       &:nth-last-child(2) {
