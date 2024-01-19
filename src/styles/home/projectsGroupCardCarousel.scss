@@ -1,0 +1,26 @@
+@import "../constants.scss";
+
+.projects-group-card-carousel {
+  max-width: 980px;
+  min-width: 0px;
+  width: 100%;
+  display: flex;
+  flex: 0 1 980px;
+
+  .projects-group-card-carousel__viewport {
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 860px;
+    min-width: 205px;
+    width: 100%;
+
+  }
+
+  .projects-group-card-carousel__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    gap: 15px;
+  }
+}

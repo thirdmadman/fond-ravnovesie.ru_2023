@@ -2,6 +2,7 @@ import '../../styles/home/sectionPrograms.scss';
 import { fondProjects } from '@/fondProjects';
 import Link from 'next/link';
 import { ProjectGroupCard } from './ProjectGroupCard';
+import { ProjectsGroupCardCarousel } from './ProjectsGroupCardCarousel';
 
 const getHelpSteps = [
   'Перейдите в нашу группу Вконтакте и напишите в сообщения группы, что хотите получить помощь',
@@ -13,7 +14,7 @@ const getHelpSteps = [
 const actionsButtons = [{ name: 'ПЕРЕЙТИ В ГРУППУ ВКОНТАКТЕ', link: '' }];
 
 export function SectionPrograms() {
-  const getProjectGroupCards = () => {
+  const getProjectGroupCards = (isMobile: boolean = false) => {
     const props = fondProjects.groups.map((projectsGroup, i) => {
       const projectGroupNumber = i + 1;
       const projectGroupName = projectsGroup.groupTitle;
@@ -30,7 +31,7 @@ export function SectionPrograms() {
       };
     });
 
-    return props.map((el) => <ProjectGroupCard key={el.link} {...el} />);
+    return props.map((el) => <ProjectGroupCard key={el.link} {...el} isMobile={isMobile} />);
   };
 
   return (
@@ -54,6 +55,9 @@ export function SectionPrograms() {
       <div className="section-programs__fond-projects fond-projects">
         <div className="fond-projects__title">ПРОЕКТЫ ФОНДА</div>
         <div className="fond-projects__list">{getProjectGroupCards()}</div>
+        <div className="fond-projects__list-mobile">
+          <ProjectsGroupCardCarousel slides={getProjectGroupCards(true)} />
+        </div>
       </div>
     </section>
   );
