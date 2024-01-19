@@ -39,7 +39,19 @@ export function Header() {
       <div className="header__container">
         <Image className="header__logo" src={logo} alt="logo" width="160" height="90" />
         <nav className={`header__navigation navigation ${isBurgerMenuOpen ? 'header__navigation_is-open' : ''}`}>
-          {menuLinks.map((link) => getLink(link.name, link.path, pathName))}
+          <div className="navigation__container">
+            <button
+              type="button"
+              className={`header__button-burger-close ${
+                isBurgerMenuOpen ? '' : 'header__button-burger-close_is-hidden'
+              }`}
+              aria-label="Close burger menu"
+              onClick={() => setIsBurgerMenuOpen(false)}
+            />
+            <div className="navigation__links-container">
+              {menuLinks.map((link) => getLink(link.name, link.path, pathName))}
+            </div>
+          </div>
         </nav>
         <Link className="header__phone" href={`tel:${phoneNumber}`}>
           {phoneNumber}
@@ -49,12 +61,6 @@ export function Header() {
           className="header__button-burger"
           aria-label="Open burger menu"
           onClick={() => setIsBurgerMenuOpen(true)}
-        />
-        <button
-          type="button"
-          className={`header__button-burger-close ${isBurgerMenuOpen ? '' : 'header__button-burger-close_is-hidden'}`}
-          aria-label="Close burger menu"
-          onClick={() => setIsBurgerMenuOpen(false)}
         />
       </div>
     </header>
