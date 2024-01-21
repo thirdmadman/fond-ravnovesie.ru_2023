@@ -27,6 +27,14 @@
     border-radius: 14px;
   }
 
+  .project-group-card_mobile {
+    .project-group-card__title {
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+  }
+
   .project-group-card__title {
     margin-bottom: 25px;
     font-size: 24px;

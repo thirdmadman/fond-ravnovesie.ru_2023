@@ -14,13 +14,13 @@ export function ProjectGroupCard(props: ProjectGroupCardProps) {
   if (isMobile) {
     return (
       <a href={link} aria-label="Open">
-        <div className="project-group-card-mobile">
+        <div className="project-group-card project-group-card_mobile">
           <ul>
             {projectNamesInGroup.map((el) => (
               <li key={el}>“{el}“</li>
             ))}
           </ul>
-          <div className="project-group-card-mobile__title">{projectGroupName}</div>
+          <div className="project-group-card__title">{projectGroupName}</div>
         </div>
       </a>
     );
