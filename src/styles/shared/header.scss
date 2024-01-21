@@ -1,4 +1,4 @@
-@import 'constants.scss';
+@import '../constants.scss';
 
 .header {
   width: 100%;
@@ -258,7 +258,7 @@
     display: none;
     width: 52px;
     height: 26px;
-    background-image: url('../../public/images/icons/icon-burger-menu.svg');
+    background-image: url('../../../public/images/icons/icon-burger-menu.svg');
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -278,7 +278,7 @@
   .header__button-burger-close {
     display: none;
 
-    background-image: url('../../public/images/icons/icon-burger-menu-close.svg');
+    background-image: url('../../../public/images/icons/icon-burger-menu-close.svg');
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

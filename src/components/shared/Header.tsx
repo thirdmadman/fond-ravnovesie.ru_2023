@@ -7,7 +7,7 @@ import logo from '/public/images/logo-header.png';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-import '../styles/header.scss';
+import '@/styles/shared/header.scss';
 
 const menuLinks = [
   { name: 'Главная', path: '/' },
