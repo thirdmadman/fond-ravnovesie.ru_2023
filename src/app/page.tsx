@@ -1,4 +1,4 @@
-import { Header } from '@/components/Header';
+import { Header } from '@/components/shared/Header';
 import '../styles/home/home.scss';
 import { SectionMission } from '@/components/home/SectionMission';
 import { SectionNeeders } from '@/components/home/SectionNeeders';
@@ -8,7 +8,7 @@ import { SectionOurTeam } from '@/components/home/SectionOurTeam';
 import { SectionHistory } from '@/components/home/SectionHistory';
 import { SectionDonation } from '@/components/home/SectionDonation';
 import { SectionSocials } from '@/components/home/SectionSocials';
-import { Footer } from '@/components/Footer';
+import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

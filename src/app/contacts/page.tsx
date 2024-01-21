@@ -1,6 +1,6 @@
-import { Header } from '@/components/Header';
+import { Header } from '@/components/shared/Header';
 import '../../styles/contacts/contacts.scss';
-import { Footer } from '@/components/Footer';
+import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
 import { SectionContacts } from '@/components/contacts/SectionContacts';
 
