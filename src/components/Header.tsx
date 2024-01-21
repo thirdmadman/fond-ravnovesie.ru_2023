@@ -2,11 +2,12 @@
 
 import { DEFAULT_PHONE_NUMBER } from '@/shared/text-constants';
 import Image from 'next/image';
-import '../styles/header.scss';
 import Link from 'next/link';
 import logo from '/public/images/logo-header.png';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+
+import '../styles/header.scss';
 
 const menuLinks = [
   { name: 'Главная', path: '/' },
@@ -50,6 +51,14 @@ export function Header() {
             />
             <div className="navigation__links-container">
               {menuLinks.map((link) => getLink(link.name, link.path, pathName))}
+            </div>
+            <div className="navigation__buttons">
+              <button className="button  button_black" type="button">
+                <p>ПОМОЧЬ ФОНДУ</p>
+              </button>
+              <button className="button button_transparent" type="button">
+                <p>ПОЛУЧИТЬ ПОМОЩЬ</p>
+              </button>
             </div>
           </div>
         </nav>

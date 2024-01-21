@@ -147,6 +147,46 @@
     }
   }
 
+  .navigation__buttons {
+    display: none;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .button {
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Steppe;
+
+      &_black {
+        background: $color-dark-l;
+        color: $color-light-m;
+      }
+
+      &_transparent {
+        border-width: 1px;
+        border-color: $color-dark-l;
+        color: $color-dark-l;
+      }
+  
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        max-width: 350px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 25px;
+        min-width: initial;
+      }
+    }
+  
+  }
+
   .header__phone {
     word-break: keep-all;
     text-wrap: nowrap;
