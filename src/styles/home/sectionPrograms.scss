@@ -277,9 +277,11 @@
     }
 
     .fond-projects__list-mobile {
+      display: none;
       width: 100vw;
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: block;
         margin-left: -40px;
       }
 
