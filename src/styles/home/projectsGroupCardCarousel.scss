@@ -9,8 +9,6 @@
 
   .projects-group-card-carousel__viewport {
     overflow: hidden;
-    margin-left: 30px;
-    margin-right: 30px;
     max-width: 860px;
     min-width: 205px;
     width: 100%;
@@ -22,5 +20,7 @@
     display: flex;
     touch-action: pan-y;
     gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

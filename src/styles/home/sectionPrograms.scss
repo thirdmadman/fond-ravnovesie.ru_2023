@@ -275,5 +275,21 @@
         display: none;
       }
     }
+
+    .fond-projects__list-mobile {
+      width: 100vw;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        margin-left: -40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        margin-left: -30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-s) {
+        margin-left: -20px;
+      }
+    }
   }
 }
