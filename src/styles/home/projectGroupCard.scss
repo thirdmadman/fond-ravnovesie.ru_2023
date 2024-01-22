@@ -27,14 +27,6 @@
     border-radius: 14px;
   }
 
-  .project-group-card_mobile {
-    .project-group-card__title {
-      font-size: 13px;
-      line-height: 16px;
-      text-transform: uppercase;
-    }
-  }
-
   .project-group-card__title {
     margin-bottom: 25px;
     font-size: 24px;
@@ -129,6 +121,48 @@
         background-size: contain;
         background-color: initial;
       }
+    }
+  }
+
+  &_mobile {
+    position: relative;
+    width: 240px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 13px;
+
+    .project-group-card__title {
+      min-height: 32px;
+      margin-bottom: 0;
+      padding-left: 15px;
+      display: flex;
+      align-items: flex-start;
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin-bottom: 18px;
+      margin-left: 0;
+
+      li:before {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: url('../../../public/images/icons/icon-arrow.svg') no-repeat center;
     }
   }
 }

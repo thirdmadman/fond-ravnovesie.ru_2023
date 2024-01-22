@@ -17,7 +17,7 @@ export function ProjectGroupCard(props: ProjectGroupCardProps) {
         <div className="project-group-card project-group-card_mobile">
           <ul>
             {projectNamesInGroup.map((el) => (
-              <li key={el}>“{el}“</li>
+              <li key={el}>{el}</li>
             ))}
           </ul>
           <div className="project-group-card__title">{projectGroupName}</div>
