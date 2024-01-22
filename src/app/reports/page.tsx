@@ -1,5 +1,5 @@
 import { Header } from '@/components/shared/Header';
-import '../../styles/reports/reports.scss';
+import '@/styles/reports/reports.scss';
 import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
 import { SectionReports } from '@/components/reports/SectionReports';

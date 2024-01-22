@@ -1,4 +1,4 @@
-import '../../styles/home/sectionInfo.scss';
+import '@/styles/home/sectionInfo.scss';
 import Image from 'next/image';
 
 export function SectionInfo() {

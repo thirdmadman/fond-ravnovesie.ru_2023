@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import '../../styles/reports/legalPaperCard.scss';
+import '@/styles/reports/legalPaperCard.scss';
 
 interface LegalPaperCardProps {
   src: string;

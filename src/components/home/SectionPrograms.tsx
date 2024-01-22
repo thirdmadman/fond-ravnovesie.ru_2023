@@ -1,4 +1,4 @@
-import '../../styles/home/sectionPrograms.scss';
+import '@/styles/home/sectionPrograms.scss';
 import { fondProjects } from '@/fondProjects';
 import Link from 'next/link';
 import { ProjectGroupCard } from './ProjectGroupCard';

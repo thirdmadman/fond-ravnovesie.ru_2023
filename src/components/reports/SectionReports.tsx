@@ -1,7 +1,6 @@
-import '../../styles/reports/sectionReports.scss';
+import '@/styles/reports/sectionReports.scss';
+import { fondReports } from '@/fondReports';
 import { ReportCard } from './ReportCard';
-
-import { fondReports } from '../../fondReports';
 
 export function SectionReports() {
   return (

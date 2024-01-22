@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import '../../styles/home/buttonDropdown.scss';
+import '@/styles/home/buttonDropdown.scss';
 
 interface ButtonDropdownProps {
   buttonText: string;

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import '../../styles/home/sectionSocials.scss';
+import '@/styles/home/sectionSocials.scss';
 
 import needHelpLogo from '/public/images/socials/need-help-logo.png';
 import spbSobakaRuLogo from '/public/images/socials/spb.sobaka.ru-logo.png';

@@ -1,4 +1,4 @@
-import '../../styles/home/teamCard.scss';
+import '@/styles/home/teamCard.scss';
 import Image from 'next/image';
 
 interface TeamCardProps {

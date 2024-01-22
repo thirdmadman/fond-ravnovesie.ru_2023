@@ -1,4 +1,4 @@
-import '../../styles/home/sectionMission.scss';
+import '@/styles/home/sectionMission.scss';
 import { ButtonDropdown } from './ButtonDropdown';
 
 export function SectionMission() {

@@ -1,4 +1,4 @@
-import '../../styles/home/sectionHistory.scss';
+import '@/styles/home/sectionHistory.scss';
 
 export function SectionHistory() {
   return (

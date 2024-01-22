@@ -3,7 +3,7 @@
 import React from 'react';
 import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react';
 
-import '../../styles/home/teamCarousel.scss';
+import '@/styles/home/teamCarousel.scss';
 
 type PropType = {
   slides: JSX.Element[];

@@ -1,6 +1,6 @@
 'use client';
 
-import '../../styles/home/sectionDonation.scss';
+import '@/styles/home/sectionDonation.scss';
 import { DonationForm } from './DonationForm';
 
 export function SectionDonation() {

@@ -1,4 +1,4 @@
-import '../../styles/home/projectGroupCard.scss';
+import '@/styles/home/projectGroupCard.scss';
 
 interface ProjectGroupCardProps {
   projectGroupNumber: number;
