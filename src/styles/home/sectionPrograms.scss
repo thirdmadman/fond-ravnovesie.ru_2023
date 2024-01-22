@@ -11,6 +11,10 @@
     align-items: center;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    margin-bottom: 75px;
+  }
+
   .get-help {
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       margin-left: 14px;
@@ -261,7 +265,8 @@
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         font-size: 17px;
         line-height: 22px;
-        margin-bottom: 40px;
+        margin-top: 90px;
+        margin-bottom: 65px;
       }
     }
 
