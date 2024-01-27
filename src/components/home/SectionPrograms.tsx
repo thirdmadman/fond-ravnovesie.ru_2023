@@ -53,7 +53,11 @@ export function SectionPrograms() {
         ))}
       </div>
       <div className="section-programs__fond-projects fond-projects">
-        <div className="fond-projects__title">ПРОЕКТЫ ФОНДА</div>
+        <div className="fond-projects__title">
+          <div className="fond-projects__title-star" />
+          <h3>ПРОЕКТЫ ФОНДА</h3>
+          <div className="fond-projects__title-star fond-projects__title-star_small" />
+        </div>
         <div className="fond-projects__list">{getProjectGroupCards()}</div>
         <div className="fond-projects__list-mobile">
           <ProjectsGroupCardCarousel slides={getProjectGroupCards(true)} />
