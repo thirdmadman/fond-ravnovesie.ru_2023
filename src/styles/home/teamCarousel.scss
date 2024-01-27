@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .team-carousel {
   margin-left: 30px;
@@ -57,7 +57,6 @@
       margin-right: 0px;
       min-width: initial;
     }
-
   }
 
   .team-carousel__container {
@@ -103,6 +102,26 @@
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    .team-carousel__dots {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .team-carousel__dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: $color-dark-s;
+
+      &_selected {
+        background-color: $color-dark-l;
+      }
     }
   }
 }
