@@ -1,5 +1,5 @@
-import { Header } from '@/components/shared/Header';
 import '@/styles/home/home.scss';
+import { Header } from '@/components/shared/Header';
 import { SectionMission } from '@/components/home/SectionMission';
 import { SectionNeeders } from '@/components/home/SectionNeeders';
 import { SectionInfo } from '@/components/home/SectionInfo';
