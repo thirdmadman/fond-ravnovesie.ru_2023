@@ -5,6 +5,7 @@
   min-height: 765px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
     min-height: 660px;
@@ -174,6 +175,50 @@
         line-height: 22px;
         margin-bottom: 10px;
       }
+    }
+  }
+
+  .section-history__background {
+    position: absolute;
+    top: -445px;
+    right: -445px;
+    width: 1773px;
+    height: 1209px;
+    z-index: -1;
+    background-image: url('/images/ellipse-offset-gradient-white-home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      right: -600px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      top: -350px;
+      right: -840px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      right: -1115px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      right: -1240px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      right: 0px;
+      width: 493px;
+      height: 400px;
+      top: 121px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      right: -70px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      right: -100px;
     }
   }
 }
