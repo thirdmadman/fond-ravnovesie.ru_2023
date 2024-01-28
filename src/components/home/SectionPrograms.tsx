@@ -58,7 +58,11 @@ export function SectionPrograms() {
           <h3>ПРОЕКТЫ ФОНДА</h3>
           <div className="fond-projects__title-star fond-projects__title-star_small" />
         </div>
-        <div className="fond-projects__list">{getProjectGroupCards()}</div>
+        <div className="fond-projects__list">
+          <div className="fond-projects__background fond-projects__background_blue" />
+          <div className="fond-projects__background fond-projects__background_pink" />
+          {getProjectGroupCards()}
+        </div>
         <div className="fond-projects__list-mobile">
           <ProjectsGroupCardCarousel slides={getProjectGroupCards(true)} />
         </div>

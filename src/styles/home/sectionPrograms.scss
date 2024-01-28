@@ -4,7 +4,6 @@
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
-  background: url('../../../public/images/fond-projects-background.svg') no-repeat calc(50% + 418px) 41px;
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
     flex-direction: column;
@@ -219,6 +218,62 @@
     width: 100%;
     position: relative;
 
+    &__background {
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+
+      &_blue {
+        background: url('/images/fond-projects-background-oval-blue.svg');
+        width: 221px;
+        height: 335px;
+        top: -14px;
+        left: -28px;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-m) {
+          top: 790px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          left: -56px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          left: -64px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          left: -114px;
+        }
+        
+      }
+
+      &_pink {
+        background: url('/images/fond-projects-background-oval-pink.svg');
+        width: 410px;
+        height: 294px;
+        top: 375px;
+        right: -44px;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          top: 331px;
+          right: -103px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          right: -95px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          right: -143px;
+        }
+      }
+    }
+
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       max-width: 668px;
     }
@@ -288,7 +343,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         h3 {
           margin-top: 20px;
         }
@@ -300,6 +355,7 @@
       flex-direction: column;
       align-items: center;
       gap: 30px;
+      position: relative;
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         display: none;
