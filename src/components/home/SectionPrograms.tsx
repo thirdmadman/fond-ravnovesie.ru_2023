@@ -37,6 +37,7 @@ export function SectionPrograms() {
   return (
     <section className="section-programs">
       <div className="section-programs__get-help get-help">
+        <div className="get-help__background" />
         <div className="get-help__title">КАК ПОЛУЧИТЬ ПОМОЩЬ</div>
         <ol className="get-help__list">
           {getHelpSteps.map((el, i) => (
