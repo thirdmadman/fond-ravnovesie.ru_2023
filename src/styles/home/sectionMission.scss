@@ -21,6 +21,7 @@
     max-width: initial;
     min-height: 332px;
     margin-bottom: 60px;
+    padding-top: 20px;
     flex-wrap: initial;
   }
 
@@ -335,6 +336,68 @@
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         display: none;
       }
+    }
+  }
+
+  .section-mission__background {
+    position: absolute;
+    top: 100px;
+    right: -450px;
+    width: 1216px;
+    height: 1181px;
+    z-index: -1;
+    background-image: url('/images/three-color-gradient-home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-l) {
+      right: -535px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      right: -600px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      width: 1000px;
+      height: 969px;
+      right: -435px;
+      top: 15px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      right: -545px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      right: -600px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      right: -565px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      right: -610px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      right: -670px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      right: -365px;
+      width: 700px;
+      height: 678px;
+      top: 430px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      right: -400px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      right: -440px;
     }
   }
 }
