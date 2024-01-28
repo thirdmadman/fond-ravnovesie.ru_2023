@@ -14,6 +14,7 @@ export function SectionOurTeam() {
 
   return (
     <section className="section-our-team">
+      <div className="section-our-team__background" />
       <div className="section-our-team__title">Наша команда</div>
       <div className="section-our-team__list team-list">
         <div className="team-list__title">короткая информация по опыту специалистов</div>

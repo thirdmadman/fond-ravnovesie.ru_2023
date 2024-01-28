@@ -6,6 +6,7 @@ section.section-our-team {
   min-height: 770px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
     min-height: 690px;
@@ -206,6 +207,31 @@ section.section-our-team {
           left: -10px;
           border-radius: 15px;
         }
+      }
+    }
+  }
+
+  .section-our-team__background {
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 100%;
+      height: 490px;
+      z-index: -1;
+      background-image: url('/images/ellipse-subtraction-white-home.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &::after {
+        content: '';
+        top: 236px;
+        display: block;
+        width: 100%;
+        height: 245px;
+        position: absolute;
+        background-color: $color-light-xl;
+        z-index: -1;
       }
     }
   }
