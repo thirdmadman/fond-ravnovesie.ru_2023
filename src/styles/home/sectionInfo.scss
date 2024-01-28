@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-info {
   margin-bottom: 150px;
@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
     display: none;
@@ -81,7 +82,6 @@
     line-height: normal;
     text-transform: none;
     height: 0;
-
 
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       max-width: 183px;
@@ -166,6 +166,88 @@
       width: 403px;
       height: 47px;
       background: url('../../../public/images/visuals/underline-wavy-blue-info-home.svg') no-repeat center;
+    }
+  }
+
+  .section-info__background {
+    position: absolute;
+    top: -105px;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      top: -50px;
+    }
+
+    // @media screen and (max-width: $layout-breakpoint-desktop-m) {
+    //   right: -600px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-desktop-s) {
+    //   width: 1000px;
+    //   height: 969px;
+    //   right: -435px;
+    //   top: 15px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    //   right: -545px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-tablet-l) {
+    //   right: -600px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-tablet-m) {
+    //   right: -565px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    //   right: -610px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+    //   right: -670px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    //   right: -365px;
+    //   width: 700px;
+    //   height: 678px;
+    //   top: 430px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    //   right: -400px;
+    // }
+
+    // @media screen and (max-width: $layout-breakpoint-mobile-s) {
+    //   right: -440px;
+    // }
+
+    &_gray {
+      z-index: -1;
+      top: 80%;
+    }
+
+    &_white-square {
+      top: 725px;
+      display: block;
+      width: 100%;
+      height: 560px;
+      position: absolute;
+      background-color: $color-light-xl;
+      z-index: -2;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        top: 440px;
+      }
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        top: 315px;
+        height: 790px;
+      }
     }
   }
 }

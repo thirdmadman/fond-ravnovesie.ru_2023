@@ -4,6 +4,21 @@ import Image from 'next/image';
 export function SectionInfo() {
   return (
     <section className="section-info">
+      <div className="section-info__background section-info__background_white-square" />
+      <Image
+        className="section-info__background"
+        src="/images/ellipse-subtraction-white-home.svg"
+        alt="background"
+        width="1920"
+        height="1000"
+      />
+      <Image
+        className="section-info__background section-info__background_gray"
+        src="/images/ellipse-gray-home.svg"
+        alt="background"
+        width="1920"
+        height="1000"
+      />
       <Image src="/images/visuals/gray-star-black.svg" alt="separator" width="50" height="50" />
       <div className="section-info__main-text">
         Фонд уделяет особое внимание
