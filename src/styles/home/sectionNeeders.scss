@@ -34,6 +34,54 @@
 
     position: relative;
 
+    &::before {
+      content: '';
+      position: absolute;
+      right: 50px;
+      top: 65px;
+      display: block;
+      width: 46px;
+      height: 87px;
+      background-image: url('/images/visuals/gray-four-rays-star-white-outline.svg');
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        top: 15px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        right: -10px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        right: -30px;
+        top: -30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        right: -15px;
+        top: -30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 340px;
+      display: block;
+      width: 25px;
+      height: 44px;
+      background-image: url('/images/visuals/gray-four-rays-star-white-outline.svg');
+      background-size: contain;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       max-width: 628px;
     }
@@ -456,7 +504,6 @@
         line-height: 13px;
         margin-bottom: 18px;
         row-gap: initial;
-
       }
 
       ul {
