@@ -1,22 +1,25 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
-.section-programs {
+section.section-programs {
   margin-bottom: 150px;
-  padding: 0 150px;
   display: flex;
   justify-content: space-between;
-  background: url('../../../public/images/fond-projects-background.svg') no-repeat calc(50% + 418px) 41px;
-
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
-  }
+  position: relative;
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
     flex-direction: column;
     align-items: center;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    margin-bottom: 75px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .get-help {
+    position: relative;
+
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       margin-left: 14px;
     }
@@ -24,6 +27,64 @@
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       margin-left: 0;
       margin-bottom: 150px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &::before {
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: block;
+        content: '';
+        width: 10px;
+        height: 85px;
+        background-image: url('../../../public/images/visuals/arrow-down-bottom-black-hand-drawn.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: calc(50% - 6px);
+      }
+    }
+
+    .get-help__background {
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        position: absolute;
+        top: 200px;
+        right: 0;
+        width: 100%;
+        min-height: 490px;
+        height: 100%;
+        z-index: -1;
+        background-image: url('/images/ellipse-subtraction-white-home.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &::after {
+          content: '';
+          bottom: 150px;
+          display: block;
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          background-color: $color-light-xl;
+          z-index: -1;
+        }
+      }
     }
 
     .get-help__title {
@@ -36,6 +97,17 @@
         margin-bottom: 30px;
         font-size: 32px;
         text-align: center;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        margin-top: 140px;
+        margin-bottom: 90px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        margin-top: 130px;
       }
     }
 
@@ -53,6 +125,22 @@
         margin-bottom: 40px;
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        margin-left: 35px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        list-style: none;
+        counter-reset: item;
+        font-size: 11px;
+        line-height: 14px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
       &::after {
         content: '';
         display: block;
@@ -66,24 +154,113 @@
         @media screen and (max-width: $layout-breakpoint-desktop-m) {
           right: -40px;
         }
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          right: -100px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+          right: -65px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-l) {
+          right: -90px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          right: -45px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          right: -30px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+          display: none;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          display: none;
+        }
       }
 
       li {
         margin-bottom: 30px;
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          counter-increment: item;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        span:nth-child(1) {
+          display: none;
+
+          @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+            background: $color-light-m;
+            border-radius: 100%;
+            color: $color-dark-l;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -8px;
+            position: relative;
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 100px;
+            background-color: $color-dark-l;
+            position: absolute;
+            left: 14px;
+            top: 30px;
+          }
+        }
+
+        span:nth-child(2) {
+          @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+            background-color: $color-light-xl;
+            position: relative;
+            padding: 5px 15px 10px 15px;
+          }
+        }
       }
     }
 
     .get-help__button-to-vk {
-      padding: 28px 71px 30px 71px;
+      padding: 22px 30px 20px 30px;
+      max-width: 535px;
       border-radius: 40px;
-      background-color: #263c93;
+      background-color: $color-primary-blue;
       color: $color-light-m;
       font-size: 24px;
-      line-height: 17px;
+      line-height: 33px;
+      text-align: center;
+
+      transition: background-color 0.4s;
+
+      &:hover {
+        background-color: #0e216a;
+      }
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin: 0 auto;
         display: block;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 15px;
+        line-height: 10px;
+        padding: 24px 10px 23px 10px;
+        position: relative;
       }
     }
   }
@@ -92,6 +269,76 @@
     max-width: 780px;
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__background {
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+
+      &_blue {
+        background: url('/images/fond-projects-background-oval-blue.svg');
+        width: 221px;
+        height: 335px;
+        top: -14px;
+        left: -28px;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-m) {
+          top: 790px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          left: -56px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          left: -64px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          left: -114px;
+        }
+      }
+
+      &_pink {
+        background: url('/images/fond-projects-background-oval-pink.svg');
+        width: 410px;
+        height: 294px;
+        top: 375px;
+        right: -44px;
+
+        @media screen and (max-width: $layout-breakpoint-desktop-s) {
+          top: 331px;
+          right: -103px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          right: -95px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          right: -143px;
+        }
+      }
+    }
 
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       max-width: 668px;
@@ -110,6 +357,36 @@
       top: 16px;
       right: -61px;
       background: url('../../../public/images/visuals/three-lines-spark-blue-hand-drawn-right-top.svg') no-repeat;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-s) {
+        top: 26px;
+        right: -69px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        right: -25px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
+    .fond-projects__title-star {
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: block;
+        width: 40px;
+        height: 60px;
+        background-image: url('/public/images/visuals/gray-four-rays-star.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &_small {
+          width: 20px;
+          height: 30px;
+        }
+      }
     }
 
     .fond-projects__title {
@@ -122,12 +399,51 @@
         text-align: center;
         margin-bottom: 25px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        font-size: 17px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          margin-top: 20px;
+        }
+      }
     }
 
     .fond-projects__list {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 30px;
+      position: relative;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+
+    .fond-projects__list-mobile {
+      display: none;
+      width: 100vw;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: block;
+        margin-left: -40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        margin-left: -30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-s) {
+        margin-left: -20px;
+      }
     }
   }
 }

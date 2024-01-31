@@ -1,4 +1,4 @@
-import '../../styles/reports/reportCard.scss';
+import '@/styles/reports/reportCard.scss';
 
 interface ReportCardProps {
   year: number;

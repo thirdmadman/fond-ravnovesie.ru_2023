@@ -1,14 +1,31 @@
-import '../../styles/home/projectGroupCard.scss';
+import '@/styles/home/projectGroupCard.scss';
 
 interface ProjectGroupCardProps {
   projectGroupNumber: number;
   projectGroupName: string;
   projectNamesInGroup: string[];
   link: string;
+  isMobile: boolean;
 }
 
 export function ProjectGroupCard(props: ProjectGroupCardProps) {
-  const { projectGroupNumber, projectGroupName, projectNamesInGroup, link } = props;
+  const { projectGroupNumber, projectGroupName, projectNamesInGroup, link, isMobile } = props;
+
+  if (isMobile) {
+    return (
+      <a href={link} aria-label="Open">
+        <div className="project-group-card project-group-card_mobile">
+          <ul>
+            {projectNamesInGroup.map((el) => (
+              <li key={el}>{el}</li>
+            ))}
+          </ul>
+          <div className="project-group-card__title">{projectGroupName}</div>
+        </div>
+      </a>
+    );
+  }
+
   return (
     <div className="project-group-card">
       <div className="project-group-card__title">

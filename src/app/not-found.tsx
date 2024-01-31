@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import '../styles/notFoundPage.scss';
+import '@/styles/notFoundPage.scss';
 
 export const metadata: Metadata = {
   title: '404 Not Found',

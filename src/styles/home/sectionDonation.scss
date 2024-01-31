@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-donation {
   padding: 0 150px;
@@ -12,9 +12,29 @@
   }
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    padding-left: 70px;
+    padding: 0 50px;
     padding-right: 50px;
     min-height: 925px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    padding: 0 50px;
+    min-height: 910px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-l) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding: 0 30px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    margin-bottom: 30px;
+    padding: 0 40px;
+    min-height: initial;
   }
 
   .section-donation__qr {
@@ -31,6 +51,48 @@
       align-items: flex-start;
     }
 
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 370px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: inherit;
+      margin-right: initial;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      min-height: 312px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      min-height: initial;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &::after {
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 56px;
+        background-image: url('../../../public/images/visuals/arrow-down-bottom-black-hand-drawn-donation.svg');
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+
     .qr-donation__title {
       margin-top: 20px;
       margin-bottom: 30px;
@@ -40,6 +102,21 @@
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin-top: 0px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        font-size: 32px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        margin-bottom: 25px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 17px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 15px;
       }
     }
 
@@ -53,6 +130,22 @@
         max-width: 360px;
       }
 
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        max-width: 550px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        max-width: 500px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+      }
+
       &::after {
         content: '';
         display: block;
@@ -61,25 +154,89 @@
         position: absolute;
         bottom: -215px;
         right: -279px;
-        background: url('../../../public/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg') no-repeat;
+        background-image: url('../../../public/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg');
+        background-repeat: no-repeat;
 
         @media screen and (max-width: $layout-breakpoint-desktop-m) {
           right: -225px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-desktop-m) {
+          background-size: cover;
+          width: 303px;
+          height: 191px;
+          left: 343px;
+          top: 90px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-m) {
+          width: 317px;
+          height: 227px;
+          left: 11px;
+          top: 105px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          width: 317px;
+          height: 227px;
+          left: 52px;
+          top: 105px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+          display: none;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          display: none;
         }
       }
     }
 
     .qr-donation__img-box {
       margin-top: 128px;
-      width: 342px;
-      height: 342px;
-      background: url('../../../public/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
-      url('../../../public/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
+      min-width: 342px;
+      min-height: 342px;
+      background:
+        url('../../../public/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
+        url('../../../public/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
       align-self: center;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin-top: 60px;
         align-self: flex-start;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        margin-top: 5px;
+        align-self: flex-end;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        margin-top: 16px;
+        align-self: initial;
+        margin-right: 85px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        margin-top: 16px;
+        align-self: initial;
+        margin-right: 0px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        min-width: 230px;
+        min-height: 230px;
+        align-self: flex-end;
+        background-size: 30%;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+        align-self: center;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
       }
     }
   }

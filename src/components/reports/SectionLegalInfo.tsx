@@ -1,4 +1,4 @@
-import '../../styles/reports/sectionLegalInfo.scss';
+import '@/styles/reports/sectionLegalInfo.scss';
 import { fondLegalPapers } from '@/fondLegalPapers';
 import { LegalPaperCard } from './LegalPaperCard';
 

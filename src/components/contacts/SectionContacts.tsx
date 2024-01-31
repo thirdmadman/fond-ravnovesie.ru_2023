@@ -1,4 +1,4 @@
-import '../../styles/contacts/sectionContacts.scss';
+import '@/styles/contacts/sectionContacts.scss';
 import Image from 'next/image';
 
 export function SectionContacts() {

@@ -1,20 +1,34 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-history {
-  padding: 0 150px;
   margin-bottom: 150px;
   min-height: 765px;
   display: flex;
   justify-content: space-between;
-
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
-  }
+  position: relative;
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    padding-left: 70px;
-    padding-right: 50px;
     min-height: 660px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    min-height: 810px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    margin-bottom: 90px;
+    justify-content: initial;
+    min-height: initial;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    margin-bottom: 110px;
+    justify-content: initial;
+    min-height: initial;
   }
 
   .section-history__title {
@@ -38,6 +52,18 @@
       margin-top: 65px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      margin-left: 80px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      max-width: initial;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -47,6 +73,14 @@
       background: url('../../../public/images/visuals/quote-black-hand-drawn.svg') no-repeat center center;
       left: -100px;
       top: -67px;
+    }
+  }
+
+  .section-history__title-mobile {
+    display: none;
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: block;
+      margin-left: 50%;
     }
   }
 
@@ -79,8 +113,15 @@
       margin-left: 10px;
     }
 
-    div:nth-child(2n) {
-      margin-top: 35px;
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      margin-left: 0px;
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      flex-direction: column;
+      font-size: 10px;
+      gap: initial;
     }
 
     .section-history__column {
@@ -90,13 +131,32 @@
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         max-width: 360px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        max-width: 410px;
+      }
     }
 
     p {
       margin-bottom: 26px;
 
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        line-height: 15px;
+        margin-bottom: 20px;
+      }
+
       &:nth-last-child(2) {
         margin-bottom: 15px;
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          margin-bottom: 0px;
+        }
+      }
+
+      &:nth-last-child(1) {
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          margin-bottom: 0px;
+        }
       }
     }
 
@@ -105,9 +165,60 @@
       line-height: 38px;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
-        margin-bottom: 14px;
-        line-height: 36px;
+        margin-bottom: 0px;
+        line-height: 40px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        font-size: 15px;
+        text-align: center;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .section-history__background {
+    position: absolute;
+    top: -445px;
+    right: -445px;
+    width: 1773px;
+    height: 1209px;
+    z-index: -1;
+    background-image: url('/images/ellipse-offset-gradient-white-home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      right: -600px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      top: -350px;
+      right: -840px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      right: -1115px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      right: -1240px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      right: 0px;
+      width: 493px;
+      height: 400px;
+      top: 121px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      right: -70px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      right: -100px;
     }
   }
 }

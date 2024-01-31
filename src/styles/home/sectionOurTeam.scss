@@ -1,20 +1,40 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
-.section-our-team {
-  padding-left: 150px;
+section.section-our-team {
   padding-right: 60px;
   margin-bottom: 150px;
   min-height: 770px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
+  @media screen and (max-width: $layout-breakpoint-desktop-s) {
+    min-height: 690px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    min-height: initial;
+    margin-bottom: 50px;
   }
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    padding: 0 50px;
-    min-height: 690px;
+    padding-right: 50px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    padding-right: 30px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    padding-right: 40px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding-right: 30px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-s) {
+    padding-right: 20px;
   }
 
   .section-our-team__title {
@@ -28,6 +48,30 @@
       font-size: 32px;
       margin-top: 15px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 17px;
+      line-height: 22px;
+      margin-top: 22px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        content: '';
+        display: block;
+        width: 157px;
+        height: 15px;
+        background-image: url('../../../public/images/visuals/underline-wavy-pink-our-team.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 15px;
+      }
+    }
   }
 
   .team-list {
@@ -35,18 +79,45 @@
     justify-content: space-between;
     position: relative;
 
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      flex-direction: column;
+    }
+
     &::after {
       content: '';
       display: block;
       position: absolute;
       width: 295px;
       height: 320px;
-      background: url('../../../public/images/visuals/arrow-with-loop-down-left-bottom-pink-hand-drawn.svg') no-repeat center center;
+      background-image: url('../../../public/images/visuals/arrow-with-loop-down-left-bottom-pink-hand-drawn.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
       left: 51px;
-      bottom: -175px;
+      bottom: -200px;
 
       @media screen and (max-width: $layout-breakpoint-desktop-m) {
         left: 135px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        left: 38px;
+        top: 453px;
+        width: 261px;
+        background-size: contain;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        left: -70px;
+        top: 624px;
+        transform: rotate(4deg);
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        left: 14px;
+        top: 342px;
+        width: 122px;
+        height: 122px;
+        transform: rotate(268deg);
       }
     }
 
@@ -62,13 +133,35 @@
       font-size: 24px;
       line-height: 30px;
       background-color: $color-light-xl;
+      color: $color-dark-m;
 
       @media screen and (max-width: $layout-breakpoint-desktop-m) {
         margin-right: 25px;
       }
 
-      @media screen and (max-width: $layout-breakpoint-desktop-s) {
-        // max-width: 370px;
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        max-width: 175px;
+        margin-top: 45px;
+        padding: 20px 25px 20px 25px;
+        margin-right: 35px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        max-width: 684px;
+        margin-top: 25px;
+        padding: 20px 25px 20px 25px;
+        margin-right: 0;
+        min-height: 110px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        margin-top: 0;
+        margin-bottom: 20px;
       }
     }
 
@@ -78,9 +171,59 @@
       min-width: 0px;
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         max-width: 1000px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: linear-gradient(#e38895, #fde04d);
+        bottom: -20px;
+        left: -40px;
+        width: 250px;
+        height: 185px;
+        border-radius: 45px;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          left: -30px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          width: 60px;
+          height: 50px;
+          bottom: 15px;
+          left: -10px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+
+  .section-our-team__background {
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 100%;
+      height: 490px;
+      z-index: -1;
+      background-image: url('/images/ellipse-subtraction-white-home.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &::after {
+        content: '';
+        top: 236px;
+        display: block;
+        width: 100%;
+        height: 245px;
+        position: absolute;
+        background-color: $color-light-xl;
+        z-index: -1;
       }
     }
   }
