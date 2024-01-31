@@ -42,6 +42,7 @@
     max-width: 860px;
     min-width: 205px;
     width: 100%;
+    border-radius: 43px;
 
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       max-width: 655px;
@@ -56,6 +57,7 @@
       margin-left: 0px;
       margin-right: 0px;
       min-width: initial;
+      border-radius: 18px;
     }
   }
 
