@@ -7,7 +7,7 @@ interface ButtonDropdownProps {
   buttonText: string;
   children: JSX.Element[];
 }
-// button-dropdown_is-opened
+
 export function ButtonDropdown({ children, buttonText }: ButtonDropdownProps) {
   const [isOpened, setIsOpened] = useState(false);
 
