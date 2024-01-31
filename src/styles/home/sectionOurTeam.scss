@@ -177,14 +177,6 @@ section.section-our-team {
         max-width: 1000px;
       }
 
-      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
-        padding-left: 35px;
-      }
-
-      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-        padding-left: 0px;
-      }
-
       &::before {
         content: '';
         display: block;
@@ -195,6 +187,10 @@ section.section-our-team {
         width: 250px;
         height: 185px;
         border-radius: 45px;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+          left: -30px;
+        }
 
         @media screen and (max-width: $layout-breakpoint-mobile-xl) {
           width: 60px;
