@@ -68,6 +68,12 @@
     border-radius: 15px;
     cursor: pointer;
 
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: #0e216a;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       min-width: 70px;
       padding: 0 13px;
@@ -78,6 +84,10 @@
   .donation-form__switch-button_active {
     background-color: $color-light-m;
     color: $color-dark-l;
+
+    &:hover {
+      background-color: $color-light-s;
+    }
   }
 
   .form-inputs {
@@ -126,6 +136,8 @@
       padding-top: 10px;
       text-align: center;
 
+      transition: max-width 0.4s;
+
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         padding-top: 0;
         max-width: 140px;
@@ -173,6 +185,12 @@
       font-size: 24px;
       line-height: 40px;
       color: $color-light-m;
+
+      transition: background-color 0.4s;
+
+      &:hover {
+        background-color: #0e216a;
+      }
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         margin-top: 10px;

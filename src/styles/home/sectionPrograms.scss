@@ -33,7 +33,6 @@ section.section-programs {
       margin-bottom: 50px;
     }
 
-    
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       padding-left: 40px;
       padding-right: 40px;
@@ -74,7 +73,7 @@ section.section-programs {
         background-image: url('/images/ellipse-subtraction-white-home.svg');
         background-repeat: no-repeat;
         background-size: contain;
-  
+
         &::after {
           content: '';
           bottom: 150px;
@@ -240,11 +239,17 @@ section.section-programs {
       padding: 22px 30px 20px 30px;
       max-width: 535px;
       border-radius: 40px;
-      background-color: #263c93;
+      background-color: $color-primary-blue;
       color: $color-light-m;
       font-size: 24px;
       line-height: 33px;
       text-align: center;
+
+      transition: background-color 0.4s;
+
+      &:hover {
+        background-color: #0e216a;
+      }
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin: 0 auto;
@@ -265,7 +270,6 @@ section.section-programs {
     width: 100%;
     position: relative;
 
-    
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       padding-left: 40px;
       padding-right: 40px;
@@ -312,7 +316,6 @@ section.section-programs {
         @media screen and (max-width: $layout-breakpoint-tablet-xs) {
           left: -114px;
         }
-        
       }
 
       &_pink {

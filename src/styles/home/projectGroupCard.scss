@@ -98,6 +98,12 @@
 
     font-size: 22px;
 
+    transition: scale 0.4s;
+
+    &:hover {
+      scale: 1.05;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
       font-size: 10px;
       line-height: 13px;

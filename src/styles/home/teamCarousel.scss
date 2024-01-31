@@ -81,6 +81,16 @@
     min-width: 30px;
     background: url('../../../public/images/icons/ic_next_left.svg') no-repeat center 275px;
 
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+
     @media screen and (max-width: $layout-breakpoint-tablet-s) {
       min-width: 20px;
       width: 20px;
@@ -95,6 +105,16 @@
   .team-carousel__next-right {
     min-width: 30px;
     background: url('../../../public/images/icons/ic_next_right.svg') no-repeat center 275px;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
 
     @media screen and (max-width: $layout-breakpoint-tablet-s) {
       min-width: 20px;
