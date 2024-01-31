@@ -15,10 +15,15 @@
     min-height: 124px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+    flex-wrap: wrap;
+  }
+
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    flex-wrap: unset;
   }
 
   @media screen and (max-width: $layout-breakpoint-mobile-l) {
@@ -81,7 +86,7 @@
     width: 100%;
     justify-content: flex-end;
 
-    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
       justify-content: center;
     }
   }
@@ -118,10 +123,6 @@
     }
 
     @media screen and (max-width: $layout-breakpoint-tablet-m) {
-      max-width: 593px;
-    }
-
-    @media screen and (max-width: $layout-breakpoint-tablet-s) {
       max-width: 352px;
       flex-wrap: wrap;
       row-gap: 43px;
@@ -133,7 +134,7 @@
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
-      gap: 80px;
+      gap: 60px;
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-s) {
@@ -142,22 +143,69 @@
   }
 
   .section-socials__list-item {
-    width: 156px;
     height: 156px;
-    background: $color-light-xl;
-    border-radius: 100%;
+    min-width: 156px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-basis: 160px;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 156px;
+      height: 156px;
+      position: absolute;
+      background: $color-light-xl;
+      border-radius: 100%;
+      z-index: -1;
+    }
+
+    img {
+      width: auto;
+      height: 85px;
+      object-fit: contain;
+      max-width: 250px;
+    }
 
     @media screen and (max-width: $layout-breakpoint-tablet-l) {
-      width: 124px;
       height: 124px;
+      min-width: 124px;
+      flex-basis: 125px;
+      &::before {
+        width: 124px;
+        height: 124px;
+      }
+
+      img {
+        height: 63px;
+        max-width: 200px;
+      }
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-      width: 100px;
       height: 100px;
+      min-width: 100px;
+      flex-basis: 100px;
+
+      &::before {
+        width: 100px;
+        height: 100px;
+      }
+
+      img {
+        height: 55px;
+        max-width: 160px;
+      }
     }
   }
 }
