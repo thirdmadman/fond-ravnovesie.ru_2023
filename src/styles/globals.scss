@@ -29,10 +29,15 @@ body {
 }
 
 .container {
+  margin: auto;
+  padding-top: 100px;
   width: 100%;
   max-width: 1920px;
-  margin: auto;
   position: relative;
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding-top: 92px;
+  }
 
   & > section {
     padding-left: 150px;

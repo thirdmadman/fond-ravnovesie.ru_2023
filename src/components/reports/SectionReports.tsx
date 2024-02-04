@@ -4,13 +4,13 @@ import { ReportCard } from './ReportCard';
 
 export function SectionReports() {
   return (
-    <div className="section-reports">
+    <section className="section-reports">
       <h1>Отчёты</h1>
       <div className="section-reports__list">
         {fondReports.data.map((el) => (
           <ReportCard {...el} key={el.year} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
