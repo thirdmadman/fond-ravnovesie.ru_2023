@@ -1,29 +1,29 @@
 /* eslint-disable max-len */
 export const fondProjects = {
-  groups: [
+  projects: [
     {
-      groupTitle: 'Медико-психологическая помощь',
-      projectIds: [1, 2, 3, 4],
-      link: '/',
+      projectTitle: 'Медико-психологическая помощь',
+      programIds: [1, 2, 3, 4],
+      tag: 'med-psycho-help',
     },
     {
-      groupTitle: 'Психопросвещение',
-      projectIds: [5, 6],
-      link: '/',
+      projectTitle: 'Психопросвещение',
+      programIds: [5, 6],
+      tag: 'psychoeducation',
     },
     {
-      groupTitle: 'Равный - равному',
-      projectIds: [7, 8],
-      link: '/',
+      projectTitle: 'Равный - равному',
+      programIds: [7, 8],
+      tag: 'equal-to-equal',
     },
 
     {
-      groupTitle: 'Сообщество - развитие волонтерства',
-      projectIds: [9],
-      link: '/',
+      projectTitle: 'Сообщество - развитие волонтерства',
+      programIds: [9],
+      tag: 'community',
     },
   ],
-  projects: [
+  programs: [
     {
       id: 1,
       name: 'Индивидуальная работа с психологом',
