@@ -1,6 +1,8 @@
 import { fondProjects } from '@/fondProjects';
 import { ProjectGroup } from './ProjectGroup';
 
+import '@/styles/projects/sectionProjectsList.scss';
+
 export function SectionProjectsList() {
   const getProjectGroups = () => {
     const { projects, programs } = fondProjects;
