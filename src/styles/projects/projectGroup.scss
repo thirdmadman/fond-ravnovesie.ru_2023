@@ -6,12 +6,17 @@
   width: 100%;
   border-top: 1px solid $color-dark-m;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   scroll-margin-top: 200px;
+  align-items: flex-end;
   
   h2 {
     font-size: 40px;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    align-self: flex-start;
+
   }
 
   .project-group__programs-container {
