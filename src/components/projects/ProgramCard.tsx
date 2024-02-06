@@ -38,8 +38,12 @@ export function ProgramCard({ number, name, description }: IProgramCardProps) {
           />
         </button>
       </div>
-      <div className={`program-card__description ${isDescriptionHidden && 'program-card__description_is-hidden'}`}>
-        <p>Some text here</p>
+
+      <div className={`program-card__description ${isDescriptionHidden ? 'program-card__description_is-hidden' : ''}`}>
+        <hr className="program-card__description-separator" />
+        <div className="description-body">
+          <p>Some text here</p>
+        </div>
       </div>
     </div>
   );

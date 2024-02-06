@@ -12,8 +12,7 @@
   }
 
   .program-card__number {
-    margin: 0 60px;
-    min-width: 60px;
+    min-width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,25 +45,30 @@
     align-items: center;
   }
 
+  .program-card__description-separator {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-dark-s;
+    margin-bottom: 30px;
+  }
+
   .program-card__description {
     padding-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    margin: 0 30px;
 
     &_is-hidden {
       height: 0;
       display: none;
     }
 
-    &::before {
-      content: '';
-      display: block;
-      max-width: 1000px;
+    .description-body {
+      padding-left: 120px;
+      padding-right: 25px;
       width: 100%;
-      height: 1px;
-      background-color: $color-dark-s;
     }
   }
 }
