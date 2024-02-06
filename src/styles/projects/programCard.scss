@@ -90,7 +90,7 @@
       display: flex;
 
       .text-block__title {
-        max-width: 225px;
+        min-width: 225px;
         width: 100%;
         color: $color-dark-m;
       }
