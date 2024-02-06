@@ -7,6 +7,15 @@ interface IProjectGroupProps {
     number: number;
     name: string;
     description: string;
+    textBlocks: Array<{
+      title: string;
+      description: string;
+    }>;
+    tags: Array<{
+      name: string;
+      link: string;
+    }>;
+    link: string;
   }>;
   scrollToId: string;
 }

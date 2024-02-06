@@ -18,6 +18,9 @@ export function SectionProjectsList() {
           number: program.id,
           name: program.name,
           description: program.description,
+          textBlocks: program.text_blocks,
+          tags: program.tags,
+          link: program.link,
         })),
         scrollToId: project.tag,
       };

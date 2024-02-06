@@ -9,9 +9,18 @@ interface IProgramCardProps {
   number: number;
   name: string;
   description: string;
+  textBlocks: Array<{
+    title: string;
+    description: string;
+  }>;
+  tags: Array<{
+    name: string;
+    link: string;
+  }>;
+  link: string;
 }
 
-export function ProgramCard({ number, name, description }: IProgramCardProps) {
+export function ProgramCard({ number, name, description, link, textBlocks, tags }: IProgramCardProps) {
   const [isDescriptionHidden, setIsDescriptionHidden] = useState(true);
 
   return (
@@ -43,22 +52,27 @@ export function ProgramCard({ number, name, description }: IProgramCardProps) {
       <div className={`program-card__description ${isDescriptionHidden ? 'program-card__description_is-hidden' : ''}`}>
         <hr className="program-card__description-separator" />
         <div className="description-body">
-          <div className="description-body__text-list">
-            <div className="text-block">
-              <h4 className="text-block__title">block__title</h4>
-              <p className="text-block__description">block__description</p>
+          {textBlocks?.length > 0 && (
+            <div className="description-body__text-list">
+              {textBlocks.map((textBlock) => (
+                <div className="text-block" key={textBlock.title}>
+                  <h4 className="text-block__title">{textBlock.title}</h4>
+                  <p className="text-block__description">{textBlock.description}</p>
+                </div>
+              ))}
             </div>
-            <div className="text-block">
-              <h4 className="text-block__title">block__title</h4>
-              <p className="text-block__description">block__description</p>
+          )}
+          {tags?.length > 0 && (
+            <div className="description-body__tags-list">
+              {tags.map((tag) => (
+                <div className="description-body__tag" key={tag.name}>
+                  {tag.name}
+                </div>
+              ))}
             </div>
-          </div>
-          <div className="description-body__tags-list">
-            <div className="description-body__tag">tag</div>
-            <div className="description-body__tag">tag</div>
-          </div>
+          )}
         </div>
-        <Link href="." className="button-sign-up" type="button">
+        <Link href={link} className="button-sign-up" type="button">
           Записаться на программу
         </Link>
       </div>
