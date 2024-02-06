@@ -1,4 +1,5 @@
 import '@/styles/projects/programCard.scss';
+import Image from 'next/image';
 
 interface IProgramCardProps {
   number: number;
@@ -16,7 +17,9 @@ export function ProgramCard({ number, name, description }: IProgramCardProps) {
         <h3>{name}</h3>
         <p>{description}</p>
       </div>
-      <button className="program-card__button" aria-label="Read more" type="button" />
+      <button className="program-card__button" aria-label="Read more" type="button">
+        <Image src="images/icons/icon-arrow-down-black-rounded-accordion.svg" width={50} height={26} alt="arrow down" />
+      </button>
     </div>
   );
 }

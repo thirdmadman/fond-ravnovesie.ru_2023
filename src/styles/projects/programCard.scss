@@ -4,10 +4,11 @@
   display: flex;
   background-color: $color-light-xl;
   border-radius: 30px;
-  padding: 44px 0;
+  padding: 40px 0;
 
   .program-card__number {
-    min-width: 180px;
+    margin: 0 60px;
+    min-width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +19,25 @@
   }
 
   .program-card__body {
-    max-width: 765px;
-
     h3 {
       font-size: 24px;
       text-transform: uppercase;
+      margin-bottom: 30px;
+      line-height: 24px;
+    }
+    
+    p {
+      color: $color-dark-m;
+      line-height: 20px;
     }
   }
 
   .program-card__button {
+    margin: 0 60px;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
