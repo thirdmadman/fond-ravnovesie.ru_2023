@@ -23,11 +23,18 @@ export function SectionProjectsList() {
           link: program.link,
         })),
         scrollToId: project.tag,
+        hints: project.hints || [],
       };
     });
 
     return props.map((el) => (
-      <ProjectGroup key={el.title} title={el.title} programs={el.programsInProject} scrollToId={el.scrollToId} />
+      <ProjectGroup
+        key={el.title}
+        title={el.title}
+        programs={el.programsInProject}
+        scrollToId={el.scrollToId}
+        hints={el.hints}
+      />
     ));
   };
 

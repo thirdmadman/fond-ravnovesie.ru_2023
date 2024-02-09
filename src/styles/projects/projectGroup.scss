@@ -10,12 +10,24 @@
   justify-content: space-between;
   scroll-margin-top: 200px;
   align-items: flex-end;
-  
-  h2 {
-    font-size: 40px;
-    text-transform: uppercase;
+
+  .project-group__title {
     margin-bottom: 40px;
     align-self: flex-start;
+
+    h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+
+
+  }
+
+  .project-group__hints {
+
+  }
+
+  .project-group__hint {
 
   }
 
