@@ -1,0 +1,66 @@
+@import '../constants.scss';
+
+.project-hint {
+  position: relative;
+
+  .project-hint__link {
+    font-size: 16px;
+    color: $color-primary-blue;
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .project-hint__popup {
+    display: none;
+    max-width: 1060px;
+    width: 80vw;
+    background-color: $color-light-xl;
+    border-radius: 32px;
+  }
+
+  &_is-opened {
+    .project-hint__popup {
+      display: block;
+      position: absolute;
+      top: 100%;
+    }
+  }
+
+  .project-hint__popup-container {
+    padding: 90px 145px;
+    position: relative;
+  }
+
+  .project-hint__popup-title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-primary-blue;
+    text-transform: uppercase;
+  }
+
+  .project-hint__popup-description {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .project-hint__popup-close {
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/icons/icon-close-project-hint-popup.svg');
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      scale: 1.3;
+    }
+  }
+}
