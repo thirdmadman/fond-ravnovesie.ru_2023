@@ -1,0 +1,149 @@
+@import '../constants.scss';
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-light-xl;
+  border-radius: 30px;
+  padding: 40px 0;
+
+  &_is-opened {
+    .program-card__button {
+      img {
+        rotate: 180deg;
+      }
+    }
+  }
+
+  .program-card__header {
+    display: flex;
+  }
+
+  .program-card__number {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 40px;
+    }
+  }
+
+  .program-card__body {
+    width: 100%;
+    h3 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      line-height: 24px;
+    }
+
+    p {
+      color: $color-dark-m;
+      line-height: 20px;
+    }
+  }
+
+  .program-card__button {
+    margin: 0 60px;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .program-card__description-separator {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-dark-s;
+    margin-bottom: 30px;
+  }
+
+  .program-card__description {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+
+    &_is-hidden {
+      height: 0;
+      display: none;
+    }
+  }
+
+  .description-body {
+    margin-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    .description-body__text-list {
+      margin-bottom: 25px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .text-block {
+      display: flex;
+
+      .text-block__title {
+        min-width: 225px;
+        color: $color-dark-m;
+      }
+
+      .text-block__description {
+      }
+    }
+
+    .description-body__tags-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 15px;
+      row-gap: 20px;
+    }
+
+    .description-body__tag {
+      padding: 12px 20px;
+      background-color: $color-light-m;
+      font-size: 16px;
+      line-height: 16px;
+      border-radius: 70px;
+    }
+  }
+
+  .button-sign-up {
+    max-width: 450px;
+    padding: 20px 30px;
+    width: 100%;
+    min-height: 65px;
+    background-color: $color-primary-blue;
+    color: $color-light-xl;
+    border-radius: 24px;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0e216a;
+    }
+  }
+}

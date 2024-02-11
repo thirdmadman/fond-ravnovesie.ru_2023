@@ -2,13 +2,13 @@
 
 .section-mission {
   margin-bottom: 150px;
-  min-height: 930px;
+  min-height: 830px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    min-height: 660px;
+    min-height: 560px;
   }
 
   @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
@@ -19,7 +19,7 @@
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
     max-width: initial;
-    min-height: 332px;
+    min-height: 240px;
     margin-bottom: 60px;
     padding-top: 20px;
     flex-wrap: initial;
@@ -58,11 +58,11 @@
 
     @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
       text-align: center;
-      margin-top: 200px;
+      margin-top: 100px;
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-      margin-top: 100px;
+      margin-top: 0;
       font-size: 15px;
       max-width: 350px;
       line-height: 28px;

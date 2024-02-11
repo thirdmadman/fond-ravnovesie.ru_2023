@@ -15,19 +15,19 @@ const actionsButtons = [{ name: 'ПЕРЕЙТИ В ГРУППУ ВКОНТАКТ
 
 export function SectionPrograms() {
   const getProjectGroupCards = (isMobile: boolean = false) => {
-    const props = fondProjects.groups.map((projectsGroup, i) => {
-      const projectGroupNumber = i + 1;
-      const projectGroupName = projectsGroup.groupTitle;
+    const { projects, programs } = fondProjects;
 
-      const projectNamesInGroup = fondProjects.projects
-        .filter((el) => projectsGroup.projectIds.includes(el.id))
-        .map((el) => el.name);
+    const props = projects.map((project, i) => {
+      const projectNumber = i + 1;
+      const projectName = project.projectTitle;
+
+      const programNamesInGroup = programs.filter((el) => project.programIds.includes(el.id)).map((el) => el.name);
 
       return {
-        projectGroupNumber,
-        projectGroupName,
-        projectNamesInGroup,
-        link: projectsGroup.link,
+        projectNumber,
+        projectName,
+        programNamesInGroup,
+        link: `projects/#${project.tag}`,
       };
     });
 
