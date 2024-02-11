@@ -40,6 +40,7 @@ export function ProjectGroup({ title, programs, scrollToId, hints }: IProjectGro
       </div>
 
       <div className="project-group__programs-container">
+        <div className="project-group__background" />
         {programs.map((program) => (
           <ProgramCard {...program} key={program.name} />
         ))}
