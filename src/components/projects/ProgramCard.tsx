@@ -24,7 +24,7 @@ export function ProgramCard({ number, name, description, link, textBlocks, tags 
   const [isDescriptionHidden, setIsDescriptionHidden] = useState(true);
 
   return (
-    <div className="program-card">
+    <div className={`program-card ${isDescriptionHidden ? '' : 'program-card_is-opened'}`}>
       <div className="program-card__header">
         <div className="program-card__number">
           <p>{`0${number}`}</p>
@@ -44,7 +44,6 @@ export function ProgramCard({ number, name, description, link, textBlocks, tags 
             width={50}
             height={26}
             alt="arrow down"
-            style={{ rotate: isDescriptionHidden ? '0deg' : '180deg' }}
           />
         </button>
       </div>

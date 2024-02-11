@@ -7,6 +7,14 @@
   border-radius: 30px;
   padding: 40px 0;
 
+  &_is-opened {
+    .program-card__button {
+      img {
+        rotate: 180deg;
+      }
+    }
+  }
+
   .program-card__header {
     display: flex;
   }
@@ -44,6 +52,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .program-card__description-separator {
@@ -127,5 +141,9 @@
     line-height: 25px;
     text-align: center;
     cursor: pointer;
+
+    &:hover {
+      background-color: #0e216a;
+    }
   }
 }
