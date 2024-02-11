@@ -17,6 +17,7 @@
     width: 80vw;
     background-color: $color-light-xl;
     border-radius: 32px;
+    z-index: 1;
   }
 
   &_is-opened {
