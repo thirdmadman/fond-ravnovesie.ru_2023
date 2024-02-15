@@ -1,0 +1,22 @@
+import { Header } from '@/components/shared/Header';
+import { Footer } from '@/components/shared/Footer';
+import { Metadata } from 'next';
+import { SectionWaysDonation } from '@/components/ways-to-help/SectionWaysDonation';
+
+export const metadata: Metadata = {
+  title: 'Помочь фонду | Благотворительный фонд Равновесие',
+  description:
+    'Как помочь благотворительному фонду Равновесие, список способов помощи и информация о том, как вам могут полезны наши проекты.',
+};
+
+export default function WaysToHelpPage() {
+  return (
+    <div className="ways-to-help-page">
+      <Header />
+      <div className="container">
+        <SectionWaysDonation />
+        <Footer />
+      </div>
+    </div>
+  );
+}
