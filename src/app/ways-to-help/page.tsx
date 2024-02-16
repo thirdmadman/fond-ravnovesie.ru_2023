@@ -2,6 +2,10 @@ import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
 import { SectionWaysDonation } from '@/components/ways-to-help/SectionWaysDonation';
+import { SectionBecomePartner } from '@/components/ways-to-help/SectionBecomePartner';
+import { SectionBecomeVolunteer } from '@/components/ways-to-help/SectionBecomeVolunteer';
+import { SectionSpreadTheWord } from '@/components/ways-to-help/SectionSpreadTheWord';
+import { SectionProvidePremises } from '@/components/ways-to-help/SectionProvidePremises';
 
 export const metadata: Metadata = {
   title: 'Помочь фонду | Благотворительный фонд Равновесие',
@@ -15,6 +19,10 @@ export default function WaysToHelpPage() {
       <Header />
       <div className="container">
         <SectionWaysDonation />
+        <SectionBecomePartner />
+        <SectionBecomeVolunteer />
+        <SectionSpreadTheWord />
+        <SectionProvidePremises />
         <Footer />
       </div>
     </div>
