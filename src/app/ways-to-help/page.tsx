@@ -1,6 +1,7 @@
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
+import '@/styles/ways-to-help/ways-to-help.scss';
 import { SectionWaysDonation } from '@/components/ways-to-help/SectionWaysDonation';
 import { SectionBecomePartner } from '@/components/ways-to-help/SectionBecomePartner';
 import { SectionBecomeVolunteer } from '@/components/ways-to-help/SectionBecomeVolunteer';
