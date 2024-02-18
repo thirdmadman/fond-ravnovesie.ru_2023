@@ -16,7 +16,7 @@ const spreadTheWordWays = [
 
 export function SectionSpreadTheWord() {
   return (
-    <section className="section-spread-the-word">
+    <section className="section-spread-the-word" id="spread-the-word">
       <h2>Распространить информацию</h2>
       <div className="section-spread-the-word__main-text">
         {spreadTheWordWays.map((way) => (

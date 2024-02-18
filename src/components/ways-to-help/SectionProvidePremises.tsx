@@ -4,7 +4,7 @@ import '@/styles/ways-to-help/sectionProvidePremises.scss';
 
 export function SectionProvidePremises() {
   return (
-    <section className="section-provide-premises">
+    <section className="section-provide-premises" id="provide-premises">
       <h2>Предоставить помещение</h2>
       <div className="section-provide-premises__body">
         <div className="section-provide-premises__image-container">

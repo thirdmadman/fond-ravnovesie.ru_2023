@@ -1,7 +1,7 @@
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
-import { SectionWaysDonation } from '@/components/ways-to-help/SectionWaysDonation';
+import { SectionDonate } from '@/components/ways-to-help/SectionDonate';
 import { SectionBecomePartner } from '@/components/ways-to-help/SectionBecomePartner';
 import { SectionBecomeVolunteer } from '@/components/ways-to-help/SectionBecomeVolunteer';
 import { SectionSpreadTheWord } from '@/components/ways-to-help/SectionSpreadTheWord';
@@ -19,7 +19,7 @@ export default function WaysToHelpPage() {
     <div className="ways-to-help-page">
       <Header />
       <div className="container">
-        <SectionWaysDonation />
+        <SectionDonate />
         <SectionBecomePartner />
         <SectionBecomeVolunteer />
         <SectionSpreadTheWord />
