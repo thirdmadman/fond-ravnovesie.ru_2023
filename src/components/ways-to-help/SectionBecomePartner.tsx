@@ -9,7 +9,7 @@ const helpWays = [
     id: 1,
     title: 'Маркетинговая акция в пользу фонда',
     description: dummyText,
-    imageLink: '',
+    imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
   },
 ];

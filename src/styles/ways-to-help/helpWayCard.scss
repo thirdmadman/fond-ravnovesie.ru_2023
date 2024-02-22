@@ -10,6 +10,9 @@
   img {
     margin-bottom: 20px;
     border-radius: 30px;
+    width: 365px;
+    height: 275px;
+    object-fit: cover;
   }
 
   .help-way-card__text {
@@ -25,6 +28,10 @@
 
   p {
     margin-bottom: 15px;
+  }
+
+  .help-way-card__button-hide {
+    color: $color-primary-blue;
   }
 
   a {

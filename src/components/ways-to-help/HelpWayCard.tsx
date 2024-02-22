@@ -16,11 +16,15 @@ export function HelpWayCard({ title, description, imageLink, actionLink }: IHelp
 
   return (
     <div className="help-way-card">
-      <Image src={imageLink} alt={title} width={365} height={200} />
+      <Image src={imageLink} alt={title} width={365} height={275} />
       <div className="help-way-card__text">
         <h5>{title}</h5>
         <p>{isDescriptionOpened ? description : `${description.slice(0, 200)}...`}</p>
-        <button onClick={() => setIsDescriptionOpened(!isDescriptionOpened)} type="button">
+        <button
+          className="help-way-card__button-hide"
+          onClick={() => setIsDescriptionOpened(!isDescriptionOpened)}
+          type="button"
+        >
           {isDescriptionOpened ? 'Свернуть' : 'Развернуть'}
         </button>
       </div>
