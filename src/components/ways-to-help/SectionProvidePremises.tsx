@@ -12,8 +12,8 @@ export function SectionProvidePremises() {
             <Image
               src="/images/ways-to-help/provide-premises-image.png"
               alt="photo of use example"
-              width={300}
-              height={300}
+              width={985}
+              height={657}
             />
           </div>
         </div>
