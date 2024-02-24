@@ -9,6 +9,8 @@
   justify-content: space-between;
 
   .ways-to-help-carousel__viewport {
+    margin-left: 20px;
+    margin-right: 20px;
     max-width: 1380px;
     width: 100%;
     overflow: hidden;
@@ -18,7 +20,7 @@
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
-    gap: 15px;
+    gap: 40px;
     margin-left: 20px;
     margin-right: 20px;
   }
