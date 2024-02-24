@@ -28,4 +28,23 @@
   .section-become-partner__financial-help {
 
   }
+  
+  .help-type-group {
+    margin-bottom: 160px;
+    .help-type-group__heading {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    h3 {
+      width: 600px;
+    }
+
+    .help-type-group__heading-description{
+      max-width: 765px;
+      text-align: right;
+    }
+  }
 }

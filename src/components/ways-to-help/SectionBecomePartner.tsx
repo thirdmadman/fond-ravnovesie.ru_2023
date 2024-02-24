@@ -30,6 +30,41 @@ const helpWays = [
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
   },
+  {
+    id: 4,
+    title: 'организовать мероприятие в пользу фонда',
+    description: dummyText600,
+    imageLink: '/images/ways-to-help/provide-premises-image.png',
+    actionLink: '',
+  },
+  {
+    id: 5,
+    title: 'Спонсорство просветительской деятельности',
+    description: dummyText600,
+    imageLink: '/images/ways-to-help/provide-premises-image.png',
+    actionLink: '',
+  },
+  {
+    id: 6,
+    title: 'Совместный коммуникационный проект',
+    description: dummyText600,
+    imageLink: '/images/ways-to-help/provide-premises-image.png',
+    actionLink: '',
+  },
+  {
+    id: 7,
+    title: 'Помочь фонду pro boho',
+    description: dummyText600,
+    imageLink: '/images/ways-to-help/provide-premises-image.png',
+    actionLink: '',
+  },
+  {
+    id: 8,
+    title: 'Запустить волонтерский фандрайзинг',
+    description: dummyText600,
+    imageLink: '/images/ways-to-help/provide-premises-image.png',
+    actionLink: '',
+  },
 ];
 
 const helpTypeGroups = [
@@ -37,6 +72,16 @@ const helpTypeGroups = [
     title: 'Финансовая помощь',
     description: '',
     helpWays: [{ id: 1 }, { id: 2 }, { id: 3 }],
+  },
+  {
+    title: 'Специальные проекты и кобрендинг',
+    description: dummyText400,
+    helpWays: [{ id: 4 }, { id: 5 }, { id: 6 }],
+  },
+  {
+    title: 'Вовлечение сотрудников',
+    description: dummyText400,
+    helpWays: [{ id: 7 }, { id: 8 }],
   },
 ];
 
@@ -55,8 +100,12 @@ export function SectionBecomePartner() {
       </div>
       <p className="section-become-partner__overall-description">{dummyText400}</p>
       {getHelpTypeGroups().map((helpTypeGroup) => (
-        <div className="section-become-partner__help-type-group" key={helpTypeGroup.title}>
-          <h3>{helpTypeGroup.title}</h3>
+        <div className="section-become-partner__help-type-group help-type-group" key={helpTypeGroup.title}>
+          <div className="help-type-group__heading">
+            <h3>{helpTypeGroup.title}</h3>
+            <div className="help-type-group__heading-description">{helpTypeGroup.description}</div>
+          </div>
+
           {helpTypeGroup?.helpWays.length > 0 && (
             <WaysToHelpCarousel
               slides={
