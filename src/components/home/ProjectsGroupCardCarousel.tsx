@@ -1,16 +1,17 @@
 'use client';
 
 import React from 'react';
-import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { EmblaOptionsType } from 'embla-carousel';
 
 import '@/styles/home/projectsGroupCardCarousel.scss';
 
-type PropType = {
-  slides: JSX.Element[];
+interface IProjectsGroupCardCarouselProps {
+  slides: Array<JSX.Element>;
   options?: EmblaOptionsType;
-};
+}
 
-export function ProjectsGroupCardCarousel({ slides, options = {} }: PropType) {
+export function ProjectsGroupCardCarousel({ slides, options = {} }: IProjectsGroupCardCarouselProps) {
   const [emblaRef] = useEmblaCarousel(options);
 
   return (

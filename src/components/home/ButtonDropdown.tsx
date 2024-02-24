@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import '@/styles/home/buttonDropdown.scss';
 
-interface ButtonDropdownProps {
+interface IButtonDropdownProps {
   buttonText: string;
-  children: JSX.Element[];
+  children: Array<JSX.Element>;
 }
 
-export function ButtonDropdown({ children, buttonText }: ButtonDropdownProps) {
+export function ButtonDropdown({ children, buttonText }: IButtonDropdownProps) {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
@@ -19,7 +19,6 @@ export function ButtonDropdown({ children, buttonText }: ButtonDropdownProps) {
       <div className="button-dropdown__text">{buttonText}</div>
       <ul className={`dropdown-list ${isOpened ? 'dropdown-list_is-opened' : ''}`}>
         {children.map((el, i) => (
-          // eslint-disable-next-line react/no-array-index-key
           <li key={i}>{el}</li>
         ))}
       </ul>

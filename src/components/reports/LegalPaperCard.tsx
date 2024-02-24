@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 import '@/styles/reports/legalPaperCard.scss';
 
-interface LegalPaperCardProps {
+interface ILegalPaperCardProps {
   src: string;
   description: string;
   link: string;
 }
 
-export function LegalPaperCard({ src, description, link }: LegalPaperCardProps) {
+export function LegalPaperCard({ src, description, link }: ILegalPaperCardProps) {
   return (
     <div className="legal-paper-card">
       <a href={link}>

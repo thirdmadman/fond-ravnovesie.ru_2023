@@ -1,67 +1,102 @@
 {
-  "plugins": ["@typescript-eslint", "prettier"],
+  "root": true,
   "extends": [
-    "airbnb",
-    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:react-hooks/recommended",
     "prettier",
-    "airbnb-typescript",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/recommended",
-    "next/core-web-vitals"
+    "plugin:prettier/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "ecmaVersion": "latest",
-    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": true,
+    "tsconfigRootDir": "__dirname"
   },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
   "rules": {
-    "jsx-a11y/control-has-associated-label": 2,
-    "jsx-a11y/label-has-for": 2,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "jsx-a11y/no-static-element-interactions": 0,
-    // "react-hooks/rules-of-hooks": "error",
-    "react/require-default-props": [
+    "@typescript-eslint/array-type": [2, { "default": "generic" }],
+    "@typescript-eslint/consistent-indexed-object-style": [2, "index-signature"],
+    "@typescript-eslint/no-misused-promises": [
       "error",
       {
-        "forbidDefaultForRequired": true,
-        "functions": "defaultArguments"
+        "checksVoidReturn": {
+          "arguments": false,
+          "attributes": false
+        }
       }
     ],
+    "jsx-a11y/control-has-associated-label": 2,
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
     "import/no-absolute-path": 0,
-    // "react-hooks/exhaustive-deps": "warn",
     "comma-dangle": ["error", "only-multiline"],
     "object-curly-newline": ["error", { "consistent": true }],
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "import/prefer-default-export": "off",
-    "@typescript-eslint/no-explicit-any": "error",
-    // "react/jsx-one-expression-per-line": "off",
     "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
-    // "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
+    "react/jsx-props-no-spreading": "off",
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "max-len": ["warn", { "code": 120 }],
-    "indent": [
-      "warn",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
-    "@typescript-eslint/indent": [
-      "warn",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
     "no-param-reassign": [
       "error",
       {
         "props": false
       }
-    ]
-  }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "@typescript-eslint/ban-ts-comment": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "quotes": ["error", "single"],
+    "max-len": [0, 120, 2, { "ignoreUrls": true }],
+    "arrow-parens": ["error", "always"],
+    "react/require-default-props": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "ignorePatterns": [".eslintrc.js", "next.config.js"]
 }

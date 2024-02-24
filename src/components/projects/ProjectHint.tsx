@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import '@/styles/projects/projectHint.scss';
 
-interface ProjectHintProps {
+interface IProjectHintProps {
   title: string;
   description: string;
 }
 
-export function ProjectHint({ title, description }: ProjectHintProps) {
+export function ProjectHint({ title, description }: IProjectHintProps) {
   const [isOpened, setIsOpened] = useState(false);
 
   return (

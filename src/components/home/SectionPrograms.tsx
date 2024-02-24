@@ -14,7 +14,7 @@ const getHelpSteps = [
 const actionsButtons = [{ name: 'ПЕРЕЙТИ В ГРУППУ ВКОНТАКТЕ', link: '' }];
 
 export function SectionPrograms() {
-  const getProjectGroupCards = (isMobile: boolean = false) => {
+  const getProjectGroupCards = (isMobile = false) => {
     const { projects, programs } = fondProjects;
 
     const props = projects.map((project, i) => {

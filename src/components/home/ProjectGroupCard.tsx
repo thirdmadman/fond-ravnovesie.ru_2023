@@ -1,9 +1,9 @@
 import '@/styles/home/projectGroupCard.scss';
 
-interface ProjectGroupCardProps {
+interface IProjectGroupCardProps {
   projectNumber: number;
   projectName: string;
-  programNamesInGroup: string[];
+  programNamesInGroup: Array<string>;
   link: string;
   isMobile: boolean;
 }
@@ -14,7 +14,7 @@ export function ProjectGroupCard({
   programNamesInGroup,
   link,
   isMobile,
-}: ProjectGroupCardProps) {
+}: IProjectGroupCardProps) {
   if (isMobile) {
     return (
       <a href={link} aria-label="Open">

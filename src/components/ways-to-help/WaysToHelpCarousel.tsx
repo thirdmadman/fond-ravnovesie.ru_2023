@@ -1,12 +1,13 @@
 'use client';
 
 import React from 'react';
-import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { EmblaOptionsType } from 'embla-carousel';
 
 import '@/styles/ways-to-help/waysToHelpCarousel.scss';
 
 interface IWaysToHelpCarouselProps {
-  slides: JSX.Element[];
+  slides: Array<JSX.Element>;
   options?: EmblaOptionsType;
 }
 
