@@ -12,10 +12,10 @@ export function ButtonDropdown({ children, buttonText }: IButtonDropdownProps) {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <div
+    <button
       className={`button-dropdown ${isOpened ? 'button-dropdown_is-opened' : ''}`}
       onClick={() => setIsOpened(!isOpened)}
-      role="button"
+      type="button"
     >
       <div className="button-dropdown__text">{buttonText}</div>
       <ul className={`dropdown-list ${isOpened ? 'dropdown-list_is-opened' : ''}`}>
@@ -24,6 +24,6 @@ export function ButtonDropdown({ children, buttonText }: IButtonDropdownProps) {
           <li key={i}>{el}</li>
         ))}
       </ul>
-    </div>
+    </button>
   );
 }

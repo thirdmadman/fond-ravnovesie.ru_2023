@@ -41,20 +41,20 @@ export function DonationForm() {
   return (
     <form className="donation-form" onSubmit={handleSubmit}>
       <div className="donation-form__type-switch">
-        <div
+        <button
           className={`donation-form__switch-button ${state.isMonthly ? 'donation-form__switch-button_active' : ''}`}
           onClick={() => setState({ ...state, isMonthly: true })}
-          role="button"
+          type="button"
         >
           Ежемесячно
-        </div>
-        <div
+        </button>
+        <button
           className={`donation-form__switch-button ${state.isMonthly ? '' : 'donation-form__switch-button_active'}`}
           onClick={() => setState({ ...state, isMonthly: false })}
-          role="button"
+          type="button"
         >
           Разово
-        </div>
+        </button>
       </div>
       <div className="donation-form__inputs form-inputs">
         <label htmlFor="amount" className="form-inputs__label-amount">
