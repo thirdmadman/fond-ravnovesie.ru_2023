@@ -12,7 +12,9 @@ interface ITeamCarouselProps {
   options?: EmblaOptionsType;
 }
 
-export function TeamCarousel({ slides, options = {} }: ITeamCarouselProps) {
+const defaultOptions = {};
+
+export function TeamCarousel({ slides, options = defaultOptions }: ITeamCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
@@ -30,6 +32,7 @@ export function TeamCarousel({ slides, options = {} }: ITeamCarouselProps) {
         <div className="team-carousel__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
+              // eslint-disable-next-line react/no-array-index-key
               key={index}
               onClick={() => onDotButtonClick(index)}
               className={'team-carousel__dot'.concat(index === selectedIndex ? ' team-carousel__dot_selected' : '')}

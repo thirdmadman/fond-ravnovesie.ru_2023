@@ -106,12 +106,12 @@ export function SectionBecomePartner() {
             <div className="help-type-group__heading-description">{helpTypeGroup.description}</div>
           </div>
 
-          {helpTypeGroup?.helpWays.length > 0 && (
+          {helpTypeGroup.helpWays.length > 0 && (
             <WaysToHelpCarousel
               slides={
                 helpTypeGroup.helpWays
                   .map((helpWay) => helpWay && <HelpWayCard {...helpWay} key={helpWay.id} />)
-                  .filter((el) => !!el) as Array<JSX.Element>
+                  .filter((el) => Boolean(el)) as Array<JSX.Element>
               }
             />
           )}

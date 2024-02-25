@@ -11,7 +11,9 @@ interface IProjectsGroupCardCarouselProps {
   options?: EmblaOptionsType;
 }
 
-export function ProjectsGroupCardCarousel({ slides, options = {} }: IProjectsGroupCardCarouselProps) {
+const defaultOptions = {};
+
+export function ProjectsGroupCardCarousel({ slides, options = defaultOptions }: IProjectsGroupCardCarouselProps) {
   const [emblaRef] = useEmblaCarousel(options);
 
   return (

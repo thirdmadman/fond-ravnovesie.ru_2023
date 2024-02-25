@@ -51,7 +51,7 @@ export function ProgramCard({ number, name, description, link, textBlocks, tags 
       <div className={`program-card__description ${isDescriptionHidden ? 'program-card__description_is-hidden' : ''}`}>
         <hr className="program-card__description-separator" />
         <div className="description-body">
-          {textBlocks?.length > 0 && (
+          {textBlocks.length > 0 && (
             <div className="description-body__text-list">
               {textBlocks.map((textBlock) => (
                 <div className="text-block" key={textBlock.title}>
@@ -61,7 +61,7 @@ export function ProgramCard({ number, name, description, link, textBlocks, tags 
               ))}
             </div>
           )}
-          {tags?.length > 0 && (
+          {tags.length > 0 && (
             <div className="description-body__tags-list">
               {tags.map((tag) => (
                 <div className="description-body__tag" key={tag.name}>

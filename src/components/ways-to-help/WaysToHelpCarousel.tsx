@@ -11,7 +11,9 @@ interface IWaysToHelpCarouselProps {
   options?: EmblaOptionsType;
 }
 
-export function WaysToHelpCarousel({ slides, options = {} }: IWaysToHelpCarouselProps) {
+const defaultOptions = {};
+
+export function WaysToHelpCarousel({ slides, options = defaultOptions }: IWaysToHelpCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (

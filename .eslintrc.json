@@ -2,8 +2,9 @@
   "root": true,
   "extends": [
     "next/core-web-vitals",
+    "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:react-hooks/recommended",
     "prettier",
@@ -27,6 +28,12 @@
   },
   "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
   "rules": {
+    "@typescript-eslint/no-confusing-void-expression": ["error", {"ignoreArrowShorthand": true}],
+    "no-negated-condition": "error",
+    "react/no-array-index-key": "error",
+    "react/no-object-type-as-default-prop": "error",
+    "no-implicit-coercion": "error",
+    "max-lines-per-function": ["error", {"max": 120}],
     "@typescript-eslint/array-type": [2, { "default": "generic" }],
     "@typescript-eslint/consistent-indexed-object-style": [2, "index-signature"],
     "@typescript-eslint/no-misused-promises": [
