@@ -15,6 +15,7 @@ export function ButtonDropdown({ children, buttonText }: IButtonDropdownProps) {
     <div
       className={`button-dropdown ${isOpened ? 'button-dropdown_is-opened' : ''}`}
       onClick={() => setIsOpened(!isOpened)}
+      role="button"
     >
       <div className="button-dropdown__text">{buttonText}</div>
       <ul className={`dropdown-list ${isOpened ? 'dropdown-list_is-opened' : ''}`}>

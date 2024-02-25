@@ -44,12 +44,14 @@ export function DonationForm() {
         <div
           className={`donation-form__switch-button ${state.isMonthly ? 'donation-form__switch-button_active' : ''}`}
           onClick={() => setState({ ...state, isMonthly: true })}
+          role="button"
         >
           Ежемесячно
         </div>
         <div
           className={`donation-form__switch-button ${state.isMonthly ? '' : 'donation-form__switch-button_active'}`}
           onClick={() => setState({ ...state, isMonthly: false })}
+          role="button"
         >
           Разово
         </div>
