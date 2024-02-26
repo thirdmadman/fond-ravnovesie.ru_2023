@@ -1,6 +1,8 @@
 @import '../constants.scss';
 
 .donation-form {
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 31px;
   max-width: 780px;
   width: 100%;
@@ -31,13 +33,14 @@
 
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
     margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     max-width: 235px;
     background-color: initial;
     box-shadow: none;
   }
 
   .donation-form__type-switch {
-    margin-top: 56px;
     padding: 10px;
     width: 360px;
     min-height: 75px;
@@ -52,7 +55,6 @@
     line-height: 55px;
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-      margin-top: 0;
       max-width: 170px;
       font-size: 10px;
       line-height: 25px;
