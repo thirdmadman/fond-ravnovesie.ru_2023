@@ -193,13 +193,8 @@
       }
     }
 
-    .qr-donation__img-box {
+    .qr-donation__image-container {
       margin-top: 128px;
-      min-width: 342px;
-      min-height: 342px;
-      background:
-        url('../../../public/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
-        url('../../../public/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
       align-self: center;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
@@ -241,6 +236,36 @@
     }
   }
 
-  .section-donation__form {
+  .section-donation__form-container {
+    max-width: 780px;
+    width: 100%;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      max-width: 675px;
+    }
+  
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      max-width: 640px;
+    }
+  
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: 900px;
+    }
+  
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      max-width: 235px;
+    }
   }
 }
