@@ -1,7 +1,7 @@
 'use client';
 
 import '@/styles/home/sectionDonation.scss';
-import { DonationForm } from './DonationForm';
+import { DonationForm } from '../shared/DonationForm';
 import { QrDonationImage } from '../shared/QrDonationImage';
 
 export function SectionDonation() {

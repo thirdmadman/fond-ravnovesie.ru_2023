@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { DonationForm } from '@/components/home/DonationForm';
+import { DonationForm } from '@/components/shared/DonationForm';
 import '@/styles/ways-to-help/sectionDonate.scss';
 import { QrDonationImage } from '@/components/shared/QrDonationImage';
 

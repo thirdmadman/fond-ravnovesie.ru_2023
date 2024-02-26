@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import '@/styles/home/donationForm.scss';
+import '@/styles/shared/donationForm.scss';
 
 export function DonationForm() {
   const [state, setState] = useState({
