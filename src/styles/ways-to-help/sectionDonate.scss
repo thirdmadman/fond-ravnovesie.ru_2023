@@ -16,6 +16,11 @@
   .section-donate__form-container {
     max-width: 780px;
     width: 100%;
+    .donation-form {
+      background: radial-gradient(circle at 0% 100%, #263c93, transparent 350px),
+        radial-gradient(circle at 80% 100%, #ffdb23, transparent 500px);
+      background-repeat: no-repeat;
+    }
   }
 
   .section-donate__description {
