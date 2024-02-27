@@ -17,7 +17,7 @@ export function WaysToHelpCarousel({ slides, options = defaultOptions }: IWaysTo
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   return (
-    <div className="ways-to-help-carousel">
+    <div className={`ways-to-help-carousel ${slides.length < 3 && 'ways-to-help-carousel_short-slide'}`}>
       <button
         className="ways-to-help-carousel__next-left"
         type="button"

@@ -7,6 +7,13 @@
   display: flex;
   flex: 0 1 980px;
   justify-content: space-between;
+  background: url('/images/background/background-rectangle-outline-rounded-blue.svg') 95% top no-repeat,
+  url('/images/background/background-rectangle-outline-rounded-pink.svg') 25% bottom no-repeat ;
+
+  &_short-slide {
+    background: url('/images/background/background-rectangle-outline-rounded-blue.svg') 60% top no-repeat,
+    url('/images/background/background-rectangle-outline-rounded-pink.svg') 25% bottom no-repeat ;
+  }
 
   .ways-to-help-carousel__viewport {
     margin-left: 20px;
