@@ -15,6 +15,7 @@ const helpWays = [
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: true,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const helpWays = [
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: true,
   },
   {
     id: 3,
@@ -29,13 +31,15 @@ const helpWays = [
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: true,
   },
   {
     id: 4,
-    title: 'организовать мероприятие в пользу фонда',
+    title: 'Организовать мероприятие в пользу фонда',
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: false,
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const helpWays = [
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: true,
   },
   {
     id: 6,
@@ -50,13 +55,15 @@ const helpWays = [
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: false,
   },
   {
     id: 7,
-    title: 'Помочь фонду pro boho',
+    title: 'Помочь фонду pro bono',
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: false,
   },
   {
     id: 8,
@@ -64,6 +71,7 @@ const helpWays = [
     description: dummyText600,
     imageLink: '/images/ways-to-help/provide-premises-image.png',
     actionLink: '',
+    isFinancial: false,
   },
 ];
 

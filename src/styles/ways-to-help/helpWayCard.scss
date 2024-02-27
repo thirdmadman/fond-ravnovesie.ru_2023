@@ -35,7 +35,8 @@
     color: $color-primary-blue;
   }
 
-  a {
+  .help-way-card__action-link {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 10px 15px;
@@ -47,5 +48,22 @@
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
+
+    &_financial {
+      &::after {
+        content: '';
+        position: absolute;
+        right: 14px;
+        display: block;
+        width: 38px;
+        height: 38px;
+        border-radius: 100%;
+        background-color: $color-light-m;
+        background-image: url('/images/icons/icon-money-outline-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+    }
   }
 }

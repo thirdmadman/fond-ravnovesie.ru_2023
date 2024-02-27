@@ -9,9 +9,10 @@ interface IHelpWayCardProps {
   description: string;
   imageLink: string;
   actionLink: string;
+  isFinancial: boolean;
 }
 
-export function HelpWayCard({ title, description, imageLink, actionLink }: IHelpWayCardProps) {
+export function HelpWayCard({ title, description, imageLink, actionLink, isFinancial }: IHelpWayCardProps) {
   const [isDescriptionOpened, setIsDescriptionOpened] = useState(false);
 
   return (
@@ -28,8 +29,13 @@ export function HelpWayCard({ title, description, imageLink, actionLink }: IHelp
           {isDescriptionOpened ? 'Свернуть' : 'Развернуть'}
         </button>
       </div>
-      <a href={actionLink} target="_blank" rel="noreferrer">
-        Пожертвовать
+      <a
+        className={`help-way-card__action-link ${isFinancial && 'help-way-card__action-link_financial'}`}
+        href={actionLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Помочь
       </a>
     </div>
   );
