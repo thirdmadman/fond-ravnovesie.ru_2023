@@ -32,6 +32,12 @@
   }
 
   .help-way-card__button-hide {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .help-way-card__button-hide {
     color: $color-primary-blue;
   }
 
@@ -48,6 +54,11 @@
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
+    transition: scale 0.4s;
+
+    &:hover {
+      scale: 1.1;
+    }
 
     &_financial {
       &::after {
@@ -63,7 +74,6 @@
         background-repeat: no-repeat;
         background-position: center center;
       }
-
     }
   }
 }
