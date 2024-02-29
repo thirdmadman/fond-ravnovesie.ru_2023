@@ -31,7 +31,7 @@ export function SectionLegalInfo() {
       </div>
       <div className="section-legal-info__papers legal-papers">
         {fondLegalPapers.data.map((el) => (
-          <LegalPaperCard {...el} key={el.link} />
+          <LegalPaperCard {...el} key={el.description} />
         ))}
       </div>
     </section>
