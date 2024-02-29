@@ -30,7 +30,7 @@ export function ProjectGroup({ title, programs, scrollToId, hints }: IProjectGro
     <div className="project-group" id={scrollToId}>
       <div className="project-group__title">
         <h2>{`Проект "${title}"`}</h2>
-        {hints?.length > 0 && (
+        {hints.length > 0 && (
           <div className="project-group__hints">
             {hints.map((hint) => (
               <ProjectHint key={hint.title} title={hint.title} description={hint.description} />

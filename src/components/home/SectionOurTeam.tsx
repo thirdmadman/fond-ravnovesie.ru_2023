@@ -1,4 +1,4 @@
-import { EmblaOptionsType } from 'embla-carousel-react';
+import { EmblaOptionsType } from 'embla-carousel';
 import '@/styles/home/sectionOurTeam.scss';
 
 import { fondTeam } from '@/fondTeam';

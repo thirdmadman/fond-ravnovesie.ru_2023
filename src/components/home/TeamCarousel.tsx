@@ -1,17 +1,20 @@
 'use client';
 
 import React from 'react';
-import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { EmblaOptionsType } from 'embla-carousel';
 
 import '@/styles/home/teamCarousel.scss';
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
 
-type PropType = {
-  slides: JSX.Element[];
+interface ITeamCarouselProps {
+  slides: Array<JSX.Element>;
   options?: EmblaOptionsType;
-};
+}
 
-export function TeamCarousel({ slides, options = {} }: PropType) {
+const defaultOptions = {};
+
+export function TeamCarousel({ slides, options = defaultOptions }: ITeamCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);

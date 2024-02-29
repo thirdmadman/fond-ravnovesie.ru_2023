@@ -1,8 +1,8 @@
 @import '../constants.scss';
 
 .donation-form {
-  padding-left: 31px;
-  max-width: 780px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,31 +13,19 @@
   background: $color-light-l;
   box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.04);
 
-  @media screen and (max-width: $layout-breakpoint-desktop-m) {
-    max-width: 675px;
-  }
-
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    max-width: 640px;
-    margin-top: 100px;
     padding-bottom: 60px;
     padding-left: 0px;
   }
 
-  @media screen and (max-width: $layout-breakpoint-tablet-l) {
-    max-width: 900px;
-    margin-top: 50px;
-  }
-
   @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-    margin-top: 0;
-    max-width: 235px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: initial;
     box-shadow: none;
   }
 
   .donation-form__type-switch {
-    margin-top: 56px;
     padding: 10px;
     width: 360px;
     min-height: 75px;
@@ -52,7 +40,6 @@
     line-height: 55px;
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {
-      margin-top: 0;
       max-width: 170px;
       font-size: 10px;
       line-height: 25px;
@@ -100,6 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $color-light-l;
     box-shadow: 0px 7px 25px 0px rgba(86, 86, 86, 0.19);
 
     @media screen and (max-width: $layout-breakpoint-mobile-xl) {

@@ -14,11 +14,11 @@ export function SectionMission() {
       <div className="section-mission__description description">
         <div className="description__buttons">
           <ButtonDropdown buttonText="ПОМОЧЬ ФОНДУ">
-            <a href="/help-ways#donate">Пожертвовать</a>
-            <a href="/help-ways#become-volunteer">Стать волонтером</a>
-            <a href="/help-ways#become-partner">Стать партнером</a>
-            <a href="/help-ways#share">Распространить информацию</a>
-            <a href="/help-ways#provide-room">Предоставить помещение</a>
+            <a href="/ways-to-help#donate">Пожертвовать</a>
+            <a href="/ways-to-help#become-volunteer">Стать волонтером</a>
+            <a href="/ways-to-help#become-partner">Стать партнером</a>
+            <a href="/ways-to-help#spread-the-word">Распространить информацию</a>
+            <a href="/ways-to-help#provide-premises">Предоставить помещение</a>
           </ButtonDropdown>
           <button className="button" type="button">
             <p>ПОЛУЧИТЬ ПОМОЩЬ</p>

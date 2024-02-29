@@ -1,13 +1,13 @@
 import '@/styles/reports/reportCard.scss';
 
-interface ReportCardProps {
+interface IReportCardProps {
   year: number;
   description: string;
   link: string;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function ReportCard({ year, description, link }: ReportCardProps) {
+export function ReportCard({ year, description, link }: IReportCardProps) {
   return (
     <div className="report-card">
       <h3>{year}</h3>

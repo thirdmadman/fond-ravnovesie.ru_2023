@@ -3,18 +3,19 @@
 import { useState } from 'react';
 import '@/styles/home/buttonDropdown.scss';
 
-interface ButtonDropdownProps {
+interface IButtonDropdownProps {
   buttonText: string;
-  children: JSX.Element[];
+  children: Array<JSX.Element>;
 }
 
-export function ButtonDropdown({ children, buttonText }: ButtonDropdownProps) {
+export function ButtonDropdown({ children, buttonText }: IButtonDropdownProps) {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <div
+    <button
       className={`button-dropdown ${isOpened ? 'button-dropdown_is-opened' : ''}`}
       onClick={() => setIsOpened(!isOpened)}
+      type="button"
     >
       <div className="button-dropdown__text">{buttonText}</div>
       <ul className={`dropdown-list ${isOpened ? 'dropdown-list_is-opened' : ''}`}>
@@ -23,6 +24,6 @@ export function ButtonDropdown({ children, buttonText }: ButtonDropdownProps) {
           <li key={i}>{el}</li>
         ))}
       </ul>
-    </div>
+    </button>
   );
 }

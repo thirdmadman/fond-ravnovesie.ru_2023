@@ -23,7 +23,7 @@ export function SectionProjectsList() {
           link: program.link,
         })),
         scrollToId: project.tag,
-        hints: project.hints || [],
+        hints: project.hints,
       };
     });
 

@@ -1,0 +1,50 @@
+@import '../constants.scss';
+
+.section-become-partner {
+  h2 {
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    margin-bottom: 70px;
+    font-size: 24px;
+    color: $color-dark-m;
+    text-transform: uppercase;
+  }
+
+  .section-become-partner__overall-description {
+    margin-bottom: 90px;
+    max-width: 1000px;
+    margin-bottom: 90px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .section-become-partner__financial-help {
+
+  }
+  
+  .help-type-group {
+    margin-bottom: 160px;
+    .help-type-group__heading {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    h3 {
+      width: 600px;
+    }
+
+    .help-type-group__heading-description{
+      max-width: 765px;
+      text-align: right;
+    }
+  }
+}

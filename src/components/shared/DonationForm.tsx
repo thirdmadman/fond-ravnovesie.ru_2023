@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import '@/styles/home/donationForm.scss';
+import '@/styles/shared/donationForm.scss';
 
 export function DonationForm() {
   const [state, setState] = useState({
@@ -41,18 +41,20 @@ export function DonationForm() {
   return (
     <form className="donation-form" onSubmit={handleSubmit}>
       <div className="donation-form__type-switch">
-        <div
+        <button
           className={`donation-form__switch-button ${state.isMonthly ? 'donation-form__switch-button_active' : ''}`}
           onClick={() => setState({ ...state, isMonthly: true })}
+          type="button"
         >
           Ежемесячно
-        </div>
-        <div
-          className={`donation-form__switch-button ${!state.isMonthly ? 'donation-form__switch-button_active' : ''}`}
+        </button>
+        <button
+          className={`donation-form__switch-button ${state.isMonthly ? '' : 'donation-form__switch-button_active'}`}
           onClick={() => setState({ ...state, isMonthly: false })}
+          type="button"
         >
           Разово
-        </div>
+        </button>
       </div>
       <div className="donation-form__inputs form-inputs">
         <label htmlFor="amount" className="form-inputs__label-amount">
