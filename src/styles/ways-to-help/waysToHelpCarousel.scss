@@ -1,0 +1,85 @@
+@import '../constants.scss';
+
+.ways-to-help-carousel {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex: 0 1 980px;
+  justify-content: space-between;
+  background: url('/images/background/background-rectangle-outline-rounded-blue.svg') 95% top no-repeat,
+  url('/images/background/background-rectangle-outline-rounded-pink.svg') 25% bottom no-repeat ;
+
+  &_short-slide {
+    background: url('/images/background/background-rectangle-outline-rounded-blue.svg') 60% top no-repeat,
+    url('/images/background/background-rectangle-outline-rounded-pink.svg') 25% bottom no-repeat ;
+  }
+
+  .ways-to-help-carousel__viewport {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 1380px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ways-to-help-carousel__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .ways-to-help-carousel__next-left {
+    width: 30px;
+    min-width: 30px;
+    background: url('../../../public/images/icons/ic_next_left.svg') no-repeat center 275px;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      min-width: 20px;
+      width: 20px;
+      background-size: contain;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
+  }
+
+  .ways-to-help-carousel__next-right {
+    min-width: 30px;
+    background: url('../../../public/images/icons/ic_next_right.svg') no-repeat center 275px;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      min-width: 20px;
+      width: 20px;
+      background-size: contain;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+    }
+  }
+}

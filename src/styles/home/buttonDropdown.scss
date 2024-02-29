@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .button-dropdown {
   padding: 0 20px 0 44px;
@@ -14,11 +14,36 @@
   font-size: 24px;
   line-height: 36px;
   position: relative;
+  transition:
+    0.3s linear all 0.7s,
+    background-color 0.4s;
+
+  &:hover {
+    background-color: #3d3d3d;
+
+    &::after {
+      transform: translateY(3px);
+      transition: linear all 0.3s;
+    }
+  }
 
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
     padding: 0 20px 0 40px;
     height: 60px;
     min-width: 310px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-l) {
+    min-width: 270px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    max-width: 348px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 25px;
+    min-width: initial;
   }
 
   &::after {
@@ -33,33 +58,62 @@
 
   .button-dropdown__text {
     cursor: pointer;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .dropdown-list {
+    overflow: hidden;
     position: absolute;
     top: 65px;
     left: 0;
-    height: 0px;
+    height: 0;
+    max-height: 0;
+    padding: 0 33px;
+    display: flex;
     flex-direction: column;
     gap: 25px;
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 33px;
     line-height: 18px;
-    background: $color-dark-l;
-    display: none;
-  }
+    background-color: #3d3d3d;
+    transition: 0.5s linear all 0.3s;
+    z-index: 10;
 
-  li {
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      top: 60px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      width: 100%;
+    }
+
+    &_is-opened {
+      height: fit-content;
+      max-height: 800px;
+      padding: 33px;
+      transition: 0.5s linear all 0.3s;
+    }
   }
 
   &_is-opened {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    transition: 0.1s linear all;
+    background-color: #3d3d3d;
 
-    .dropdown-list {
-      padding: 33px;
-      height: fit-content;
-      border-bottom-right-radius: 33px;
-      border-bottom-left-radius: 33px;
-      display: flex;
+    &::after {
+      rotate: 180deg;
+    }
+  }
+
+  li {
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

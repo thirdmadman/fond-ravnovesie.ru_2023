@@ -1,4 +1,4 @@
-import '../styles/footer.scss';
+import '@/styles/shared/footer.scss';
 
 export function Footer() {
   return (

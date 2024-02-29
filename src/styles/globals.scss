@@ -1,4 +1,5 @@
 @use 'preflight.css';
+@import 'constants.scss';
 
 
 @font-face {
@@ -9,10 +10,11 @@
 }
 
 html {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   min-height: 100%;
   height: -webkit-fill-available;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,4 +26,51 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  margin: auto;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    padding-top: 92px;
+  }
+
+  & > section {
+    padding-left: 150px;
+    padding-right: 150px;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-l) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }

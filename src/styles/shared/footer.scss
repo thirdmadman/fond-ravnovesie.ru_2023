@@ -1,4 +1,4 @@
-@import "constants.scss";
+@import '../constants.scss';
 
 .footer {
   min-height: 265px;
@@ -61,15 +61,15 @@
     }
 
     .links-list__item_tg {
-      background-image: url('../../public/images/socials/tg-logo.svg');
+      background-image: url('../../../public/images/socials/tg-logo.svg');
     }
 
     .links-list__item_vk {
-      background-image: url('../../public/images/socials/vk-logo.svg');
+      background-image: url('../../../public/images/socials/vk-logo.svg');
     }
 
     .links-list__item_yt {
-      background-image: url('../../public/images/socials/youtube-logo.svg');
+      background-image: url('../../../public/images/socials/youtube-logo.svg');
     }
   }
 
@@ -100,7 +100,7 @@
     .mobile__horizontal-separator {
       width: 256px;
       height: 8px;
-      background-image: url('../../public/images/visuals/wavy-line-separator-white-footer.svg');
+      background-image: url('../../../public/images/visuals/wavy-line-separator-white-footer.svg');
     }
   }
 
@@ -132,7 +132,7 @@
       position: absolute;
       height: 20px;
       left: -2px;
-      background: url('../../public/images/icons/icon-message.svg') no-repeat;
+      background: url('../../../public/images/icons/icon-message.svg') no-repeat;
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         display: none;
@@ -154,7 +154,7 @@
       height: 23px;
       position: absolute;
       left: 0px;
-      background: url('../../public/images/icons/icon-phone.svg') no-repeat;
+      background: url('../../../public/images/icons/icon-phone.svg') no-repeat;
 
       @media screen and (max-width: $layout-breakpoint-mobile-xl) {
         display: none;

@@ -1,0 +1,309 @@
+@import '../constants.scss';
+
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  font-family: Steppe;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+
+  background-color: $color-light-m;
+  z-index: 100;
+
+  .header__container {
+    padding: 0 150px;
+    margin: auto;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-l) {
+      padding: 0 70px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      padding: 0 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      padding: 0 25px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      padding: 0 20px;
+      height: 92px;
+    }
+  }
+
+  .header__logo {
+    min-width: 160px;
+    max-height: 90px;
+    margin-right: 34px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      min-width: 80px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      min-width: 80px;
+      margin-right: 0;
+      width: 80px;
+      height: 45px;
+      background-size: cover;
+    }
+  }
+
+  .header__navigation {
+    margin-left: 34px;
+    max-width: 833px;
+    width: 100%;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 575px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      display: none;
+
+      &_is-open {
+        right: 0px;
+        top: 0px;
+        margin: 0;
+        width: 350px;
+        max-width: unset;
+        max-height: 960px;
+        height: 100vh;
+        padding-top: 180px;
+        padding-left: 60px;
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #f9f9f9;
+        z-index: 10;
+      }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: none;
+
+      &_is-open {
+        z-index: 10;
+        left: 0px;
+        top: 0px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: unset;
+        max-height: 100vh;
+        height: 100vh;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+      }
+    }
+  }
+
+  .navigation__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      width: auto;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      width: 100%;
+      max-width: 350px;
+      gap: 70px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      gap: 30px;
+    }
+  }
+
+  .navigation__links-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      gap: 20px;
+    }
+  }
+
+  .navigation__link {
+    font-family: Steppe;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 20px;
+    }
+
+    &_is-active {
+      color: $color-primary-blue;
+    }
+  }
+
+  .navigation__buttons {
+    display: none;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .button {
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Steppe;
+
+      &_black {
+        background: $color-dark-l;
+        color: $color-light-m;
+      }
+
+      &_transparent {
+        border-width: 1px;
+        border-color: $color-dark-l;
+        color: $color-dark-l;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        max-width: 350px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 25px;
+        min-width: initial;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        max-width: 310px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-s) {
+        max-width: 280px;
+      }
+    }
+  }
+
+  .header__phone {
+    word-break: keep-all;
+    text-wrap: nowrap;
+
+    margin-left: 34px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      font-size: 15px;
+    }
+  }
+
+  .header__button-burger {
+    display: none;
+    width: 52px;
+    height: 26px;
+    background-image: url('/public/images/icons/icon-burger-menu.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      display: block;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      display: block;
+      width: 18px;
+      height: 12px;
+      background-size: cover;
+    }
+  }
+
+  .header__button-burger-close {
+    display: none;
+
+    background-image: url('../../../public/images/icons/icon-burger-menu-close.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 11;
+
+    &_is-hidden {
+      display: none;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      display: block;
+      position: absolute;
+      right: 40px;
+      top: 30px;
+      width: 50px;
+      height: 50px;
+      background-size: 24px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      position: unset;
+      width: 50px;
+      height: 50px;
+      background-color: $color-light-xl;
+      background-size: 16px;
+      border-radius: 100%;
+    }
+  }
+}

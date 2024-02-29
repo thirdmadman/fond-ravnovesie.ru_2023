@@ -1,23 +1,28 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-mission {
-  padding: 0 150px;
   margin-bottom: 150px;
-  height: 930px;
+  min-height: 830px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 
-  @media screen and (max-width: $layout-breakpoint-desktop-l) {
-    padding: 0 70px;
-  }
-
   @media screen and (max-width: $layout-breakpoint-desktop-s) {
-    height: 660px;
+    min-height: 560px;
   }
 
-  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
-    padding: 0 50px;
+  @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+    max-width: initial;
+    min-height: 240px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    flex-wrap: initial;
   }
 
   .section-mission__title-text {
@@ -29,6 +34,8 @@
     line-height: 60px;
     text-transform: uppercase;
     vertical-align: bottom;
+
+    margin-top: 100px;
 
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       width: 780px;
@@ -43,7 +50,27 @@
       max-width: 500px;
       margin-bottom: 0px;
     }
-    
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      max-width: 402px;
+      margin-right: 0px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-top: 0;
+      font-size: 15px;
+      max-width: 350px;
+      line-height: 28px;
+      text-align: center;
+      min-height: 144px;
+      margin-bottom: 55px;
+      width: 100%;
+    }
 
     .section-mission__text-bage {
       display: inline-block;
@@ -52,6 +79,12 @@
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         margin-left: 66px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        margin-left: 0px;
+        color: $color-light-xl;
+        margin-right: 5px;
       }
 
       &::before {
@@ -63,13 +96,24 @@
         left: -80px;
         bottom: 17px;
         border-radius: 36px;
-        background: #e38895;
+        background: $color-primary-pink;
 
         @media screen and (max-width: $layout-breakpoint-desktop-s) {
           width: 61px;
           height: 31px;
           left: -66px;
           bottom: 13px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          width: 300px;
+          height: 32px;
+          left: -63px;
+          bottom: -1px;
+          right: initial;
+          left: -190px;
+          z-index: -1;
+          background: $color-primary-blue;
         }
       }
     }
@@ -85,6 +129,14 @@
         height: 8px;
         display: block;
         background: url('../../../public/images/visuals/underline-blue-mission-home.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          width: 324px;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+          display: none;
+        }
       }
     }
   }
@@ -99,7 +151,29 @@
     }
 
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
-      max-width: 690px;
+      max-width: 710px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 660px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      max-width: 530px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      max-width: 360px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      max-width: 270px;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      margin-top: 0px;
+      min-width: 100%;
     }
 
     &::before {
@@ -126,6 +200,34 @@
         top: -216px;
         left: -61px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        top: -223px;
+        left: -30px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        top: -226px;
+        left: -115px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        top: -274px;
+        left: -90px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        top: -225px;
+        left: -96px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs-bugfix) {
+        display: none;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
     }
   }
 
@@ -135,6 +237,7 @@
     min-width: 330px;
     border-radius: 32px;
     display: flex;
+    justify-content: center;
     align-items: center;
     background: $color-dark-l;
     color: $color-light-m;
@@ -142,19 +245,33 @@
     font-size: 24px;
     line-height: 36px;
 
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: #3d3d3d;
+    }
+
     @media screen and (max-width: $layout-breakpoint-desktop-s) {
       padding: 0 22px;
       height: 60px;
       min-width: 310px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      min-width: 270px;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      max-width: 348px;
+      width: 100%;
+      font-size: 15px;
+      border-radius: 25px;
+      min-width: initial;
+    }
   }
 
   .description {
-
-    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
-      max-width: 660px;
-    }
-
     .description__buttons {
       display: flex;
       column-gap: 60px;
@@ -170,6 +287,11 @@
       @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        align-items: center;
+        row-gap: 10px;
       }
     }
 
@@ -198,6 +320,90 @@
       @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         margin-bottom: 20px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-l) {
+        font-size: 12px;
+        margin-bottom: 35px;
+        line-height: 15px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-m) {
+        margin-bottom: 0px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        margin-bottom: 50px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+        display: none;
+      }
+    }
+  }
+
+  .section-mission__background {
+    position: absolute;
+    top: 100px;
+    right: -450px;
+    width: 1216px;
+    height: 1181px;
+    z-index: -1;
+    background-image: url('/images/three-color-gradient-home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-l) {
+      right: -535px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      right: -600px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-s) {
+      width: 1000px;
+      height: 969px;
+      right: -435px;
+      top: 15px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      right: -545px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-l) {
+      right: -600px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      right: -565px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      right: -610px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      right: -670px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-xl) {
+      right: -365px;
+      width: 700px;
+      height: 678px;
+      top: 430px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      right: -400px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-s) {
+      right: -440px;
     }
   }
 }
