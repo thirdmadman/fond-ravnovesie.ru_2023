@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-legal-info {
   margin-bottom: 150px;
@@ -8,25 +8,21 @@
 
   display: flex;
   justify-content: space-between;
+  column-gap: 60px;
 
   .section-legal-info__data {
   }
 
   .legal-data {
-    h2 {
-      margin-bottom: 45px;
-      font-size: 24px;
-      line-height: 28px;
-      text-transform: uppercase;
-    }
+    width: 100%;
+    line-height: 115%;
+    font-size: 16px;
 
     .legal-data__data {
       display: grid;
       grid-template-columns: auto 1fr;
       max-width: 780px;
-      grid-gap: 16px 23px;
-      gap: 17px 23px;
-      line-height: 19px;
+      gap: 25px 23px;
     }
 
     .data {
@@ -37,15 +33,18 @@
   }
 
   .section-legal-info__papers {
-    
   }
 
   .legal-papers {
-    margin-left: 40px;
-    margin-top: 75px;
     display: flex;
-    gap: 53px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+
+    .legal-papers__list {
+      display: flex;
+      gap: 53px;
+      flex-wrap: wrap;
+    }
 
     img {
       min-width: 153px;
