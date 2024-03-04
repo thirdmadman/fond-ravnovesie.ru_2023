@@ -1,12 +1,20 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-reports {
   margin-top: 100px;
   margin-bottom: 150px;
 
+  @media screen and (max-width: $layout-breakpoint-desktop-m) {
+    margin-top: 80px;
+  }
+
   .section-reports__list {
     display: flex;
     gap: 55px;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      gap: 60px;
+    }
   }
 }

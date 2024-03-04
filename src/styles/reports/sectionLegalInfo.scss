@@ -10,6 +10,12 @@
   justify-content: space-between;
   column-gap: 60px;
 
+  @media screen and (max-width: $layout-breakpoint-desktop-m) {
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 150px;
+  }
+
   .section-legal-info__data {
   }
 
@@ -21,8 +27,11 @@
     .legal-data__data {
       display: grid;
       grid-template-columns: auto 1fr;
-      max-width: 780px;
       gap: 25px 23px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        gap: 30px 23px;
+      }
     }
 
     .data {
@@ -44,6 +53,11 @@
       display: flex;
       gap: 53px;
       flex-wrap: wrap;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        justify-content: space-around;
+        gap: 60px;
+      }
     }
 
     img {

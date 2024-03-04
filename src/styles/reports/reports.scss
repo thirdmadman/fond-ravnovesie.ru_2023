@@ -9,5 +9,10 @@
     font-size: 40px;
     line-height: 115%;
     text-transform: uppercase;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
   }
 }
