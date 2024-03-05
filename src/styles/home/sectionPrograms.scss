@@ -54,7 +54,7 @@ section.section-programs {
         content: '';
         width: 10px;
         height: 85px;
-        background-image: url('../../../public/images/visuals/arrow-down-bottom-black-hand-drawn.svg');
+        background-image: url('/images/visuals/arrow-down-bottom-black-hand-drawn.svg');
         background-repeat: no-repeat;
         position: absolute;
         left: calc(50% - 6px);
@@ -149,7 +149,7 @@ section.section-programs {
         height: 386px;
         top: 45px;
         right: -94px;
-        background: url('../../../public/images/visuals/arrow-down-left-bottom-pink-hand-drawn.svg') no-repeat;
+        background: url('/images/visuals/arrow-down-left-bottom-pink-hand-drawn.svg') no-repeat;
 
         @media screen and (max-width: $layout-breakpoint-desktop-m) {
           right: -40px;
@@ -356,7 +356,7 @@ section.section-programs {
       height: 63px;
       top: 16px;
       right: -61px;
-      background: url('../../../public/images/visuals/three-lines-spark-blue-hand-drawn-right-top.svg') no-repeat;
+      background: url('/images/visuals/three-lines-spark-blue-hand-drawn-right-top.svg') no-repeat;
 
       @media screen and (max-width: $layout-breakpoint-desktop-s) {
         top: 26px;
@@ -377,7 +377,7 @@ section.section-programs {
         display: block;
         width: 40px;
         height: 60px;
-        background-image: url('/public/images/visuals/gray-four-rays-star.svg');
+        background-image: url('/images/visuals/gray-four-rays-star.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

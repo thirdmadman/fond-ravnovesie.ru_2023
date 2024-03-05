@@ -86,7 +86,7 @@
         display: block;
         width: 9px;
         height: 56px;
-        background-image: url('../../../public/images/visuals/arrow-down-bottom-black-hand-drawn-donation.svg');
+        background-image: url('/images/visuals/arrow-down-bottom-black-hand-drawn-donation.svg');
         background-repeat: no-repeat;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -154,7 +154,7 @@
         position: absolute;
         bottom: -215px;
         right: -279px;
-        background-image: url('../../../public/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg');
+        background-image: url('/images/visuals/arrow-down-right-bottom-blue-hand-drawn.svg');
         background-repeat: no-repeat;
 
         @media screen and (max-width: $layout-breakpoint-desktop-m) {

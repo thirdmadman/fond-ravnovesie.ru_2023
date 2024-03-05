@@ -128,7 +128,7 @@
         width: 423px;
         height: 8px;
         display: block;
-        background: url('../../../public/images/visuals/underline-blue-mission-home.svg') no-repeat;
+        background: url('/images/visuals/underline-blue-mission-home.svg') no-repeat;
 
         @media screen and (max-width: $layout-breakpoint-tablet-s) {
           width: 324px;
@@ -184,7 +184,7 @@
       display: block;
       width: 223px;
       height: 192px;
-      background: url('../../../public/images/visuals/arrow-with-loop-pink-hand-drawn.svg');
+      background: url('/images/visuals/arrow-with-loop-pink-hand-drawn.svg');
 
       @media screen and (max-width: $layout-breakpoint-desktop-m) {
         top: -213px;
