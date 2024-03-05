@@ -4,8 +4,8 @@
   min-width: 342px;
   min-height: 342px;
   background:
-    url('../../../public/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
-    url('../../../public/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
+    url('/images/visuals/corner-left-top-qr-home.svg') left top no-repeat,
+    url('/images/visuals/corner-right-bottom-qr-home.svg') right bottom no-repeat;
 
   @media screen and (max-width: $layout-breakpoint-tablet-s) {
     min-width: 230px;
