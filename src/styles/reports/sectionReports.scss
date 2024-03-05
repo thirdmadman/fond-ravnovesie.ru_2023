@@ -16,5 +16,9 @@
     @media screen and (max-width: $layout-breakpoint-desktop-m) {
       gap: 60px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      gap: 40px;
+    }
   }
 }

@@ -8,6 +8,14 @@
   border-radius: 30px;
   background: $color-light-xl;
 
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    max-width: 265px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    padding: 40px 30px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,8 +24,13 @@
     padding-left: 25px;
     padding-top: 30px;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 115%;
     text-transform: uppercase;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      padding-left: 20px;
+      padding-top: 0;
+    }
   }
 
   a {
@@ -34,8 +47,20 @@
 
     position: relative;
 
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      line-height: 115%;
+      height: 54px;
+      padding: 15px 25px 15px 20px;
+      max-width: 190px;
+      font-size: 20px;
+    }
+
     p {
       padding-top: 4px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        padding-top: 0;
+      }
     }
 
     &::after {
