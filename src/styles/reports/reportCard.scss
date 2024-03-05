@@ -10,10 +10,12 @@
 
   @media screen and (max-width: $layout-breakpoint-desktop-xs) {
     max-width: 265px;
+    padding: 40px 30px;
   }
 
-  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
-    padding: 40px 30px;
+  @media screen and (max-width: $layout-breakpoint-tablet-m) {
+    max-width: 430px;
+    min-height: 200px;
   }
 
   display: flex;
