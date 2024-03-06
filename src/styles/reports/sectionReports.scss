@@ -17,7 +17,15 @@
       gap: 60px;
     }
 
-    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      display: grid;
+      grid-template: auto 1fr / 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      display: flex;
+      flex-direction: column;
       gap: 40px;
     }
   }

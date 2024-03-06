@@ -18,6 +18,10 @@
     min-height: 200px;
   }
 
+  @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+    max-width: unset;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
