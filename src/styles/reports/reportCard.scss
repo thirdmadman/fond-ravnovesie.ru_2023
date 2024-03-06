@@ -35,23 +35,42 @@
 
   &:nth-child(1n) {
     background-image: url('/images/reports/background-report-card-2024.svg');
-    background-position: 155px -32px;
+    background-position: right -99px top -33px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -124px top -52px;
+    }
   }
 
   &:nth-child(2n) {
     background-image: url('/images/reports/background-report-card-2023.svg');
-    background-position: 187px -58px;
+    background-position: right -93px top -58px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -130px top -52px;
+    }
   }
 
   &:nth-child(3n) {
     background-image: url('/images/reports/background-report-card-2022.svg');
+    background-position: right -122px top -58px;
 
-    background-position: 187px -58px;
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -153px top -30px;
+    }
   }
 
   &:nth-child(4n) {
     background-image: url('/images/reports/background-report-card-2021.svg');
-    background-position: 126px -117px;
+    background-position: right -136px top -118px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -126px top -61px;
+    }
   }
 
   h3 {
