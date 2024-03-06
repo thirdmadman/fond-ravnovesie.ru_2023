@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .report-card {
   padding: 36px 40px;
@@ -31,6 +31,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-repeat: no-repeat;
+
+  &:nth-child(1n) {
+    background-image: url('/images/reports/background-report-card-2024.svg');
+    background-position: 155px -32px;
+  }
+
+  &:nth-child(2n) {
+    background-image: url('/images/reports/background-report-card-2023.svg');
+    background-position: 187px -58px;
+  }
+
+  &:nth-child(3n) {
+    background-image: url('/images/reports/background-report-card-2022.svg');
+
+    background-position: 187px -58px;
+  }
+
+  &:nth-child(4n) {
+    background-image: url('/images/reports/background-report-card-2021.svg');
+    background-position: 126px -117px;
+  }
 
   h3 {
     padding-left: 25px;
@@ -88,7 +110,6 @@
     }
 
     &::after {
-
       content: '';
       width: 24px;
       height: 24px;
