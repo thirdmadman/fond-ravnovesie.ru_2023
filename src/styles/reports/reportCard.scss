@@ -22,6 +22,12 @@
     max-width: unset;
   }
 
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    min-height: 100px;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,6 +42,11 @@
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       padding-left: 20px;
       padding-top: 0;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      font-size: 15px;
+      padding-left: 15px;
     }
   }
 
@@ -61,6 +72,13 @@
       font-size: 20px;
     }
 
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      font-size: 15px;
+      padding: 9px 15px;
+      height: 35px;
+      max-width: 150px;
+    }
+
     p {
       padding-top: 4px;
 
@@ -79,6 +97,13 @@
       top: 14px;
       right: 22px;
       background: url('/images/icons/icon-arrow-right-black.svg');
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+        top: 10px;
+      }
     }
   }
 }

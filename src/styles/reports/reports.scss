@@ -14,5 +14,11 @@
       font-size: 32px;
       margin-bottom: 40px;
     }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
   }
 }
