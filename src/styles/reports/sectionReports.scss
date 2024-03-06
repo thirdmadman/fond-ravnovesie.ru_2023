@@ -19,7 +19,7 @@
 
     @media screen and (max-width: $layout-breakpoint-tablet-m) {
       display: grid;
-      grid-template: auto 1fr / 1fr 1fr;
+      grid-template: auto / 1fr 1fr;
       gap: 40px;
     }
 
