@@ -1,6 +1,11 @@
 export const fondReports = {
   data: [
     {
+      year: 2024,
+      description: '',
+      link: '/',
+    },
+    {
       year: 2023,
       description: '',
       link: '/',

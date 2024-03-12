@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .report-card {
   padding: 36px 40px;
@@ -8,16 +8,87 @@
   border-radius: 30px;
   background: $color-light-xl;
 
+  @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+    max-width: 265px;
+    padding: 40px 30px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-m) {
+    max-width: 430px;
+    min-height: 200px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+    max-width: unset;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    min-height: 100px;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-repeat: no-repeat;
+
+  &:nth-child(1n) {
+    background-image: url('/images/reports/background-report-card-2024.svg');
+    background-position: right -99px top -33px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -124px top -52px;
+    }
+  }
+
+  &:nth-child(2n) {
+    background-image: url('/images/reports/background-report-card-2023.svg');
+    background-position: right -93px top -58px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -130px top -52px;
+    }
+  }
+
+  &:nth-child(3n) {
+    background-image: url('/images/reports/background-report-card-2022.svg');
+    background-position: right -122px top -58px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -153px top -30px;
+    }
+  }
+
+  &:nth-child(4n) {
+    background-image: url('/images/reports/background-report-card-2021.svg');
+    background-position: right -136px top -118px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      background-size: 100% 130%;
+      background-position: right -126px top -61px;
+    }
+  }
 
   h3 {
     padding-left: 25px;
     padding-top: 30px;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 115%;
     text-transform: uppercase;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      padding-left: 20px;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      font-size: 15px;
+      padding-left: 15px;
+    }
   }
 
   a {
@@ -34,12 +105,30 @@
 
     position: relative;
 
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      line-height: 115%;
+      height: 54px;
+      padding: 15px 25px 15px 20px;
+      max-width: 190px;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      font-size: 15px;
+      padding: 9px 15px;
+      height: 35px;
+      max-width: 150px;
+    }
+
     p {
       padding-top: 4px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        padding-top: 0;
+      }
     }
 
     &::after {
-
       content: '';
       width: 24px;
       height: 24px;
@@ -48,6 +137,13 @@
       top: 14px;
       right: 22px;
       background: url('/images/icons/icon-arrow-right-black.svg');
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+        top: 10px;
+      }
     }
   }
 }

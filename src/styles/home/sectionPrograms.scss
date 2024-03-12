@@ -39,11 +39,6 @@ section.section-programs {
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    @media screen and (max-width: $layout-breakpoint-mobile-s) {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -276,11 +271,6 @@ section.section-programs {
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    @media screen and (max-width: $layout-breakpoint-mobile-s) {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -438,10 +428,6 @@ section.section-programs {
       }
 
       @media screen and (max-width: $layout-breakpoint-mobile-l) {
-        margin-left: -30px;
-      }
-
-      @media screen and (max-width: $layout-breakpoint-mobile-s) {
         margin-left: -20px;
       }
     }

@@ -1,20 +1,41 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-reports {
-  padding-top: 50px;
-  margin-bottom: 140px;
+  margin-top: 100px;
+  margin-bottom: 150px;
 
-  h1 {
+  @media screen and (max-width: $layout-breakpoint-desktop-m) {
+    margin-top: 80px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
     margin-top: 40px;
-    margin-bottom: 50px;
-    font-size: 24px;
-    line-height: 25px;
-    text-transform: uppercase;
+    margin-bottom: 40px;
   }
 
   .section-reports__list {
     display: flex;
-    gap: 60px;
+    gap: 55px;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-m) {
+      gap: 60px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-m) {
+      display: grid;
+      grid-template: auto / 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      gap: 10px;
+    }
   }
 }

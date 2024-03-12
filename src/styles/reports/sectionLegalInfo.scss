@@ -1,4 +1,4 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .section-legal-info {
   margin-bottom: 150px;
@@ -8,44 +8,93 @@
 
   display: flex;
   justify-content: space-between;
+  column-gap: 60px;
+
+  @media screen and (max-width: $layout-breakpoint-desktop-m) {
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 150px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-mobile-l) {
+    row-gap: 20px;
+  }
 
   .section-legal-info__data {
   }
 
   .legal-data {
-    h2 {
-      margin-bottom: 45px;
-      font-size: 24px;
-      line-height: 28px;
-      text-transform: uppercase;
-    }
+    width: 100%;
+    line-height: 115%;
+    font-size: 16px;
 
     .legal-data__data {
       display: grid;
       grid-template-columns: auto 1fr;
-      max-width: 780px;
-      grid-gap: 16px 23px;
-      gap: 17px 23px;
-      line-height: 19px;
+      gap: 25px 23px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        gap: 30px 23px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        gap: 20px 23px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
     }
 
     .data {
+      p {
+        @media screen and (max-width: $layout-breakpoint-mobile-l) {
+          font-size: 14px;
+          line-height: 118%;
+          margin-bottom: 20px;
+        }
+      }
+
       .data__heading {
         color: $color-dark-m;
+        @media screen and (max-width: $layout-breakpoint-mobile-l) {
+          font-size: 16px;
+          line-height: 115%;
+          margin-bottom: 10px;
+        }
       }
     }
   }
 
   .section-legal-info__papers {
-    
   }
 
   .legal-papers {
-    margin-left: 40px;
-    margin-top: 75px;
     display: flex;
-    gap: 53px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+
+    .legal-papers__list {
+      display: flex;
+      gap: 53px;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-m) {
+        justify-content: space-around;
+        gap: 60px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        gap: 40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        column-gap: 10px;
+        row-gap: 20px;
+      }
+    }
 
     img {
       min-width: 153px;
