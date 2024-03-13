@@ -40,15 +40,13 @@
 
   .not-fund-page__container {
     margin-left: 132px;
-    padding-left: 178px;
-    padding-top: 110px;
+    padding-left: 188px;
+    padding-top: 87px;
   }
 
   .not-fund-page__text {
-    margin-left: 10px;
-    margin-bottom: 50px;
-    max-width: 700px;
-    min-height: 380px;
+    margin-bottom: 80px;
+    max-width: 810px;
     position: relative;
 
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
@@ -62,7 +60,7 @@
       position: absolute;
       width: 150px;
       height: 2px;
-      left: -188px;
+      left: -190px;
       top: 51px;
       background-color: $color-dark-l;
     }
@@ -87,7 +85,7 @@
     }
 
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       color: $color-dark-l;
       font-size: 40px;
       line-height: 46px;
@@ -113,7 +111,7 @@
   .not-fund-page__buttons {
     display: flex;
     flex-direction: row;
-    gap: 35px;
+    gap: 30px;
     position: relative;
 
     &::before {
@@ -122,7 +120,7 @@
       position: absolute;
       width: 150px;
       height: 2px;
-      left: -180px;
+      left: -190px;
       top: 37px;
       background-color: $color-dark-l;
     }
@@ -130,6 +128,7 @@
     a {
       display: block;
       padding: 15px 34px;
+      min-width: 240px;
       border-radius: 55px;
       border: 1px solid $color-dark-l;
       color: $color-dark-l;
