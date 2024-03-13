@@ -14,6 +14,8 @@
   .container {
     max-width: 1920px;
     width: 100%;
+    padding-left: 130px;
+    padding-right: 130px;
     max-height: 1080px;
     height: 100%;
     display: flex;
@@ -25,17 +27,20 @@
     margin: unset;
     flex-grow: 1;
 
-    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
-      background:
-        url('/images/background/wave-background-white-small.svg') no-repeat 100% 140%,
-        #f6f6f6;
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
   .not-fund-page__container {
-    margin-left: 132px;
     padding-left: 188px;
     padding-top: 87px;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: unset;
+      padding-top: 51px;
+    }
   }
 
   .not-fund-page__text {
@@ -44,8 +49,8 @@
     position: relative;
 
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
-      min-height: 300px;
-      margin-bottom: 45px;
+      max-width: 650px;
+      margin-bottom: 50px;
     }
 
     &::before {
@@ -57,6 +62,10 @@
       left: -190px;
       top: 51px;
       background-color: $color-dark-l;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        display: none;
+      }
     }
 
     h1 {
@@ -65,6 +74,12 @@
       font-size: 150px;
       line-height: 132px;
       position: relative;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        margin-bottom: 30px;
+        font-size: 112px;
+        line-height: 100px;
+      }
 
       &::after {
         content: '';
@@ -75,6 +90,14 @@
         left: 283px;
         top: -80px;
         background: url('/images/visuals/two-stars-gray.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-mobile-l) {
+          left: 212px;
+          top: -51px;
+          width: 43px;
+          height: 69px;
+          background-size: cover;
+        }
       }
     }
 
@@ -88,6 +111,11 @@
         font-size: 32px;
         line-height: 37px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        font-size: 24px;
+        line-height: 115%;
+      }
     }
 
     p {
@@ -99,6 +127,11 @@
         font-size: 16px;
         line-height: 18px;
       }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        font-size: 16px;
+        line-height: 115%;
+      }
     }
   }
 
@@ -107,6 +140,12 @@
     flex-direction: row;
     gap: 30px;
     position: relative;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      flex-direction: column;
+      gap: 25px;
+    }
 
     &::before {
       content: '';
@@ -117,6 +156,10 @@
       left: -190px;
       top: 37px;
       background-color: $color-dark-l;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        display: none;
+      }
     }
 
     a {
@@ -129,6 +172,12 @@
       font-size: 40px;
       line-height: 54px;
       text-align: center;
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        padding: 11px 34px;
+        font-size: 24px;
+        line-height: 136%;
+      }
     }
 
     .not-fund-page__button_blue {
