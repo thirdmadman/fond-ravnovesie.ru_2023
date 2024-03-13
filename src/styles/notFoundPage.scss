@@ -27,6 +27,16 @@
     margin: unset;
     flex-grow: 1;
 
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
       padding-left: 20px;
       padding-right: 20px;
@@ -35,22 +45,38 @@
 
   .not-fund-page__container {
     padding-left: 188px;
-    padding-top: 87px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-left: unset;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+    }
 
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
       padding-left: unset;
-      padding-top: 51px;
     }
   }
 
   .not-fund-page__text {
     margin-bottom: 80px;
+    padding-top: 87px;
     max-width: 810px;
     position: relative;
 
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       max-width: 650px;
       margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-top: 67px;
+      max-width: unset;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-top: 51px;
     }
 
     &::before {
@@ -60,8 +86,12 @@
       width: 150px;
       height: 2px;
       left: -190px;
-      top: 51px;
+      top: 138px;
       background-color: $color-dark-l;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        display: none;
+      }
 
       @media screen and (max-width: $layout-breakpoint-mobile-l) {
         display: none;
@@ -74,6 +104,12 @@
       font-size: 150px;
       line-height: 132px;
       position: relative;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        font-size: 120px;
+        line-height: 88%;
+        margin-bottom: 40px;
+      }
 
       @media screen and (max-width: $layout-breakpoint-mobile-l) {
         margin-bottom: 30px;
@@ -90,6 +126,14 @@
         left: 283px;
         top: -80px;
         background: url('/images/visuals/two-stars-gray.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: 218px;
+          top: -65px;
+          width: 52px;
+          height: 82px;
+          background-size: cover;
+        }
 
         @media screen and (max-width: $layout-breakpoint-mobile-l) {
           left: 212px;
@@ -110,6 +154,11 @@
       @media screen and (max-width: $layout-breakpoint-desktop-xs) {
         font-size: 32px;
         line-height: 37px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        font-size: 28px;
+        line-height: 115%;
       }
 
       @media screen and (max-width: $layout-breakpoint-mobile-l) {
@@ -142,6 +191,10 @@
     position: relative;
     flex-wrap: wrap;
 
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      flex-direction: column;
+    }
+
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
       flex-direction: column;
       gap: 25px;
@@ -156,6 +209,10 @@
       left: -190px;
       top: 37px;
       background-color: $color-dark-l;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        display: none;
+      }
 
       @media screen and (max-width: $layout-breakpoint-mobile-l) {
         display: none;
@@ -172,6 +229,13 @@
       font-size: 40px;
       line-height: 54px;
       text-align: center;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        font-size: 32px;
+        line-height: 136%;
+        padding: 15px 34px;
+        min-width: 200px;
+      }
 
       @media screen and (max-width: $layout-breakpoint-mobile-l) {
         padding: 11px 34px;
