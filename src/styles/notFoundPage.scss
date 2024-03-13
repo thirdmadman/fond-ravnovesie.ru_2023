@@ -19,21 +19,15 @@
     display: flex;
     align-items: center;
     background:
-      url('../../public/images/wave-background-white.svg') no-repeat bottom right,
+      url('/images/background/wave-background-white.svg') no-repeat bottom right,
       $color-light-m;
     padding-top: unset;
     margin: unset;
     flex-grow: 1;
 
-    @media screen and (max-width: $layout-breakpoint-desktop-m) {
-      background:
-        url('../../public/images/wave-background-white.svg') no-repeat 150% 100%,
-        #f6f6f6;
-    }
-
     @media screen and (max-width: $layout-breakpoint-desktop-xs) {
       background:
-        url('../../public/images/wave-background-white-small.svg') no-repeat 100% 140%,
+        url('/images/background/wave-background-white-small.svg') no-repeat 100% 140%,
         #f6f6f6;
     }
   }
