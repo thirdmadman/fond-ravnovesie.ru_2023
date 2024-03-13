@@ -1,36 +1,92 @@
-@import "constants.scss";
+@import 'constants.scss';
 
 .not-fund-page {
   width: 100%;
   min-height: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   flex-grow: 1;
-
-  background: url('/images/wave-background-white.svg') no-repeat calc(100vw - 1454px) calc(100vh - 1065px);
+  background-color: $color-light-l;
 
   .container {
     max-width: 1920px;
-    margin: auto;
     width: 100%;
+    padding-left: 130px;
+    padding-right: 130px;
+    max-height: 1080px;
     height: 100%;
     display: flex;
     align-items: center;
+    background:
+      url('/images/background/wave-background-white.svg') no-repeat bottom right,
+      $color-light-m;
+    padding-top: unset;
+    margin: unset;
     flex-grow: 1;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   .not-fund-page__container {
-    margin-left: 132px;
-    padding-left: 178px;
-    padding-top: 110px;
+    padding-left: 188px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-left: unset;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-left: unset;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   .not-fund-page__text {
-    margin-left: 10px;
-    margin-bottom: 50px;
-    max-width: 700px;
-    min-height: 380px;
+    margin-bottom: 80px;
+    padding-top: 87px;
+    max-width: 810px;
     position: relative;
+
+    @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+      max-width: 650px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-top: 67px;
+      max-width: unset;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      padding-top: 51px;
+    }
 
     &::before {
       content: '';
@@ -38,9 +94,17 @@
       position: absolute;
       width: 150px;
       height: 2px;
-      left: -188px;
-      top: 51px;
+      left: -190px;
+      top: 138px;
       background-color: $color-dark-l;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        display: none;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        display: none;
+      }
     }
 
     h1 {
@@ -49,6 +113,18 @@
       font-size: 150px;
       line-height: 132px;
       position: relative;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        font-size: 120px;
+        line-height: 88%;
+        margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        margin-bottom: 30px;
+        font-size: 112px;
+        line-height: 100px;
+      }
 
       &::after {
         content: '';
@@ -59,28 +135,79 @@
         left: 283px;
         top: -80px;
         background: url('/images/visuals/two-stars-gray.svg') no-repeat;
+
+        @media screen and (max-width: $layout-breakpoint-tablet-s) {
+          left: 218px;
+          top: -65px;
+          width: 52px;
+          height: 82px;
+          background-size: cover;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-mobile-l) {
+          left: 212px;
+          top: -51px;
+          width: 43px;
+          height: 69px;
+          background-size: cover;
+        }
       }
     }
 
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       color: $color-dark-l;
       font-size: 40px;
       line-height: 46px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        font-size: 32px;
+        line-height: 37px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        font-size: 28px;
+        line-height: 115%;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        font-size: 24px;
+        line-height: 115%;
+      }
     }
 
     p {
       color: $color-dark-m;
       font-size: 24px;
       line-height: 28px;
+
+      @media screen and (max-width: $layout-breakpoint-desktop-xs) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        font-size: 16px;
+        line-height: 115%;
+      }
     }
   }
 
   .not-fund-page__buttons {
     display: flex;
     flex-direction: row;
-    gap: 35px;
+    gap: 30px;
     position: relative;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $layout-breakpoint-tablet-xs) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-mobile-l) {
+      flex-direction: column;
+      gap: 25px;
+    }
 
     &::before {
       content: '';
@@ -88,19 +215,42 @@
       position: absolute;
       width: 150px;
       height: 2px;
-      left: -180px;
+      left: -190px;
       top: 37px;
       background-color: $color-dark-l;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        display: none;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        display: none;
+      }
     }
 
     a {
       display: block;
       padding: 15px 34px;
+      min-width: 240px;
       border-radius: 55px;
       border: 1px solid $color-dark-l;
       color: $color-dark-l;
       font-size: 40px;
       line-height: 54px;
+      text-align: center;
+
+      @media screen and (max-width: $layout-breakpoint-tablet-s) {
+        font-size: 32px;
+        line-height: 136%;
+        padding: 15px 34px;
+        min-width: 200px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-mobile-l) {
+        padding: 11px 34px;
+        font-size: 24px;
+        line-height: 136%;
+      }
     }
 
     .not-fund-page__button_blue {
