@@ -46,15 +46,24 @@
   .not-fund-page__container {
     padding-left: 188px;
 
+    padding-top: 100px;
+    padding-bottom: 100px;
+
     @media screen and (max-width: $layout-breakpoint-tablet-s) {
       padding-left: unset;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
 
     @media screen and (max-width: $layout-breakpoint-tablet-s) {
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     @media screen and (max-width: $layout-breakpoint-mobile-l) {
       padding-left: unset;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 
