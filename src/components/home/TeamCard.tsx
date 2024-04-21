@@ -1,14 +1,14 @@
-import '../../styles/home/teamCard.scss';
+import '@/styles/home/teamCard.scss';
 import Image from 'next/image';
 
-interface TeamCardProps {
+interface ITeamCardProps {
   name: string;
   jobTitle: string;
   imageSrc: string;
   isLead?: boolean;
 }
 
-export function TeamCard({ name, jobTitle, imageSrc, isLead = false }: TeamCardProps) {
+export function TeamCard({ name, jobTitle, imageSrc, isLead = false }: ITeamCardProps) {
   return (
     <div className={`team-card ${isLead ? 'team-card_lead' : ''}`}>
       <div className="team-card__text">

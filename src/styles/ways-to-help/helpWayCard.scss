@@ -1,0 +1,79 @@
+@import '../constants.scss';
+
+.help-way-card {
+  padding: 30px;
+  width: 425px;
+  border-radius: 40px;
+  background-color: $color-light-xl;
+  flex-shrink: 0;
+
+  img {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 365px;
+    height: 275px;
+    object-fit: cover;
+  }
+
+  .help-way-card__text {
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    min-height: 84px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  .help-way-card__button-hide {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .help-way-card__button-hide {
+    color: $color-primary-blue;
+  }
+
+  .help-way-card__action-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 75px;
+    border: 1px solid $color-dark-l;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    transition: scale 0.4s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &_financial {
+      &::after {
+        content: '';
+        position: absolute;
+        right: 14px;
+        display: block;
+        width: 38px;
+        height: 38px;
+        border-radius: 100%;
+        background-color: $color-light-m;
+        background-image: url('/images/icons/icon-money-outline-black.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+}

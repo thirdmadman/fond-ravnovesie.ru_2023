@@ -1,9 +1,8 @@
 @import "../constants.scss";
 
 .section-contacts {
-  margin: 0 110px;
   padding: 40px;
-  padding-top: 230px;
+  padding-top: 130px;
   padding-bottom: 53px;
   min-height: 815px;
   display: flex;
@@ -39,7 +38,7 @@
         height: 24px;
         left: -42px;
         top: 4px;
-        background: url('../../../public/images/icons/icon-location-black.svg') no-repeat;
+        background: url('/images/icons/icon-location-black.svg') no-repeat;
       }
     }
 
@@ -52,7 +51,7 @@
         height: 24px;
         left: -42px;
         top: 4px;
-        background: url('../../../public/images/icons/icon-phone-black.svg') no-repeat;
+        background: url('/images/icons/icon-phone-black.svg') no-repeat;
       }
     }
 
@@ -65,7 +64,7 @@
         height: 24px;
         left: -42px;
         top: 4px;
-        background: url('../../../public/images/icons/icon-message-black.svg') no-repeat;
+        background: url('/images/icons/icon-message-black.svg') no-repeat;
       }
     }
 

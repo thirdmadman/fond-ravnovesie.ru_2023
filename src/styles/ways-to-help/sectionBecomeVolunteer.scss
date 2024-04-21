@@ -1,0 +1,35 @@
+.section-become-volunteer {
+  margin-bottom: 150px;
+
+  h2 {
+    margin-bottom: 100px;
+  }
+
+  .section-become-volunteer__content {
+    display: flex;
+    column-gap: 60px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+  }
+
+  .section-become-volunteer__help-direction-group {
+    max-width: 360px;
+    width: 100%;
+
+    h3 {
+      min-height: 56px;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .section-become-volunteer__directions-list {
+    font-size: 16px;
+
+    li {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -2,6 +2,7 @@ $color-light-xl: #FFFFFF;
 $color-light-l: #F9F9F9;
 $color-light-m: #F6F6F6;
 $color-light-s: #E0E0E0;
+$color-dark-s: #D9D9D9;
 $color-dark-m: #8B8B8B;
 $color-dark-l: #282828;
 
@@ -18,7 +19,10 @@ $layout-breakpoint-desktop-xs: 1280px;
 $layout-breakpoint-tablet-l: 1167px;
 $layout-breakpoint-tablet-m: 1000px;
 $layout-breakpoint-tablet-s: 910px;
-$layout-breakpoint-tablet-xs: 774px;
+$layout-breakpoint-tablet-xs: 744px;
+
+$layout-breakpoint-tablet-xs-bugfix: 730px;
 
 $layout-breakpoint-mobile-xl: 428px;
 $layout-breakpoint-mobile-l: 390px;
+$layout-breakpoint-mobile-s: 320px;
