@@ -7,6 +7,7 @@ import { SectionBecomeVolunteer } from '@/components/ways-to-help/SectionBecomeV
 import { SectionSpreadTheWord } from '@/components/ways-to-help/SectionSpreadTheWord';
 import { SectionProvidePremises } from '@/components/ways-to-help/SectionProvidePremises';
 import '@/styles/ways-to-help/ways-to-help.scss';
+import { SectionDonation } from '@/components/home/SectionDonation';
 
 export const metadata: Metadata = {
   title: 'Помочь фонду | Благотворительный фонд Равновесие',
@@ -24,6 +25,7 @@ export default function WaysToHelpPage() {
         <SectionBecomeVolunteer />
         <SectionSpreadTheWord />
         <SectionProvidePremises />
+        <SectionDonation />
         <Footer />
       </div>
     </div>

@@ -4,6 +4,7 @@ import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
 import { SectionReports } from '@/components/reports/SectionReports';
 import { SectionLegalInfo } from '@/components/reports/SectionLegalInfo';
+import { SectionDonation } from '@/components/home/SectionDonation';
 
 export const metadata: Metadata = {
   title: 'Отчёты | Благотворительный фонд Равновесие',
@@ -18,6 +19,7 @@ export default function Reports() {
       <div className="container">
         <SectionReports />
         <SectionLegalInfo />
+        <SectionDonation />
         <Footer />
       </div>
     </div>
