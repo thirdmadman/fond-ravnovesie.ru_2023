@@ -6,6 +6,7 @@
   min-height: 815px;
   display: flex;
   justify-content: space-between;
+  scroll-margin-top: 150px;
 
   @media screen and (max-width: $layout-breakpoint-desktop-l) {
     padding: 0 70px;

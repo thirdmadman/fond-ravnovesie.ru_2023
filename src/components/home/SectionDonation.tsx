@@ -6,7 +6,7 @@ import { QrDonationImage } from '../shared/QrDonationImage';
 
 export function SectionDonation() {
   return (
-    <section className="section-donation">
+    <section id="section-donation" className="section-donation">
       <div className="section-donation__qr qr-donation">
         <div className="qr-donation__text">
           <div className="qr-donation__title">Денежное пожертвование</div>

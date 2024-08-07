@@ -15,6 +15,7 @@ const menuLinks = [
   { name: 'Проекты', path: '/projects' },
   { name: 'Сообщество', path: '/community' },
   { name: 'Контакты', path: '/contacts' },
+  { name: 'Пожертвовать', path: '/#section-donation' },
 ];
 
 export function Header() {
