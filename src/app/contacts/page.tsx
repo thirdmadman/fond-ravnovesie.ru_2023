@@ -3,6 +3,7 @@ import '@/styles/contacts/contacts.scss';
 import { Footer } from '@/components/shared/Footer';
 import { Metadata } from 'next';
 import { SectionContacts } from '@/components/contacts/SectionContacts';
+import { SectionDonation } from '@/components/home/SectionDonation';
 
 export const metadata: Metadata = {
   title: 'Контакты | Благотворительный фонд Равновесие',
@@ -16,6 +17,7 @@ export default function Contacts() {
       <Header />
       <div className="container">
         <SectionContacts />
+        <SectionDonation />
         <Footer />
       </div>
     </div>
